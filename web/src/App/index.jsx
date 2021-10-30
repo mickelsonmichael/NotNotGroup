@@ -10,6 +10,7 @@ import Navigation from "../Components/Navigation";
 import { AccountProvider } from "../Context/AccountContext";
 import Home from "../Components/Home";
 import "./App.css";
+import Wintertodt from "../Components/Wintertodt";
 
 const queryClient = new QueryClient();
 const localStoragePersistor = createWebStoragePersistor ({ storage: window.localStorage });
@@ -51,9 +52,7 @@ const App = () => (
                         <Box sx={{ padding: "1rem" }}>
                             <Switch>
                                 <Route path="/" exact component={Home} />
-                                <Route path="/winterhodt">
-                                    Winterhodt
-                                </Route>
+                                <Route path="/Wintertodt" component={Wintertodt} />
                             </Switch>
                         </Box>
                     </Box>

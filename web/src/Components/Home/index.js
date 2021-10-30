@@ -24,13 +24,13 @@ const Home = () => {
                 <Grid item sm={6} sx={{ padding: "1rem" }}>
                     <h2 style={h2Style}>NotNotMike</h2>
                     <Box sx={wrapperStyle}>
-                    <HiScoresTable skills={notNotMike} />
+                        <HiScoresTable skills={notNotMike} />
                     </Box>
                 </Grid>
                 <Grid item sm={6} sx={{ padding: "1rem" }}>
                     <h2 style={h2Style}>NotNotThomas</h2>
                     <Box sx={wrapperStyle}>
-                    <HiScoresTable skills={notNotThomas} />
+                        <HiScoresTable skills={notNotThomas} />
                     </Box>
                 </Grid>
             </Grid>

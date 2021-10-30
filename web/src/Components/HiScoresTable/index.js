@@ -3,7 +3,7 @@ import { TableContainer, Table, TableHead, TableRow, TableBody, TableCell, Typog
 
 const HiScoresTable = ({ skills }) => skills == null ? null : (
     <TableContainer>
-        <Table size="small" striped>
+        <Table size="small">
             <TableHead>
                 <TableRow sx={{ backgroundColor: "rgba(1,1,1,0.2)" }}>
                     <TableCell>

@@ -23,18 +23,19 @@ module.exports = (env, argv) => ({
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ["@babel/preset-env", "@babel/preset-react" ]
+                        presets: ["@babel/preset-env", "@babel/preset-react"],
+                        plugins: ["@babel/plugin-transform-runtime"]
                     }
                 }
             },
             {
                 test: /\.css$/,
-                use: [ "style-loader", "css-loader" ]
+                use: ["style-loader", "css-loader"]
             }
         ]
     },
     resolve: {
-        extensions: [ ".js", ".jsx" ]
+        extensions: [".js", ".jsx"]
     },
     plugins: [
         new HtmlWebpackPlugin({

@@ -2,9 +2,22 @@ import { createTheme, CssBaseline, ThemeProvider, Box } from "@mui/material";
 import React from "react";
 import { Switch, Route } from "react-router";
 import { HashRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { persistQueryClient } from "react-query/persistQueryClient-experimental";
+import { createWebStoragePersistor  } from "react-query/createWebStoragePersistor-experimental";
 
 import Navigation from "../Components/Navigation";
+import { AccountProvider } from "../Context/AccountContext";
+import Home from "../Components/Home";
 import "./App.css";
+
+const queryClient = new QueryClient();
+const localStoragePersistor = createWebStoragePersistor ({ storage: window.localStorage });
+
+persistQueryClient({
+    queryClient,
+    persistor: localStoragePersistor
+});
 
 const theme = createTheme({
     palette: {
@@ -26,26 +39,28 @@ const theme = createTheme({
 });
 
 const App = () => (
-    <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <HashRouter>
-            <Box backgroundColor="primary.main" sx={{ height: "100%" }}>
+    <QueryClientProvider client={queryClient}>
+        <AccountProvider>
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <HashRouter>
+                    <Box backgroundColor="primary.main" sx={{ height: "100%", overflowY: "auto", maxHeight: "100%" }}>
 
-                <Navigation />
+                        <Navigation />
 
-                <Box sx={{ padding: "1rem" }}>
-                    <Switch>
-                        <Route path="/">
-                            Home
-                        </Route>
-                        <Route path="winterhodt">
-                            Winterhodt
-                        </Route>
-                    </Switch>
-                </Box>
-            </Box>
-        </HashRouter>
-    </ThemeProvider>
+                        <Box sx={{ padding: "1rem" }}>
+                            <Switch>
+                                <Route path="/" exact component={Home} />
+                                <Route path="/winterhodt">
+                                    Winterhodt
+                                </Route>
+                            </Switch>
+                        </Box>
+                    </Box>
+                </HashRouter>
+            </ThemeProvider>
+        </AccountProvider>
+    </QueryClientProvider>
 );
 
 export default App;

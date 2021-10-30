@@ -23,7 +23,7 @@ const Navigation = () => (
                 </NavLink>
             </Grid>
             <Grid item columns={{ xs: 12, sm: "auto" }}>
-                <NavLink to="/Wintertodt">Wintertodt</NavLink>
+                <NavLink to="/wintertodt">Wintertodt</NavLink>
             </Grid>
         </Grid>
     </Box>

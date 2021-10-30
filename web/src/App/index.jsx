@@ -52,7 +52,7 @@ const App = () => (
                         <Box sx={{ padding: "1rem" }}>
                             <Switch>
                                 <Route path="/" exact component={Home} />
-                                <Route path="/Wintertodt" component={Wintertodt} />
+                                <Route path="/wintertodt" component={Wintertodt} />
                             </Switch>
                         </Box>
                     </Box>

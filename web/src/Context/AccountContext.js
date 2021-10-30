@@ -15,7 +15,7 @@ const AccountContext = createContext({
     isNotNotMikeError: false
 });
 
-const hiScoresUrl = "http://localhost:7071/api/GetHiScores" //"https://mickelsonosrs.azurewebsites.net/GetHiScores"
+const hiScoresUrl = "https://mickelsonosrs.azurewebsites.net/api/GetHiScores"
 
 const useAccount = (account) => useQuery(account, async () => {
     const cancellationToken = axios.CancelToken;

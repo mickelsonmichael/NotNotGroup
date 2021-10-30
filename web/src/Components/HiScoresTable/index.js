@@ -20,12 +20,14 @@ const HiScoresTable = ({ skills }) => skills == null ? null : (
             </TableHead>
             <TableBody>
                 {
-                    Object.keys(skills).map((key, i) => (
-                        <TableRow key={key} sx={{ backgroundColor: i % 2 != 0 ? "rgba(1,1,1,0.2)" : "transparent" }}>
-                            <TableCell>{key}</TableCell>
-                            <TableCell sx={{ textAlign: "right" }}>{skills[key].level}</TableCell>
-                        </TableRow>
-                    ))
+                    Object.keys(skills)
+                        .filter(key => key !== "cancel")
+                        .map((key, i) => (
+                            <TableRow key={key} sx={{ backgroundColor: i % 2 != 0 ? "rgba(1,1,1,0.2)" : "transparent" }}>
+                                <TableCell>{key}</TableCell>
+                                <TableCell sx={{ textAlign: "right" }}>{skills[key].level}</TableCell>
+                            </TableRow>
+                        ))
                 }
             </TableBody>
         </Table>

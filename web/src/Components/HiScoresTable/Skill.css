@@ -5,12 +5,14 @@
 }
 
 .skill {
+    position: relative;
     display: inline-block;
     white-space: nowrap;
     height: 55px;
     width: 80px;
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .skill__inner {
@@ -30,4 +32,16 @@
 
 .skill__hover {
     display: none;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    background: #333388;
+    z-index: 10;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid white;
+    transform: translateX(-50%);
+}
+
+.skill:hover .skill__hover {
+    display: block;
 }

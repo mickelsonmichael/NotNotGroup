@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 import { useAccounts } from "../../Context/AccountContext";
 import HiScoresTable from "../HiScoresTable";
@@ -13,8 +13,6 @@ const h2Style = {
     margin: "0",
     textAlign: "center"
 };
-
-const commaPattern = /\B(?=(\d{3})+(?!\d))/g;
 
 const Home = () => {
     const { notNotMike, notNotThomas } = useAccounts();

@@ -1,5 +1,5 @@
 $rootUrl = "https://oldschool.runescape.wiki"
-$outFolder = "C:/dev/NotNotGroup/web/src/skills"
+$outFolder = "C:/dev/NotNotGroup/web/public"
 
 Write-Host "Downloading images to $outFolder"
 

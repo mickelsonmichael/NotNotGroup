@@ -5,13 +5,10 @@ import LiquidFillGauge from "react-liquid-gauge";
 import { useAccounts } from "../../Context/AccountContext";
 
 const xp99 = 13034431;
-const h2Style = {
-    textAlign: "center",
-}
 
 const Wintertodt = () => {
     const { notNotThomas, notNotMike } = useAccounts();
-console.log(notNotMike);
+
     return (
         <>
             <Typography variant="h1" textAlign="center">
@@ -26,13 +23,13 @@ console.log(notNotMike);
                     <LiquidFillGauge
                         waveAnimation
                         textStyle={{ fill: "white" }}
-                        value={(notNotMike?.Firemaking.experience ?? 0) / xp99 * 100}
+                        value={(notNotMike?.skills.Firemaking.experience ?? 0) / xp99 * 100}
                     />
                     <Typography variant="h3" textAlign="center" marginTop={1}>
-                        Kills {notNotMike?.Wintertodt.level ?? "?"}
+                        Kills {notNotMike?.bosses.Wintertodt.level ?? "?"}
                     </Typography>
                     <Typography textAlign="center">
-                        <small>HP {notNotMike?.Hitpoints.level}</small>
+                        <small>HP {notNotMike?.skills.Hitpoints.level}</small>
                     </Typography>
                 </Grid>
                 <Grid item>
@@ -44,13 +41,13 @@ console.log(notNotMike);
                         waveStyle={{ fill: "gold" }}
                         circleStyle={{ fill: "gold" }}
                         waveAnimation
-                        value={(notNotThomas?.Firemaking.experience ?? 0) / xp99 * 100}
+                        value={(notNotThomas?.skills.Firemaking.experience ?? 0) / xp99 * 100}
                     />
                     <Typography variant="h3" textAlign="center" marginTop={1}>
-                        Kills {notNotThomas?.Wintertodt.level ?? "?"}
+                        Kills {notNotThomas?.bosses.Wintertodt.level ?? "?"}
                     </Typography>
                     <Typography textAlign="center">
-                        <small>HP {notNotThomas?.Hitpoints.level}</small>
+                        <small>HP {notNotThomas?.skills.Hitpoints.level}</small>
                     </Typography>
                 </Grid>
             </Grid>

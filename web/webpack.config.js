@@ -1,11 +1,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env, argv) => ({
     entry: "./src/index.js",
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "build"),
+        clean: true
     },
     watchOptions: {
         aggregateTimeout: 200,
@@ -31,6 +33,13 @@ module.exports = (env, argv) => ({
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.png$/,
+                loader: "file-loader",
+                options: {
+                    outputPath: "images"
+                }
             }
         ]
     },
@@ -38,8 +47,10 @@ module.exports = (env, argv) => ({
         extensions: [".js", ".jsx"]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: "./public/index.html"
+        new CopyPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, "public"), to: path.resolve(__dirname, "build") }
+            ]
         })
     ]
 });

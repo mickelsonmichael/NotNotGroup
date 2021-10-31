@@ -6,8 +6,7 @@ import HiScoresTable from "../HiScoresTable";
 
 const wrapperStyle = {
     borderColor: "text.primary",
-    border: 1,
-    borderRadius: 2,
+    textAlign: "center"
 }
 
 const h2Style = {
@@ -16,12 +15,6 @@ const h2Style = {
 };
 
 const commaPattern = /\B(?=(\d{3})+(?!\d))/g;
-
-const Overall = ({ overall }) => (
-    <Typography textAlign="center" margin="0.5rem" fontWeight={700}>
-        Overall {overall?.level.replace(commaPattern)} levels with {overall?.experience.replace(commaPattern, ",")} XP
-    </Typography>
-);
 
 const Home = () => {
     const { notNotMike, notNotThomas } = useAccounts();
@@ -32,17 +25,13 @@ const Home = () => {
                 <Grid item sm={6} sx={{ padding: "1rem" }}>
                     <h2 style={h2Style}>NotNotMike</h2>
                     <Box sx={wrapperStyle}>
-                        <HiScoresTable skills={notNotMike?.skills} />
-
-                        <Overall overall={notNotMike?.Overall} />
+                        <HiScoresTable skills={notNotMike?.skills} overall={notNotMike?.Overall} />
                     </Box>
                 </Grid>
                 <Grid item sm={6} sx={{ padding: "1rem" }}>
                     <h2 style={h2Style}>NotNotThomas</h2>
                     <Box sx={wrapperStyle}>
-                        <HiScoresTable skills={notNotThomas?.skills} />
-
-                        <Overall overall={notNotThomas?.Overall} />
+                        <HiScoresTable skills={notNotThomas?.skills} overall={notNotThomas?.Overall} />
                     </Box>
                 </Grid>
             </Grid>

@@ -1,37 +1,19 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableBody, TableCell, Typography } from "@mui/material";
 
-const HiScoresTable = ({ skills }) => skills == null ? null : (
-    <TableContainer>
-        <Table size="small">
-            <TableHead>
-                <TableRow sx={{ backgroundColor: "rgba(1,1,1,0.2)" }}>
-                    <TableCell>
-                        <Typography fontWeight={700}>
-                            Skill
-                        </Typography>
-                    </TableCell>
-                    <TableCell sx={{ textAlign: "right" }}>
-                        <Typography fontWeight={700}>
-                            Level
-                        </Typography>
-                    </TableCell>
-                </TableRow>
-            </TableHead>
-            <TableBody>
-                {
-                    Object.keys(skills)
-                        .filter(key => key !== "cancel")
-                        .map((key, i) => (
-                            <TableRow key={key} sx={{ backgroundColor: i % 2 != 0 ? "rgba(1,1,1,0.2)" : "transparent" }}>
-                                <TableCell>{key}</TableCell>
-                                <TableCell sx={{ textAlign: "right" }}>{skills[key].level}</TableCell>
-                            </TableRow>
-                        ))
-                }
-            </TableBody>
-        </Table>
-    </TableContainer>
+import Skill from "./Skill";
+
+const HiScoresTable = ({ skills, overall }) => skills == null ? null : (
+    <>
+        <div className="skill-grid">
+            {
+                Object.keys(skills)
+                    .map((key, i) => (
+                        <Skill skillName={key} skillData={skills[key]} />
+                    ))
+            }
+            <Skill skillName="Overall" skillData={overall} />
+        </div>
+    </>
 );
 
 export default HiScoresTable;

@@ -1,0 +1,33 @@
+.skill-grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+}
+
+.skill {
+    display: inline-block;
+    white-space: nowrap;
+    height: 55px;
+    width: 80px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.skill__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.25rem;
+}
+
+.skill__inner > img {
+    vertical-align: sub;
+}
+
+.skill__inner-level {
+}
+
+.skill__hover {
+    display: none;
+}

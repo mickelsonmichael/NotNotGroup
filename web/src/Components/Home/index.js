@@ -18,21 +18,19 @@ const Home = () => {
     const { notNotMike, notNotThomas } = useAccounts();
 
     return (
-        <Box>
-            <Grid container justifyContent="space-between">
-                <Grid item sm={6} sx={{ padding: "1rem" }}>
-                    <h2 style={h2Style}>NotNotMike</h2>
-                    <Box sx={wrapperStyle}>
-                        <HiScoresTable skills={notNotMike?.skills} overall={notNotMike?.Overall} />
-                    </Box>
-                </Grid>
-                <Grid item sm={6} sx={{ padding: "1rem" }}>
-                    <h2 style={h2Style}>NotNotThomas</h2>
-                    <Box sx={wrapperStyle}>
-                        <HiScoresTable skills={notNotThomas?.skills} overall={notNotThomas?.Overall} />
-                    </Box>
-                </Grid>
-            </Grid>
+        <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "row", flexWrap: "wrap" }}>
+            <Box padding={1}>
+                <h2 style={h2Style}>NotNotMike</h2>
+                <Box sx={wrapperStyle}>
+                    <HiScoresTable skills={notNotMike?.skills} overall={notNotMike?.Overall} />
+                </Box>
+            </Box>
+            <Box padding={1}>
+                <h2 style={h2Style}>NotNotThomas</h2>
+                <Box sx={wrapperStyle}>
+                    <HiScoresTable skills={notNotThomas?.skills} overall={notNotThomas?.Overall} />
+                </Box>
+            </Box>
         </Box>
     );
 }

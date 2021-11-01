@@ -4,7 +4,7 @@ import axios from "axios";
 
 import MapSkills from "./MapSkills";
 
-const hourMS = 1000 * 60 * 60;
+const fifteenMinutesMS = 1000 * 15;
 
 const AccountContext = createContext({
     notNotThomas: null,
@@ -32,7 +32,7 @@ const useAccount = (account) => useQuery(account, async () => {
         cancel: () => cancellationSource.cancel("Query was canceled by React Query.")
     }
 }, {
-    staleTime: hourMS
+    staleTime: fifteenMinutesMS
 });
 
 const AccountProvider = ({ children }) => {

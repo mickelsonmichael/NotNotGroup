@@ -1,10 +1,9 @@
 import React, { createContext, useContext } from "react";
 import { useQuery } from "react-query";
 import axios from "axios";
+import CompletedQuests from "../Data/completedQuests.json";
 
 import MapSkills from "./MapSkills";
-
-const fifteenMinutesMS = 1000 * 15;
 
 const AccountContext = createContext({
     notNotThomas: null,
@@ -15,13 +14,11 @@ const AccountContext = createContext({
     isNotNotMikeError: false
 });
 
-const hiScoresUrl = "https://mickelsonosrs.azurewebsites.net/api/GetHiScores"
-
 const useAccount = (account) => useQuery(account, async () => {
     const cancellationToken = axios.CancelToken;
     const cancellationSource = cancellationToken.source();
 
-    const response = await axios(`${hiScoresUrl}?name=${account}`, {
+    const response = await axios(`${process.env.HISCORES_URL}?name=${account}`, {
         cancelToken: cancellationSource.token
     });
 
@@ -29,10 +26,11 @@ const useAccount = (account) => useQuery(account, async () => {
 
     return {
         ...mapped,
+        quests: CompletedQuests[account.toLowerCase()],
         cancel: () => cancellationSource.cancel("Query was canceled by React Query.")
     }
 }, {
-    staleTime: fifteenMinutesMS
+    staleTime: Number(process.env.REFETCH_INTERVAL)
 });
 
 const AccountProvider = ({ children }) => {

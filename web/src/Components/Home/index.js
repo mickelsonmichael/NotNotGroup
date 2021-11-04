@@ -3,16 +3,12 @@ import { Box, Grid } from "@mui/material";
 
 import { useAccounts } from "../../Context/AccountContext";
 import HiScoresTable from "../HiScoresTable";
+import NameHeader from "../NameHeader";
 
 const wrapperStyle = {
     borderColor: "text.primary",
     textAlign: "center"
 }
-
-const h2Style = {
-    margin: "0",
-    textAlign: "center"
-};
 
 const Home = () => {
     const { notNotMike, notNotThomas } = useAccounts();
@@ -20,13 +16,13 @@ const Home = () => {
     return (
         <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "row", flexWrap: "wrap" }}>
             <Box padding={1}>
-                <h2 style={h2Style}>NotNotMike</h2>
+                <NameHeader name="NotNotMike" />
                 <Box sx={wrapperStyle}>
                     <HiScoresTable skills={notNotMike?.skills} overall={notNotMike?.Overall} />
                 </Box>
             </Box>
             <Box padding={1}>
-                <h2 style={h2Style}>NotNotThomas</h2>
+                <NameHeader name="NotNotThomas" />
                 <Box sx={wrapperStyle}>
                     <HiScoresTable skills={notNotThomas?.skills} overall={notNotThomas?.Overall} />
                 </Box>

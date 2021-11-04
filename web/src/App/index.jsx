@@ -11,6 +11,7 @@ import { AccountProvider } from "../Context/AccountContext";
 import Home from "../Components/Home";
 import "./App.css";
 import Wintertodt from "../Components/Wintertodt";
+import Quests from "../Components/Quests";
 
 const queryClient = new QueryClient();
 const localStoragePersistor = createWebStoragePersistor ({ storage: window.localStorage });
@@ -28,13 +29,17 @@ const theme = createTheme({
         },
         text: {
             primary: "#FFFFFF"
+        },
+        white: {
+            main: "#FFFFFF",
+            backgroundColor: "transparent"
         }
     },
     typography: {
         fontFamily: [
             '"Segoe UI"',
             "sans-serif"
-        ],
+        ].join(","),
         fontSize: 14
     }
 });
@@ -53,6 +58,7 @@ const App = () => (
                             <Switch>
                                 <Route path="/" exact component={Home} />
                                 <Route path="/wintertodt" component={Wintertodt} />
+                                <Route path="/quests" component={Quests} />
                             </Switch>
                         </Box>
                     </Box>

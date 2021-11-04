@@ -1,0 +1,50 @@
+{
+    "quests": [
+        {
+            "name": "Animal Magnetism",
+            "description": "I can start this quest by talking to Ava who lives in Draynor Manor.",
+            "skills": [
+                {
+                    "name": "Ranged",
+                    "level": 30
+                },
+                {
+                    "name": "Slayer",
+                    "level": 18
+                },
+                {
+                    "name": "Crafting",
+                    "level": 19
+                },
+                {
+                    "name": "Woodcutting",
+                    "level": 35
+                }
+            ],
+            "quests": [
+                "Restless Ghost",
+                "Ernest the Chicken",
+                "Priest in Peril"
+            ]
+        },
+        {
+            "name": "Another Slice of H.A.M",
+            "description": "I can start this quest by speaking to Ambassador Alvijar, who is in Ur-tag's house in Dorgesh-Kaan.",
+            "quests": [
+                "Death to the Dorgeshuun",
+                "The Digsite",
+                "The Giant Dwarf"
+            ],
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 15
+                },
+                {
+                    "name": "Prayer",
+                    "level": 25
+                }
+            ]
+        }
+    ]
+}

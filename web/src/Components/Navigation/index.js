@@ -7,6 +7,13 @@ const NavLink = ({ to, children }) => (
         component={Link}
         underline="none"
         color="text.primary"
+        sx={{
+            paddingRight: "1.5rem",
+            display: "inline-block",
+            ":hover": {
+                color: "#AAAAFF"
+            }
+        }}
     >
         {children}
     </UILink>
@@ -24,6 +31,7 @@ const Navigation = () => (
             </Grid>
             <Grid item columns={{ xs: 12, sm: "auto" }}>
                 <NavLink to="/wintertodt">Wintertodt</NavLink>
+                <NavLink to="/quests">Quests</NavLink>
             </Grid>
         </Grid>
     </Box>

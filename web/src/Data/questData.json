@@ -45,6 +45,124 @@
                     "level": 25
                 }
             ]
+        },
+        {
+            "name": "The Ascent of Arceuus",
+            "description": "I can start this quest by talking to Mori north of the pub in Arceuus. Requires 20% Arceuus favour.",
+            "quests": [
+                "Client of Kourend"
+            ],
+            "skills": [
+                {
+                    "name": "Hunter",
+                    "level": 12
+                }
+            ]
+        },
+        {
+            "name": "Between a Rock...",
+            "description": "I can start this quest by talking to an old dwarf in the Keldagrim mines east of Rellekka and north of the mountain camp, underneath the troll mountains. Note: Higher mining levels are beneficial. You must defeat a level 75 enemy.",
+            "quests": [
+                "Fishing Contest",
+                "Dwarf Cannon"
+            ],
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 30
+                },
+                {
+                    "name": "Mining",
+                    "level": 40
+                },
+                {
+                    "name": "Smithing",
+                    "level": 50
+                }
+            ]
+        },
+        {
+            "name": "Big Chompy Bird Hunting",
+            "description": "I can start this quest by speaking to the ogre Rantz who lives East of the Ogre City, North of the Swamp Pool.",
+            "quests": [],
+            "skills": [
+                {
+                    "name": "Fletching",
+                    "level": 5
+                },
+                {
+                    "name": "Cooking",
+                    "level": 30
+                },
+                {
+                    "name": "Ranged",
+                    "level": 30
+                }
+            ]
+        },
+        {
+            "name": "Biohazard",
+            "description": "",
+            "quests": [],
+            "skills": []
+        },
+        {
+            "name": "Bone Voyage",
+            "description": "I can start the quest by speaking to Curator Haig Halen in Varrock Museum. Note: Requires 100 Museum Kudos.",
+            "quests": [
+                "The Dig Site"
+            ],
+            "skills": []
+        },
+        {
+            "name": "Cabin Fever",
+            "description": "I can start this quest by talking to Bill Teach in Port Phasmatys.",
+            "quests": [
+                "Rum Deal",
+                "Pirate's Treasure",
+                "Priest in Peril"
+            ],
+            "skills": [
+                {
+                    "name": "Agility",
+                    "level": 42
+                },
+                {
+                    "name": "Crafting",
+                    "level": 45
+                },
+                {
+                    "name": "Smithing",
+                    "level": 50
+                },
+                {
+                    "name": "Ranged",
+                    "level": 40
+                }
+            ]
+        },
+        {
+            "name": "Cold War",
+            "description": "I can start this quest by speaking to Larry at the Ardougne Zoo.",
+            "quests": [],
+            "skills": [
+                {
+                    "name": "Agility",
+                    "level": 30
+                },
+                {
+                    "name": "Crafting",
+                    "level": 30
+                },
+                {
+                    "name": "Construction",
+                    "level": 34
+                },
+                {
+                    "name": "Hunter",
+                    "level": 10
+                }
+            ]
         }
     ]
 }

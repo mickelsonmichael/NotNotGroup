@@ -42,12 +42,12 @@ const QuestStatus = ({ quest, player }) => (
 const QuestList = ({ quests, player }) => (
     quests.map(questName => (
         <ListItem key={questName}>
-            { 
+            {
                 player != null && player.quests.includes(questName)
                     ? <YesIcon />
                     : <NoIcon />
             }
-            {questName }
+            {questName}
         </ListItem>
     ))
 );
@@ -72,6 +72,13 @@ const QuestRow = ({ quest, player }) => (
         </AccordionSummary>
         <AccordionDetails>
             <div>"{quest.description}"</div>
+            {
+                quest.notes && (
+                    <ul>
+                        {quest.notes.map(n => (<li>{n}</li>))}
+                    </ul>
+                )
+            }
             <List>
                 <QuestList quests={quest.quests} player={player} />
                 <SkillList skills={quest.skills} player={player} />

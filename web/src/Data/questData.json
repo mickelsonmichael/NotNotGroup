@@ -48,7 +48,10 @@
         },
         {
             "name": "The Ascent of Arceuus",
-            "description": "I can start this quest by talking to Mori north of the pub in Arceuus. Requires 20% Arceuus favour.",
+            "description": "I can start this quest by talking to Mori north of the pub in Arceuus.",
+            "notes": [
+                "Requires 20% Areuus favor."
+            ],
             "quests": [
                 "Client of Kourend"
             ],
@@ -61,7 +64,11 @@
         },
         {
             "name": "Between a Rock...",
-            "description": "I can start this quest by talking to an old dwarf in the Keldagrim mines east of Rellekka and north of the mountain camp, underneath the troll mountains. Note: Higher mining levels are beneficial. You must defeat a level 75 enemy.",
+            "description": "I can start this quest by talking to an old dwarf in the Keldagrim mines east of Rellekka and north of the mountain camp, underneath the troll mountains.",
+            "notes": [
+                "You must defeat a level 75 enemy.",
+                "Higher mining levels are beneficial."
+            ],
             "quests": [
                 "Fishing Contest",
                 "Dwarf Cannon"
@@ -108,7 +115,10 @@
         },
         {
             "name": "Bone Voyage",
-            "description": "I can start the quest by speaking to Curator Haig Halen in Varrock Museum. Note: Requires 100 Museum Kudos.",
+            "description": "I can start the quest by speaking to Curator Haig Halen in Varrock Museum.",
+            "notes": [
+                "Requires 100 Museum Kudos"
+            ],
             "quests": [
                 "The Dig Site"
             ],
@@ -117,10 +127,12 @@
         {
             "name": "Cabin Fever",
             "description": "I can start this quest by talking to Bill Teach in Port Phasmatys.",
+            "notes": [
+                "Also requires Priest in Peril to get to Port Phasmatys."
+            ],
             "quests": [
                 "Rum Deal",
-                "Pirate's Treasure",
-                "Priest in Peril"
+                "Pirate's Treasure"
             ],
             "skills": [
                 {

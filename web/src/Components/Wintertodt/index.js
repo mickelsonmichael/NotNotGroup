@@ -9,10 +9,10 @@ const Wintertodt = () => {
 
     return (
         <>
-            <Typography variant="h1" textAlign="center">
+            <Typography sx={{ typography: { xs: "h2", sm: "h1" } }} textAlign="center">
                 Wintertodt
             </Typography>
-            
+
             <Grid container spacing={1} justifyContent="space-around" sx={{ marginTop: "1rem" }}>
                 <Grid item>
                     <Gauge player={notNotMike} playerName="NotNotMike" />

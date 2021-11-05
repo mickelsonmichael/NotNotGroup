@@ -39,16 +39,21 @@ const QuestStatus = ({ quest, player }) => (
         )
 );
 
-const QuestList = ({ quest, player }) => (
-    quest.quests.map(quest => (
-        <ListItem key={quest}>
-            <YesIcon /> {quest}
+const QuestList = ({ quests, player }) => (
+    quests.map(questName => (
+        <ListItem key={questName}>
+            { 
+                player != null && player.quests.includes(questName)
+                    ? <YesIcon />
+                    : <NoIcon />
+            }
+            {questName }
         </ListItem>
     ))
 );
 
-const SkillList = ({ quest, player }) => (
-    quest.skills.map(skill => (
+const SkillList = ({ skills, player }) => (
+    skills.map(skill => (
         <ListItem key={skill.name}>
             {
                 player != null && skill.level <= player.skills[skill.name].level
@@ -68,8 +73,8 @@ const QuestRow = ({ quest, player }) => (
         <AccordionDetails>
             <div>"{quest.description}"</div>
             <List>
-                <QuestList quest={quest} player={player} />
-                <SkillList quest={quest} player={player} />
+                <QuestList quests={quest.quests} player={player} />
+                <SkillList skills={quest.skills} player={player} />
             </List>
         </AccordionDetails>
     </Accordion>

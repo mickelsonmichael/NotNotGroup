@@ -1,24 +1,20 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Grid } from "@mui/material";
 
 import { useAccounts } from "../../Context/AccountContext";
 import QuestData from "../../Data/questData.json";
 import QuestRow from "./QuestRow";
-import NameHeader from "../NameHeader";
 
 const Quests = () => {
 
     const { notNotMike, notNotThomas } = useAccounts();
 
+    const players = useMemo(() => [notNotMike, notNotThomas].filter(p => p!=null), [notNotMike, notNotThomas]);
+
     return (
-        <Grid container spacing={2}>
-            <Grid item sm={6}>
-                <NameHeader name="NotNotMike" />
-                {QuestData.quests.map(q => (<QuestRow key={q.name} quest={q} player={notNotMike} />))}
-            </Grid>
-            <Grid item sm={6}>
-                <NameHeader name="NotNotThomas" />
-                {QuestData.quests.map(q => (<QuestRow key={q.name} quest={q} player={notNotThomas} />))}
+        <Grid container justifyContent="center">
+            <Grid item lg={6} md={12}>
+                {QuestData.quests.map(q => (<QuestRow key={q.name} quest={q} players={players} />))}
             </Grid>
         </Grid>
     )

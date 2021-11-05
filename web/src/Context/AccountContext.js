@@ -26,6 +26,7 @@ const useAccount = (account) => useQuery(account, async () => {
 
     return {
         ...mapped,
+        name: account,
         quests: CompletedQuests[account.toLowerCase()],
         cancel: () => cancellationSource.cancel("Query was canceled by React Query.")
     }

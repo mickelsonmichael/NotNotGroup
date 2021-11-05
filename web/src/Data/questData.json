@@ -402,6 +402,273 @@
                     "level": 50
                 }
             ]
+        },
+        {
+            "name": "Dream Mentor",
+            "description": "I can start this quest by inspecting the fallen man, in the mines on the north of Lunar Isle. There should be a tunnel leading to him.",
+            "notes": [
+                "Must have a combat level of 85."
+            ],
+            "quests": [
+                "Lunar Diplomacy",
+                "Eadgar's Ruse"
+            ],
+            "skills": []
+        },
+        {
+            "name": "Druidic Ritual",
+            "description": "",
+            "quests": [],
+            "skills": []
+        },
+        {
+            "name": "Dwarf Cannon",
+            "description": "I can start this quest by speaking to Lawgof the Dwarven Captain of the Black Watch. He is defending an area north-west of the Fishing Guild against goblin attack.",
+            "quests": [],
+            "skills": []
+        },
+        {
+            "name": "Eadgar's Ruse",
+            "description": "I can start this quest by talking to Sanfew.",
+            "quests": [
+                "Druidic Ritual",
+                "Troll Stronghold"
+            ],
+            "skills": [
+                {
+                    "name": "Herblore",
+                    "level": 31
+                }
+            ]
+        },
+        {
+            "name": "Eagles' Peak",
+            "description": "",
+            "quests": [],
+            "skills": []
+        },
+        {
+            "name": "Elemental Workshop I",
+            "description": "I can start this quest by reading a book found in Seers' village.",
+            "quests": [],
+            "skills": [
+                {
+                    "name": "Mining",
+                    "level": 20
+                },
+                {
+                    "name": "Smithing",
+                    "level": 20
+                },
+                {
+                    "name": "Crafting",
+                    "level": 20
+                }
+            ]
+        },
+        {
+            "name": "Elemental Workshop II",
+            "description": "I can start this quest by reading the beaten book found in the education center at The Dig Site.",
+            "quests": [
+                "Elemental Workshop I"
+            ],
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 20
+                },
+                {
+                    "name": "Smithing",
+                    "level": 30
+                }
+            ]
+        },
+        {
+            "name": "Enakhra's Lament",
+            "description": "I can start this quest by talking to a man called Lazim in the desert south of the Bandit Camp.",
+            "quests": [],
+            "skills": [
+                {
+                    "name": "Crafting",
+                    "level": 50
+                },
+                {
+                    "name": "Firemaking",
+                    "level": 45
+                },
+                {
+                    "name": "Prayer",
+                    "level": 43
+                },
+                {
+                    "name": "Magic",
+                    "level": 39
+                }
+            ]
+        },
+        {
+            "name": "Enlightened Journey",
+            "description": "I can start this quest by speaking to Auguste on Entrana.",
+            "notes": [
+                "Requires 20 quest points."
+            ],
+            "quests": [],
+            "skills": [
+                {
+                    "name": "Crafting",
+                    "level": 36
+                },
+                {
+                    "name": "Farming",
+                    "level": 30
+                },
+                {
+                    "name": "Firemaking",
+                    "level": 20
+                }
+            ]
+        },
+        {
+            "name": "The Eyes of Glouphrie",
+            "description": "I can start this q  uest by speaking to Brimstail in his cave in the Gnome Stronghold.",
+            "notes": [
+                "Level 13 Runecraft would be an advantage.",
+                "Level 45 Woodcutting would be an advantage."
+            ],
+            "quests": [
+                "The Grand Tree"
+            ],
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 46
+                },
+                {
+                    "name": "Construction",
+                    "level": 5
+                }
+            ]
+        },
+        {
+            "name": "Fairytale I - Growing Pains",
+            "description": "I can start this quest by talking to Martin the Master Gardener in Draynor Village square.",
+            "notes": [
+                "A high farming level would be an advantage.",
+                "You must defeat a level 111 monster."
+            ],
+            "quests": [
+                "Lost City",
+                "Nature Spirit"
+            ],
+            "skills": []
+        },
+        {
+            "name": "Fairytale II - Cure a Queen",
+            "description": "I can start this quest by talking to Martin the Master Gardener in Draynor Village square.",
+            "quests": [
+                "Fairytale I - Growing Pains"
+            ],
+            "notes": [
+                "Must defeat a level 145 enemy."
+            ],
+            "skills": [
+                {
+                    "name": "Herblore",
+                    "level": 57
+                },
+                {
+                    "name": "Farming",
+                    "level": 49
+                },
+                {
+                    "name": "Thieving",
+                    "level": 40
+                }
+            ]
+        },
+        {
+            "name": "Family Crest",
+            "description": "I can start this quest by speaking to Dimintheis in East Varrock.",
+            "notes": [
+                "Must defeat a level 170 Demon."
+            ],
+            "quests": [],
+            "skills": [
+                {
+                    "name": "Mining",
+                    "level": 40
+                },
+                {
+                    "name": "Crafting",
+                    "level": 40
+                },
+                {
+                    "name": "Smithing",
+                    "level": 40
+                },
+                {
+                    "name": "Magic",
+                    "level": 59
+                }
+            ]
+        },
+        {
+            "name": "The Feud",
+            "description": "I can start this quest by speaking to Ali Morrisane, a merchant in the Al Kharid bazaar.",
+            "notes": [
+                "Must defeat a level 75 Warrior."
+            ],
+            "quests": [],
+            "skills": [
+                {
+                    "name": "Thieving",
+                    "level": 30
+                }
+            ]
+        },
+        {
+            "name": "Fight Arena",
+            "description": "I can start this quest by speaking to Lady Servil just North-West of the Khazard Port.",
+            "notes": [
+                "Must defeat a level 137 enemy."
+            ],
+            "quests": [],
+            "skills": []
+        },
+        {
+            "name": "Fishing Contest",
+            "description": "",
+            "quests": [],
+            "skills": []
+        },
+        {
+            "name": "Forgettable Tale...",
+            "description": "I can start this quest by talking to Veldaban, the Commander of the Black Guard in Keldagrim.",
+            "quests": [
+                "The Giant Dwarf",
+                "Fishing Contest"
+            ],
+            "skills": [
+                {
+                    "name": "Farming",
+                    "level": 17
+                },
+                {
+                    "name": "Cooking",
+                    "level": 22
+                }
+            ]
+        },
+        {
+            "name": "The Forsaken Tower",
+            "description": "I can start this quest by talking to Lady Vulcana Lovakengj in the Lovakengj Assembly.",
+            "notes": [
+                "Requires 20% Lovakengj Favor."
+            ],
+            "quests": [
+                "Client of Kourend"
+            ],
+            "skills": []
         }
     ],
     "emptyQuest": {

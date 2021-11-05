@@ -286,12 +286,7 @@
             "name": "The Depths of Despair",
             "description": "",
             "quests": [],
-            "skills": [
-                {
-                    "name": "",
-                    "level": 1
-                }
-            ]
+            "skills": []
         },
         {
             "name": "Desert Treasure",

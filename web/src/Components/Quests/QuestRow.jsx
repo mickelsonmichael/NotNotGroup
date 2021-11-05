@@ -56,7 +56,9 @@ const SkillList = ({ skills, player }) => (
     skills.map(skill => (
         <ListItem key={skill.name}>
             {
-                player != null && skill.level <= player.skills[skill.name].level
+                player != null && skill.level <= (player.skills[skill.name]?.level ?? (() => { 
+                    console.log("Issue with skill", skill.name); return 0; 
+                })())
                     ? <YesIcon />
                     : <NoIcon />
             }<span>{skill.level} {skill.name}</span>

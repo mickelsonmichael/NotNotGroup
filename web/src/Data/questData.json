@@ -154,6 +154,18 @@
             ]
         },
         {
+            "name": "Client of Kourend",
+            "description": "",
+            "quests": [],
+            "skills": []
+        },
+        {
+            "name": "Clock Tower",
+            "description": "",
+            "quests": [],
+            "skills": []
+        },
+        {
             "name": "Cold War",
             "description": "I can start this quest by speaking to Larry at the Ardougne Zoo.",
             "quests": [],
@@ -175,6 +187,237 @@
                     "level": 10
                 }
             ]
+        },
+        {
+            "name": "Contact!",
+            "description": "I can start this quest by speaking to the High Priest of Icthlarin, who lives in Sophanem.",
+            "quests": [
+                "Gertrude's Cat",
+                "Icthlarin's little helper",
+                "Prince Ali Rescue"
+            ],
+            "skills": []
+        },
+        {
+            "name": "Creature of Fenkenstrain",
+            "description": "I can start this quest by reading the signpost in the center of Canifis.",
+            "notes": [
+                "Must defeat a level 51 monster."
+            ],
+            "skills": [
+                {
+                    "name": "Crafting",
+                    "level": 20
+                },
+                {
+                    "name": "Thieving",
+                    "level": 25
+                }
+            ],
+            "quests": [
+                "Priest in Peril",
+                "Restless Ghost"
+            ]
+        },
+        {
+            "name": "Darkness of Hallowvale",
+            "description": "I can start this quest by speaking to Veliaf Hurtz in the Myreque Hideout beneath Burgh de Rott.",
+            "quests": [
+                "In Aid of the Myreque"
+            ],
+            "skills": [
+                {
+                    "name": "Strength",
+                    "level": 40
+                },
+                {
+                    "name": "Magic",
+                    "level": 33
+                },
+                {
+                    "name": "Crafting",
+                    "level": 32
+                },
+                {
+                    "name": "Agility",
+                    "level": 26
+                },
+                {
+                    "name": "Thieving",
+                    "level": 22
+                },
+                {
+                    "name": "Mining",
+                    "level": 20
+                },
+                {
+                    "name": "Construction",
+                    "level": 5
+                }
+            ]
+        },
+        {
+            "name": "Death Plateau",
+            "description": "I can start this quest by speaking to Denulth who is in his tent at the Imperial Guard camp in Burthorpe.",
+            "quests": [],
+            "skills": []
+        },
+        {
+            "name": "Death to the Dorgeshuun",
+            "description": "I can start this quest by speaking to Mistag in the Dorgeshuun Mines.",
+            "notes": [
+                "Must defeat a level 50 enemy."
+            ],
+            "quests": [
+                "The Lost Tribe"
+            ],
+            "skills": [
+                {
+                    "name": "Thieving",
+                    "level": 23
+                },
+                {
+                    "name": "Agility",
+                    "level": 23
+                }
+            ]
+        },
+        {
+            "name": "The Depths of Despair",
+            "description": "",
+            "quests": [],
+            "skills": [
+                {
+                    "name": "",
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "name": "Desert Treasure",
+            "description": "I can start this quest by speaking to The Archaeologist who is exploring the Bedabin Camp South West of the Shantay Pass.",
+            "quests": [
+                "The Dig Site",
+                "The Tourist Trap",
+                "The Temple of Ikov",
+                "Priest in Peril",
+                "Waterfall Quest",
+                "Troll Stronghold"
+            ],
+            "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 10
+                },
+                {
+                    "name": "Firemaking",
+                    "level": 50
+                },
+                {
+                    "name": "Magic",
+                    "level": 50
+                },
+                {
+                    "name": "Thieving",
+                    "level": 53
+                }
+            ]
+        },
+        {
+            "name": "Devious Minds",
+            "description": "I can start this quest by speaking to the Monk who is East of Varrock, near the river Salve.",
+            "quests": [
+                "Doric's Quest",
+                "Troll Stronghold",
+                "Wanted!",
+                "Recruitment Drive"
+            ],
+            "skills": [
+                {
+                    "name": "Fletching",
+                    "level": 50
+                },
+                {
+                    "name": "Runecraft",
+                    "level": 50
+                },
+                {
+                    "name": "Smithing",
+                    "level": 65
+                }
+            ]
+        },
+        {
+            "name": "The Dig Site",
+            "description": "",
+            "quests": [],
+            "skills": [
+                {
+                    "name": "Herblore",
+                    "level": 17
+                }
+            ]
+        },
+        {
+            "name": "Dragon Slayer II",
+            "description": "I can start this quest by talking to Alec Kincade in the Myths' Guild, west of Corsair Cove.",
+            "notes": [
+                "Requires 200 quest points."
+            ],
+            "quests": [
+                "Legends' Quest",
+                "Dream Mentor",
+                "A Tail of Two Cats",
+                "Animal Magnetism",
+                "Ghosts Ahoy",
+                "Bone Voyage",
+                "Client of Kourend"
+            ],
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 75
+                },
+                {
+                    "name": "Smithing",
+                    "level": 70
+                },
+                {
+                    "name": "Mining",
+                    "level": 68
+                },
+                {
+                    "name": "Crafting",
+                    "level": 62
+                },
+                {
+                    "name": "Agility",
+                    "level": 60
+                },
+                {
+                    "name": "Thieving",
+                    "level": 60
+                },
+                {
+                    "name": "Construction",
+                    "level": 50
+                },
+                {
+                    "name": "Hitpoints",
+                    "level": 50
+                }
+            ]
         }
-    ]
+    ],
+    "emptyQuest": {
+        "name": "",
+        "description": "",
+        "quests": [],
+        "skills": [
+            {
+                "name": "",
+                "level": 1
+            }
+        ]
+    }
 }

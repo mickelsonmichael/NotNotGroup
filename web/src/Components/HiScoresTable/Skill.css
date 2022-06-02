@@ -2,6 +2,10 @@
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px -2px black;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .skill {
@@ -9,10 +13,13 @@
     display: inline-block;
     white-space: nowrap;
     height: 55px;
-    width: 80px;
+    width: 100px;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 0.25rem 0.5rem;
 }
 
 .skill__inner {
@@ -20,22 +27,32 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0.25rem;
+    padding: 0.5rem 0.25rem;
 }
 
-.skill__inner > img {
+.skill:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.skill__inner>img {
     vertical-align: sub;
+    height: 25px;
 }
 
 .skill__inner-level {
+    font-size: 25px;
 }
 
 .skill__hover {
     display: none;
     position: absolute;
-    top: 65%;
+    top: 85%;
     left: 50%;
-    background: #333388;
+    background: rgba(0, 0, 0);
     z-index: 10;
     padding: 0.25rem 0.5rem;
     border: 1px solid white;
@@ -44,4 +61,24 @@
 
 .skill:hover .skill__hover {
     display: block;
+}
+
+@media (min-width: 1200px) {
+    .skill-grid {
+        margin: 1rem;
+    }
+
+    .skill {
+        height: auto;
+        width: auto;
+    }
+
+    .skill__inner>img {
+        height: 30px;
+        margin-right: 15px;
+    }
+
+    .skill__inner-level {
+        font-size: 30px;
+    }
 }

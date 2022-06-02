@@ -3,6 +3,7 @@ import React from "react";
 
 import { useAccounts } from "../../Context/AccountContext";
 import Gauge from "./Gauge";
+import "./Wintertodt.css"
 
 const Wintertodt = () => {
     const { notNotThomas, notNotMike } = useAccounts();
@@ -13,7 +14,7 @@ const Wintertodt = () => {
                 Wintertodt
             </Typography>
 
-            <Grid container spacing={1} justifyContent="space-around" sx={{ marginTop: "1rem" }}>
+            <Grid container spacing={1} justifyContent="center" sx={{ marginTop: "1rem" }}>
                 <Grid item>
                     <Gauge player={notNotMike} playerName="NotNotMike" />
                 </Grid>

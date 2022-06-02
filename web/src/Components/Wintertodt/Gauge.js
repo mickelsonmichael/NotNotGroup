@@ -5,8 +5,8 @@ import LiquidFillGauge from "react-liquid-gauge";
 import xp from "../../xp";
 
 const Gauge = ({ color, player, playerName }) => (
-    <div>
-        <Typography variant="h2" textAlign="center">
+    <div className="wintertodt-wrapper">
+        <Typography variant="h4" textAlign="center" marginBottom={3}>
             {playerName}
         </Typography>
         <LiquidFillGauge
@@ -16,7 +16,7 @@ const Gauge = ({ color, player, playerName }) => (
             circleStyle={{ fill: color ?? "cyan" }}
             value={(player?.skills.Firemaking.experience ?? 0) / xp[99] * 100}
         />
-        <Typography variant="h3" textAlign="center" marginTop={1}>
+        <Typography variant="h3" textAlign="center" marginTop={3}>
             Kills {player?.bosses.Wintertodt.level ?? "?"}
         </Typography>
         <Typography textAlign="center">

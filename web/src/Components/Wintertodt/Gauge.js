@@ -20,7 +20,15 @@ const Gauge = ({ color, player, playerName }) => (
             Kills {player?.bosses.Wintertodt.level ?? "?"}
         </Typography>
         <Typography textAlign="center">
-            <small>HP {player?.skills.Hitpoints.level}</small>
+            <div>
+                <small>HP | {player?.skills.Hitpoints.level}</small>
+            </div>
+            <div>
+                <small>Fletching | {player?.skills.Fletching.level}</small>
+            </div>
+            <div>
+                <small>Woodcutting | {player?.skills.Woodcutting.level}</small>
+            </div>
         </Typography>
     </div>
 );

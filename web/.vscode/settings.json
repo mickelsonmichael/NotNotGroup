@@ -6,6 +6,11 @@
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.preDeployTask": "npm prune (functions)",
     "cSpell.words": [
+        "Burthorpe",
+        "Eohric",
+        "Kharazi",
+        "Rellekka",
+        "Shilo",
         "Wintertodt"
     ]
 }

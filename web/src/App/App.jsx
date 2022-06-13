@@ -4,7 +4,6 @@ import { HashRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { persistQueryClient } from "react-query/persistQueryClient-experimental";
 import { createWebStoragePersistor } from "react-query/createWebStoragePersistor-experimental";
-import ReactTooltip from "react-tooltip";
 
 import { AccountProvider } from "../Context/AccountContext";
 
@@ -73,7 +72,6 @@ const App = () => (
         <AccountProvider>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
-                <ReactTooltip html={true} />
                 <HashRouter>
                     <Layout />
                 </HashRouter>

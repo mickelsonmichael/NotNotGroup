@@ -7,6 +7,7 @@ import { createWebStoragePersistor } from "react-query/createWebStoragePersistor
 
 import { AccountProvider } from "../Context/AccountContext";
 
+import useTheme from "./useTheme";
 import Layout from "./Layout";
 import "./App.css";
 
@@ -18,54 +19,7 @@ persistQueryClient({
     persistor: localStoragePersistor
 });
 
-const theme = createTheme({
-    palette: {
-        primary: {
-            main: "#444477",
-            dark: "#333366",
-        },
-        secondary: {
-            main: "#ececec"
-        },
-        text: {
-            primary: "#FFFFFF"
-        },
-        white: {
-            main: "#FFFFFF",
-            backgroundColor: "transparent"
-        },
-    },
-    typography: {
-        fontFamily: [
-            '"Segoe UI"',
-            "sans-serif"
-        ].join(","),
-        fontSize: 14
-    },
-    components: {
-        MuiAccordion: {
-            styleOverrides: {
-                root: {
-                    background: "transparent"
-                }
-            }
-        },
-        MuiAccordionSummary: {
-            styleOverrides: {
-                root: {
-                    backgroundColor: "rgba(0, 0, 0, 0.4)"
-                }
-            }
-        },
-        MuiAccordionDetails: {
-            styleOverrides: {
-                root: {
-                    backgroundColor: "rgba(25, 25, 25, 0.4)"
-                }
-            }
-        }
-    }
-});
+const theme = useTheme();
 
 const App = () => (
     <QueryClientProvider client={queryClient}>

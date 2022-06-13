@@ -32,6 +32,7 @@ const Navigation = () => (
             <Grid item columns={{ xs: 12, sm: "auto" }}>
                 <NavLink to="/wintertodt">Wintertodt</NavLink>
                 <NavLink to="/quests">Quests</NavLink>
+                <NavLink to="/treasure-trails">Treasure Trails</NavLink>
             </Grid>
         </Grid>
     </Box>

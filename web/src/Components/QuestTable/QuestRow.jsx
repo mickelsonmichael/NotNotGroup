@@ -1,45 +1,44 @@
-import React from "react";
-import { Accordion as MuiAccordion, AccordionSummary as MuiAccordionSummary, AccordionDetails, styled } from "@mui/material"
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import React, { useState } from "react";
+import { TableRow, TableCell, Collapse } from "@mui/material";
+import IconButton from '@mui/material/IconButton';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import Requirements from "./Requirements";
 import QuestStatus from "./QuestStatus";
 
-const Accordion = styled((props) => (
-    <MuiAccordion {...props} />
-))(() => ({
-    backgroundColor: "#222255"
-}));
+const QuestRow = ({ quest, players }) => {
+    const [isOpen, setIsOpen] = useState(false);
 
-const AccordionSummary = styled((props) => (
-    <MuiAccordionSummary {...props} />
-))(() => ({
-    '& .MuiAccordionSummary-expandIconWrapper': {
-        color: "white"
-    }
-}))
+    const handleToggle = () => setIsOpen(o => !o);
 
-const QuestRow = ({ quest, players }) => (
-    <Accordion>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ display: "flex", flexDirection: "row", paddingX: "1rem", alignItems: "center" }}>
-            <strong style={{ marginRight: "auto", fontSize: "105%" }}>{quest.name}</strong>
-            {
-                players.map(p => (<QuestStatus key={p.name} player={p} quest={quest} />))
-            }
-        </AccordionSummary>
-        <AccordionDetails>
-            <div>"{quest.description}"</div>
-            {
-                quest.notes && (
-                    <ul>
-                        {quest.notes.map((n, i) => (<li key={i}>{n}</li>))}
-                    </ul>
-                )
-            }
-            <br />
-            <Requirements quest={quest} players={players} />
-        </AccordionDetails>
-    </Accordion>
-);
+    return (
+        <>
+            <TableRow>
+                <TableCell>
+                    {quest.name}
+                    <IconButton size="small" onClick={handleToggle}>
+                        {isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                    </IconButton>
+                </TableCell>
+                {players.map(p => (
+                    <TableCell key={p.name} align="center">
+                        <QuestStatus player={p} quest={quest} />
+                    </TableCell>
+                ))}
+            </TableRow>
+            <TableRow>
+                <TableCell
+                    style={{ paddingBottom: 0, paddingTop: 0 }}
+                    colSpan={1 + players.length}
+                >
+                    <Collapse in={isOpen} unmountOnExit sx={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}>
+                        <Requirements quest={quest} players={players} />
+                    </Collapse>
+                </TableCell>
+            </TableRow>
+        </>
+    );
+};
 
 export default QuestRow;

@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material";
+import { blue } from "@mui/material/colors";
 
 const useTheme = () => createTheme({
     palette: {
@@ -43,6 +44,20 @@ const useTheme = () => createTheme({
             styleOverrides: {
                 root: {
                     backgroundColor: "rgba(25, 25, 25, 0.4)"
+                }
+            }
+        },
+        MuiIconButton: {
+            styleOverrides: {
+                root: {
+                    color: "rgba(155, 155, 155)",
+                }
+            }
+        },
+        MuiList: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: "rgba(25, 25, 25)"
                 }
             }
         }

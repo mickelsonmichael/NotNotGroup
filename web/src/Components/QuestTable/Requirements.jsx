@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckOutlined, CancelOutlined } from "@mui/icons-material";
-import { Tooltip, Alert, styled } from "@mui/material"
+import { Tooltip, styled } from "@mui/material"
 
 const YesIcon = () => (<CheckOutlined sx={{ color: "#33DD66" }} />);
 const NoIcon = () => (<CancelOutlined sx={{ color: "#DD3366" }} />);
@@ -10,10 +10,9 @@ const Table = styled((props) => (
 ))(() => ({
     boxSizing: "border-box",
     width: "100%",
-    padding: "0 3rem",
     borderCollapse: "collapse",
     "td": {
-        padding: "0.25rem 1rem"
+        padding: "0.25rem 0.5rem"
     },
     "tbody tr:nth-of-type(even)": {
         backgroundColor: "rgba(0, 0, 0, 0.1)"
@@ -30,11 +29,21 @@ const QuestList = ({ quests, players }) => (
             {
                 players.map(player => (
                     <td key={player.name} style={{ textAlign: "center" }}>
-                        {
-                            player.quests.includes(questName)
-                                ? <YesIcon />
-                                : <NoIcon />
-                        }
+                        <Tooltip
+                            id={`quest-${questName}-${player.name}`}
+                            title={player.name}
+                            arrow
+                            describeChild
+                            disableInteractive
+                        >
+                            <div>
+                                {
+                                    player.quests.includes(questName)
+                                        ? <YesIcon />
+                                        : <NoIcon />
+                                }
+                            </div>
+                        </Tooltip>
                     </td>
                 ))
             }
@@ -50,7 +59,8 @@ const SkillList = ({ skills, players }) => (
                 players.map(player => (
                     <td key={player.name} style={{ textAlign: "center" }}>
                         <Tooltip
-                            title={player.skills[skill.name].level}
+                            id={`skill-${skill.name}-${player.name}`}
+                            title={`${player.name}: ${player.skills[skill.name].level}`}
                             arrow
                             describeChild
                             disableInteractive
@@ -76,12 +86,6 @@ const Requirements = ({ quest, players }) => (
             quest.skills.length > 0 || quest.quests.length > 0
                 ? (
                     <Table>
-                        <thead>
-                            <tr>
-                                <td></td>
-                                {players.map(p => <td key={p.name} style={{ textAlign: "center" }}>{p.name}</td>)}
-                            </tr>
-                        </thead>
                         <tbody>
                             <QuestList quests={quest.quests} players={players} />
                             <SkillList skills={quest.skills} players={players} />

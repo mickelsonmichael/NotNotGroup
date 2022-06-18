@@ -9,12 +9,15 @@ import {
     TableContainer,
     TableRow,
     TableFooter,
-    TablePagination
+    TablePagination,
+    Collapse,
+    Box
 } from "@mui/material";
 import FilterIcon from "@mui/icons-material/FilterAlt"
 
 import useQuestTable from "./useQuestTable";
 import QuestStatus from "./QuestStatus";
+import QuestRow from "./QuestRow";
 
 const QuestTable = ({ players }) => {
     const {
@@ -34,7 +37,7 @@ const QuestTable = ({ players }) => {
 
     return (
         <>
-            <div>
+            <Box>
                 <Input
                     name="filter"
                     placeholder="Filter"
@@ -47,7 +50,7 @@ const QuestTable = ({ players }) => {
                         </InputAdornment>
                     }
                 />
-            </div>
+            </Box>
 
             <TableContainer>
                 <Table>
@@ -63,14 +66,9 @@ const QuestTable = ({ players }) => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {quests.map(q => (<TableRow key={q.name}>
-                            <TableCell>{q.name}</TableCell>
-                            {players.map(p => (
-                                <TableCell key={p.name} align="center">
-                                    <QuestStatus player={p} quest={q} />
-                                </TableCell>
-                            ))}
-                        </TableRow>))}
+                        {quests.map(q => (
+                            <QuestRow key={q.name} quest={q} players={players} />
+                        ))}
                     </TableBody>
                     <TableFooter>
                         <TableRow>

@@ -22,14 +22,14 @@ const QuestRow = ({ quest, players }) => {
                     </IconButton>
                 </TableCell>
                 {players.map(p => (
-                    <TableCell key={p.name} align="center">
+                    <TableCell key={p.name} align="center" sx={{ width: "20%" }}>
                         <QuestStatus player={p} quest={quest} />
                     </TableCell>
                 ))}
             </TableRow>
             <TableRow>
                 <TableCell
-                    style={{ paddingBottom: 0, paddingTop: 0 }}
+                    style={{ padding: 0 }}
                     colSpan={1 + players.length}
                 >
                     <Collapse in={isOpen} unmountOnExit sx={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}>

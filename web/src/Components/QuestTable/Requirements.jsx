@@ -1,34 +1,17 @@
 import React from "react";
 import { CheckOutlined, CancelOutlined } from "@mui/icons-material";
-import { Tooltip, styled } from "@mui/material"
+import { Tooltip, styled, Table, TableRow, TableCell, TableBody, Box } from "@mui/material"
 
 const YesIcon = () => (<CheckOutlined sx={{ color: "#33DD66" }} />);
 const NoIcon = () => (<CancelOutlined sx={{ color: "#DD3366" }} />);
 
-const Table = styled((props) => (
-    <table {...props} />
-))(() => ({
-    boxSizing: "border-box",
-    width: "100%",
-    borderCollapse: "collapse",
-    "td": {
-        padding: "0.25rem 0.5rem"
-    },
-    "tbody tr:nth-of-type(even)": {
-        backgroundColor: "rgba(0, 0, 0, 0.1)"
-    },
-    "svg": {
-        verticalAlign: "middle"
-    }
-}));
-
 const QuestList = ({ quests, players }) => (
     quests.map(questName => (
-        <tr key={questName}>
-            <td>{questName}</td>
+        <TableRow key={questName}>
+            <TableCell>{questName}</TableCell>
             {
                 players.map(player => (
-                    <td key={player.name} style={{ textAlign: "center" }}>
+                    <TableCell key={player.name} style={{ textAlign: "center" }} width="20%">
                         <Tooltip
                             id={`quest-${questName}-${player.name}`}
                             title={player.name}
@@ -44,20 +27,20 @@ const QuestList = ({ quests, players }) => (
                                 }
                             </div>
                         </Tooltip>
-                    </td>
+                    </TableCell>
                 ))
             }
-        </tr>
+        </TableRow>
     ))
 );
 
 const SkillList = ({ skills, players }) => (
     skills.map(skill => (
-        <tr key={skill.name}>
-            <td>{skill.level} {skill.name}</td>
+        <TableRow key={skill.name}>
+            <TableCell>{skill.level} {skill.name}</TableCell>
             {
                 players.map(player => (
-                    <td key={player.name} style={{ textAlign: "center" }}>
+                    <TableCell key={player.name} style={{ textAlign: "center" }} width="20%">
                         <Tooltip
                             id={`skill-${skill.name}-${player.name}`}
                             title={`${player.name}: ${player.skills[skill.name].level}`}
@@ -73,10 +56,10 @@ const SkillList = ({ skills, players }) => (
                                 }
                             </span>
                         </Tooltip>
-                    </td>
+                    </TableCell>
                 ))
             }
-        </tr>
+        </TableRow>
     ))
 );
 
@@ -86,13 +69,13 @@ const Requirements = ({ quest, players }) => (
             quest.skills.length > 0 || quest.quests.length > 0
                 ? (
                     <Table>
-                        <tbody>
+                        <TableBody>
                             <QuestList quests={quest.quests} players={players} />
                             <SkillList skills={quest.skills} players={players} />
-                        </tbody>
+                        </TableBody>
                     </Table>
                 ) : (
-                    <div style={{ textAlign: "center" }}>No requirements</div>
+                    <Box textAlign="center" padding="1rem">No requirements</Box>
                 )
         }
     </>

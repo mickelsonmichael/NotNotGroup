@@ -10,13 +10,12 @@ import {
     TableRow,
     TableFooter,
     TablePagination,
-    Collapse,
+    Select,
     Box
 } from "@mui/material";
 import FilterIcon from "@mui/icons-material/FilterAlt"
 
 import useQuestTable from "./useQuestTable";
-import QuestStatus from "./QuestStatus";
 import QuestRow from "./QuestRow";
 
 const QuestTable = ({ players }) => {
@@ -26,9 +25,11 @@ const QuestTable = ({ players }) => {
         quests,
         totalQuests,
         questsPerPage,
+        filterOptions,
         setPage,
         setFilter,
-        setPageSize
+        setPageSize,
+        setSelectedFilter
     } = useQuestTable(players);
 
     const handleChangePageSize = ({ target: { value } }) => setPageSize(value);
@@ -37,7 +38,7 @@ const QuestTable = ({ players }) => {
 
     return (
         <>
-            <Box>
+            <Box display="flex" flexDirection="row" justifyItems="space-between">
                 <Input
                     name="filter"
                     placeholder="Filter"
@@ -50,6 +51,16 @@ const QuestTable = ({ players }) => {
                         </InputAdornment>
                     }
                 />
+
+                <Select
+                    onChange={({ target: { value }}) => setSelectedFilter(value)}
+                    defaultValue=""
+                    native
+                    variant="standard"
+                >
+                    <option value="">#NoFilter</option>
+                    {filterOptions.map(f => (<option key={f.value} value={f.value}>{f.label}</option>))}
+                </Select>
             </Box>
 
             <TableContainer>

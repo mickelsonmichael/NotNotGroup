@@ -26,6 +26,22 @@ const useTheme = () => createTheme({
         fontSize: 14
     },
     components: {
+        MuiInput: {
+            styleOverrides: {
+                root: {
+                    "&::before": {
+                        borderColor: "#ddd",
+                    }
+                }
+            }
+        },
+        MuiSvgIcon: {
+            styleOverrides: {
+                root: {
+                    color: "#ddd",
+                }
+            }
+        },
         MuiAccordion: {
             styleOverrides: {
                 root: {
@@ -58,6 +74,13 @@ const useTheme = () => createTheme({
             styleOverrides: {
                 root: {
                     backgroundColor: "rgba(25, 25, 25)"
+                }
+            }
+        },
+        MuiNativeSelect: {
+            styleOverrides: {
+                icon: {
+                    color: "#ddd",
                 }
             }
         }

@@ -18,5 +18,54 @@
             "text": "IN BAR",
             "solution": "Brian, axe shop in Port Sarim"
         }
+    ],
+    "stashes": [
+        {
+            "difficulty": "Beginner",
+            "location": "Clap at Bob's Brilliant Axes.",
+            "items": [
+                "Bronze axe",
+                "Leather boots"
+            ],
+            "players": [
+                "notnotmike"
+            ]
+        },
+        {
+            "difficulty": "Easy",
+            "location": "Headbang in the mine north of Al Kharid.",
+            "items": [
+                "Desert shirt",
+                "Leather gloves",
+                "Leather boots"
+            ],
+            "players": [
+                "notnotmike"
+            ]
+        },
+        {
+            "difficulty": "Easy",
+            "location": "Dance at the crossroads north of Draynor.",
+            "items": [
+                "Iron chain body",
+                "Sapphire ring",
+                "Longbow"
+            ],
+            "players": [
+                "notnotmike"
+            ]
+        },
+        {
+            "difficulty": "Easy",
+            "location": "Spin at the crossroads north of Rimmington.",
+            "items": [
+                "Green gnome hat",
+                "Cream gnome top",
+                "Leather chaps"
+            ],
+            "players": [
+                "notnotmike"
+            ]
+        }
     ]
 }

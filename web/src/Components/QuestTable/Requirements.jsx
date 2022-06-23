@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckOutlined, CancelOutlined } from "@mui/icons-material";
-import { Tooltip, styled, Table, TableRow, TableCell, TableBody, Box } from "@mui/material"
+import { Tooltip, Table, TableRow, TableCell, TableBody, Box } from "@mui/material"
 
 const YesIcon = () => (<CheckOutlined sx={{ color: "#33DD66" }} />);
 const NoIcon = () => (<CancelOutlined sx={{ color: "#DD3366" }} />);
@@ -75,7 +75,7 @@ const Requirements = ({ quest, players }) => (
                         </TableBody>
                     </Table>
                 ) : (
-                    <Box textAlign="center" padding="1rem">No requirements</Box>
+                    <Box textAlign="center" padding="1rem">There are no requirements</Box>
                 )
         }
     </>

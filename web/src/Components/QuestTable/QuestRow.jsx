@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { TableRow, TableCell, Collapse } from "@mui/material";
+import { Box, TableRow, TableCell, Collapse } from "@mui/material";
 import IconButton from '@mui/material/IconButton';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
+import QuestDescription from "./QuestDescription";
 import Requirements from "./Requirements";
 import QuestStatus from "./QuestStatus";
 
@@ -33,6 +34,7 @@ const QuestRow = ({ quest, players }) => {
                     colSpan={1 + players.length}
                 >
                     <Collapse in={isOpen} unmountOnExit sx={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}>
+                        <QuestDescription quest={quest} />
                         <Requirements quest={quest} players={players} />
                     </Collapse>
                 </TableCell>

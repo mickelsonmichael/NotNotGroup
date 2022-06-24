@@ -17,6 +17,18 @@
         {
             "text": "IN BAR",
             "solution": "Brian, axe shop in Port Sarim"
+        },
+        {
+            "text": "DT RUN N",
+            "solution": "Brudnt, the chieftain in Rellekka",
+            "challenge": "How many people are waiting for the Bard to perform",
+            "answer": "4"
+        },
+        {
+            "text": "ARMCHAIR THE PELT",
+            "solution": "Charlie the Tramp, Varrock",
+            "challenge": "How many coins would I have if I have 0 coins and attempt to buy 10 loaves of bread for 3 coins each?",
+            "answer": "0"
         }
     ],
     "stash": [

@@ -3,6 +3,7 @@ import { Container, Grid, Input, InputAdornment } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 
 import clues from "../../Data/clues.json";
+import StashClues from "../../Components/StashClues";
 
 import CoordinateClues from "./CoordinateClues";
 import AnagramClues from "./AnagramClues";
@@ -17,7 +18,7 @@ const TreasureTrailsPage = () => {
         return (
             Object.keys(clues).reduce((result, type) => ({
                 ...result,
-                [type]: clues[type].filter(clue => clue.solution.match(pattern) || clue.text.match(pattern))
+                [type]: clues[type].filter(clue => clue.solution?.match(pattern) || clue.text?.match(pattern) || clue.location?.match(pattern) || clue.items?.some(i => i.match(pattern)))
             }), {})
         )
     }, [search]);
@@ -42,6 +43,9 @@ const TreasureTrailsPage = () => {
                 </Grid>
                 <Grid item xs={12}>
                     <AnagramClues clues={filteredClues.anagram} />
+                </Grid>
+                <Grid item xs={12}>
+                    <StashClues clues={filteredClues.stash} />
                 </Grid>
             </Grid>
         </Container>

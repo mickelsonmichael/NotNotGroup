@@ -19,7 +19,7 @@
             "solution": "Brian, axe shop in Port Sarim"
         }
     ],
-    "stashes": [
+    "stash": [
         {
             "difficulty": "Beginner",
             "location": "Clap at Bob's Brilliant Axes.",
@@ -28,7 +28,7 @@
                 "Leather boots"
             ],
             "players": [
-                "notnotmike"
+                "NotNotMike"
             ]
         },
         {
@@ -40,7 +40,7 @@
                 "Leather boots"
             ],
             "players": [
-                "notnotmike"
+                "NotNotMike"
             ]
         },
         {
@@ -52,7 +52,7 @@
                 "Longbow"
             ],
             "players": [
-                "notnotmike"
+                "NotNotMike"
             ]
         },
         {
@@ -64,7 +64,7 @@
                 "Leather chaps"
             ],
             "players": [
-                "notnotmike"
+                "NotNotMike"
             ]
         }
     ]

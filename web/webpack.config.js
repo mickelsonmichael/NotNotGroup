@@ -1,5 +1,4 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const DotenvPlugin = require("dotenv-webpack");
 
@@ -45,6 +44,11 @@ module.exports = (env, argv) => ({
         ]
     },
     resolve: {
+        alias: {
+            "@components": path.resolve(__dirname, "src/Components"),
+            "@common": path.resolve(__dirname, "src/Common"),
+            "@data": path.resolve(__dirname, "src/Data")
+        },
         extensions: [".js", ".jsx"]
     },
     plugins: [

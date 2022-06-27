@@ -1,0 +1,58 @@
+.word-bank,
+.word-history {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.word-history__word,
+.word-bank__letter {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-history__word {
+    background-color: #666;
+}
+
+.word-bank__letter {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.word-bank__letter:nth-child(1n + 0) {
+    background-color: #aa2e25;
+}
+
+.word-bank__letter:nth-child(2n) {
+    background-color: #ff9800;
+}
+
+.word-bank__letter:nth-child(3n) {
+    background-color: #ffeb3b;
+    color: #111;
+}
+
+.word-bank__letter:nth-child(4n) {
+    background-color: #4caf50;
+}
+
+.word-bank__letter:nth-child(5n) {
+    background-color: #2196f3;
+}
+
+.word-bank__letter:nth-child(6n) {
+    background-color: #673ab7;
+    color: inherit;
+}

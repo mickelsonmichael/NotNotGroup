@@ -7,6 +7,7 @@ import Home from "../Components/Home";
 import Wintertodt from "../Components/Wintertodt";
 import QuestPage from "../Pages/QuestPage";
 import TreasureTrailsPage from "../Pages/TreasureTrailsPage";
+import AnagramHelperPage from "../Pages/AnagramHelperPage";
 
 const Layout = () => (
     <Box
@@ -26,6 +27,7 @@ const Layout = () => (
                 <Route path="/" exact component={Home} />
                 <Route path="/wintertodt" component={Wintertodt} />
                 <Route path="/quests" component={QuestPage} />
+                <Route path="/treasure-trails/anagrams" component={AnagramHelperPage} />
                 <Route path="/treasure-trails" component={TreasureTrailsPage} />
             </Switch>
         </Box>

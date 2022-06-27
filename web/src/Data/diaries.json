@@ -1,0 +1,20 @@
+{
+    "ardougne": {
+        "easy": [
+            {
+                "description": "Have Wizard Cromperty teleport you to the Rune Essence mine.",
+                "quests": [
+                    "Rune Mysteries"
+                ]
+            },
+            {
+                "description": "Steal a cake from the Ardougne market stalls.",
+                "skills": [
+                    {
+                        "name": "Thieving"
+                    }
+                ]
+            }
+        ]
+    } 
+}

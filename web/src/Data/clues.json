@@ -29,6 +29,14 @@
             "solution": "Charlie the Tramp, Varrock",
             "challenge": "How many coins would I have if I have 0 coins and attempt to buy 10 loaves of bread for 3 coins each?",
             "answer": "0"
+        },
+        {
+            "text": "DISORDER",
+            "solution": "Archmage Sedridore, Wizards Tower basement"
+        },
+        {
+            "text": "I CORD",
+            "solution": "Doric, north of Falador"
         }
     ],
     "stash": [
@@ -78,6 +86,20 @@
             "players": [
                 "NotNotMike"
             ]
+        }
+    ],
+    "riddle": [
+        {
+            "text": "Monk's residence in the far west. See robe storage device.",
+            "solution": "Drawers in Monk encampment south of Hosidius."
+        },
+        {
+            "test": "Saltry peter.",
+            "solution": "The guy shoveling saltpetre West of Hosidius"
+        },
+        {
+            "text": "Always walking around the castle grounds and somehow knows everyone's age.",
+            "solution": "Hans, Lumbridge castle"
         }
     ]
 }

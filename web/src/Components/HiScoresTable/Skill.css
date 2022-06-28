@@ -50,7 +50,7 @@
 .skill__hover {
     display: none;
     position: absolute;
-    top: 110%;
+    top: 115%;
     left: 50%;
     background: rgba(25, 25, 25, 0.95);
     z-index: 10;
@@ -65,20 +65,20 @@
     display: block;
 }
 
-.skill__hover > table {
+.skill__hover>table {
     border-spacing: 0 5px;
     border-collapse: collapse;
 }
 
-.skill__hover > table > tr:not(:last-child) {
+.skill__hover>table>tbody>tr:not(:last-child) {
     border-bottom: 1px solid white;
 }
 
-.skill__hover > table > tr > td:first-child {
+.skill__hover>table>tbody>tr>td:first-child {
     text-align: left;
 }
 
-.skill__hover>table>tr>td:last-child {
+.skill__hover>table>tbody>tr>td:last-child {
     text-align: right;
     padding-left: 1rem;
 }

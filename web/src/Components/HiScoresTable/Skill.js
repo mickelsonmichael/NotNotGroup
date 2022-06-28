@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
 import React from "react";
 
-import maximums from "@data/maximums";
+import maximums, { diaryMaximums, questMaximums } from "@data/maximums";
 import formatNum from "../../formatNum";
 import "./Skill.css"
 
@@ -11,26 +11,37 @@ const getStyle = (skillName, skillLevel) => {
         return {};
     }
 
+    const questsMax = questMaximums[skillName];
+    const diaryMax = diaryMaximums[skillName];
     const requiredLevel = maximums[skillName];
 
     if (skillLevel == 99) {
-        // background: "linear-gradient(320deg, rgba(218, 222, 45, .6) 0%, rgba(218, 222, 45, 0.6) 6%, rgba(255, 255, 255, 0.6) 9%, rgba(255, 255, 255, 0.6) 8%, rgba(218, 222, 45, 0.6) 15%)"
         return {
-            border: "1px solid gold"
+            border: "2px solid gold"
         }
-    } else if (skillLevel < 99 && skillLevel >= requiredLevel) {
+    }
+    else if (skillLevel < 99 && skillLevel >= requiredLevel) {
         return {
-            border: "1px solid lightblue"
+            border: "2px solid silver"
+        }
+    } else if (questsMax > diaryMax && skillLevel >= diaryMax) {
+        return {
+            border: "2px solid green"
+        }
+    } else if (diaryMax > questsMax && skillLevel >= questsMax) {
+        return {
+            border: "2px solid skyblue"
         }
     }
 
-    return {};
+    return {
+        border: "2px solid transparent"
+    };
 }
 
 const Skill = ({ skillName, skillData }) => {
 
     const style = getStyle(skillName, skillData?.level ?? 0);
-    const requiredLevel = maximums[skillName];
 
     return (
         <Box className="skill" sx={style}>
@@ -45,20 +56,28 @@ const Skill = ({ skillName, skillData }) => {
             <div className="skill__hover">
                 <div><strong>{skillName}</strong></div>
                 <table>
-                    <tr>
-                        <td>Rank</td>
-                        <td>{skillData?.rank > -1 ? formatNum(skillData?.rank) : "Unranked"}</td>
-                    </tr>
-                    <tr>
-                        <td>XP</td>
-                        <td>{formatNum(skillData?.experience)}</td>
-                    </tr>
-                    {skillName !== "Overall" && (
+                    <tbody>
                         <tr>
-                            <td>Required</td>
-                            <td>{formatNum(requiredLevel.toString())}</td>
+                            <td>Rank</td>
+                            <td>{skillData?.rank > -1 ? formatNum(skillData?.rank) : "Unranked"}</td>
                         </tr>
-                    )}
+                        <tr>
+                            <td>XP</td>
+                            <td>{formatNum(skillData?.experience)}</td>
+                        </tr>
+                        {skillName !== "Overall" && (
+                            <>
+                                <tr>
+                                    <td>Diaries</td>
+                                    <td>{formatNum(diaryMaximums[skillName])}</td>
+                                </tr>
+                                <tr>
+                                    <td>Quests</td>
+                                    <td>{formatNum(questMaximums[skillName])}</td>
+                                </tr>
+                            </>
+                        )}
+                    </tbody>
                 </table>
             </div>
         </Box>

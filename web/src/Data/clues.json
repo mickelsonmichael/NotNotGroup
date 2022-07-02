@@ -7,6 +7,14 @@
         {
             "text": "15 degrees 22 minutes north\n07 degrees 31 minutes east",
             "solution": "South-eastern house in Rellekka, in the vegetable garden"
+        },
+        {
+            "text": "06 degrees 58 minutes north\n21 degrees 16 minutes east",
+            "solution": "North-East of Draynor Manor (outside the fence)"
+        },
+        {
+            "text": "07 degrees 05 minutes north\n30 degrees 56 minutes east",
+            "solution": "Mort Myre Swamp, north of the nature grotto"
         }
     ],
     "anagram": [
@@ -37,6 +45,16 @@
         {
             "text": "I CORD",
             "solution": "Doric, north of Falador"
+        },
+        {
+            "text": "AN EARL",
+            "solution": "Ranael, plateskirt shop in East Al Kharid"
+        },
+        {
+            "text": "ARC O LINE",
+            "solution": "Caroline, Witchaven",
+            "challenge": "How many fishermen are there on the fishing platform",
+            "answer": "11"
         }
     ],
     "stash": [
@@ -100,6 +118,10 @@
         {
             "text": "Always walking around the castle grounds and somehow knows everyone's age.",
             "solution": "Hans, Lumbridge castle"
+        },
+        {
+            "text": "In a town where Wizards are known to gather, search a large house to the north",
+            "solution": "Yanille, locked chest on the second floor. Requires killing a man on the first floor to get a key."
         }
     ]
 }

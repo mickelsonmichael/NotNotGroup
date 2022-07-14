@@ -15,6 +15,10 @@
         {
             "text": "07 degrees 05 minutes north\n30 degrees 56 minutes east",
             "solution": "Mort Myre Swamp, north of the nature grotto"
+        },
+        {
+            "text": "22 degrees 30 minutes north\n03 degrees 01 minutes east",
+            "solution": "Miscellania?"
         }
     ],
     "anagram": [
@@ -55,6 +59,10 @@
             "solution": "Caroline, Witchaven",
             "challenge": "How many fishermen are there on the fishing platform",
             "answer": "11"
+        },
+        {
+            "text": "RUG DETER",
+            "solution": "Gertrude, Varrock"
         }
     ],
     "stash": [

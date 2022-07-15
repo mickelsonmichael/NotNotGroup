@@ -1,0 +1,56 @@
+.diary-region {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+}
+
+.diary-region__name {
+    text-align: left;
+    text-transform: capitalize;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.diary-region__progress {
+    display: grid;
+    row-gap: 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: darkred;
+    height: 5px;
+}
+
+.diary-region__progress-wrapper {
+    display: flex;
+}
+
+.diary-region__progress-wrapper:not(:last-child) {
+    border-right: 1px solid lightgray;
+}
+
+.diary-region__progress-indicator {
+    background-color: green;
+    width: 0;
+}
+
+.diary-difficulty__name {
+    text-transform: capitalize;
+    padding-top: 1rem;
+}
+
+.diary-difficulty__tasks {
+    text-align: left;
+    padding: 1rem 0.5rem;
+}
+
+.diary-difficulty__tasks-task {
+}
+
+.diary-difficulty__tasks-task__name {
+    cursor: pointer;
+}
+
+.diary-difficulty__tasks-requirements__req {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

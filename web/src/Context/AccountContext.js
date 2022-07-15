@@ -11,7 +11,7 @@ const AccountContext = createContext({
     isNotNotThomasError: false,
     notNotMike: null,
     isNotNotMikeLoading: false,
-    isNotNotMikeError: false
+    isNotNotMikeError: false,
 });
 
 const useAccount = (account) => useQuery(account, async () => {
@@ -56,7 +56,17 @@ const AccountProvider = ({ children }) => {
 
 const useAccounts = () => useContext(AccountContext);
 
+const usePlayer = (playerName) => {
+    const context = useAccounts();
+    
+    const key = Object.keys(context)
+        .find(key => key.toLowerCase() === playerName.toLowerCase());
+
+    return context[key];
+}
+
 export {
     AccountProvider,
-    useAccounts
+    useAccounts,
+    usePlayer
 };

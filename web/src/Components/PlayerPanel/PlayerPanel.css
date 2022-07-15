@@ -1,0 +1,32 @@
+.player-panel {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px -2px black;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.player-panel__tab {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-panel__tab li {
+    cursor: pointer;
+    padding: 0.25rem;
+    color: #aaa;
+    user-select: none;
+}
+
+.player-panel__tab li.active {
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .player-panel {
+        width: 480px;
+    }
+}

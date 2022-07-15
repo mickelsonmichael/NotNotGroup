@@ -1,13 +1,14 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { Switch, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 
-import Navigation from "../Components/Navigation";
-import Home from "../Components/Home";
-import Wintertodt from "../Components/Wintertodt";
+import Navigation from "@components/Navigation";
+import Wintertodt from "@components/Wintertodt";
+import HomePage from "../Pages/HomePage";
 import QuestPage from "../Pages/QuestPage";
 import TreasureTrailsPage from "../Pages/TreasureTrailsPage";
 import AnagramHelperPage from "../Pages/AnagramHelperPage";
+import DiariesPage from "../Pages/DiariesPage";
 
 const Layout = () => (
     <Box
@@ -23,13 +24,17 @@ const Layout = () => (
         <Navigation />
 
         <Box sx={{ padding: "1rem", flexGrow: 1 }}>
-            <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/wintertodt" component={Wintertodt} />
-                <Route path="/quests" component={QuestPage} />
-                <Route path="/treasure-trails/anagrams" component={AnagramHelperPage} />
-                <Route path="/treasure-trails" component={TreasureTrailsPage} />
-            </Switch>
+            <Routes>
+                <Route path="/" exact element={<HomePage />} />
+                <Route path="/wintertodt" element={<Wintertodt />} />
+                <Route path="/quests" element={<QuestPage />} />
+                <Route path="/treasure-trails/anagrams" element={<AnagramHelperPage />} />
+                <Route path="/treasure-trails" element={<TreasureTrailsPage />} />
+                <Route path="/diaries/:region/:playerName" element={<DiariesPage />} />
+                <Route path="">
+                    Page Not Found
+                </Route>
+            </Routes>
         </Box>
     </Box>
 );

@@ -1,19 +1,17 @@
 .skill-grid {
-    display: inline-grid;
+    display: grid;
+    box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 8px -2px black;
-    padding: 1rem;
     border-radius: 5px;
+    width: 100%;
 }
 
 .skill {
+    box-sizing: border-box;
     position: relative;
     display: inline-block;
     white-space: nowrap;
     height: 55px;
-    width: 100px;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -84,10 +82,6 @@
 }
 
 @media (min-width: 1200px) {
-    .skill-grid {
-        margin: 1rem;
-    }
-
     .skill {
         height: auto;
         width: auto;

@@ -47,7 +47,7 @@
     "react-dom": "^17.0.2",
     "react-liquid-gauge": "^1.2.4",
     "react-query": "^3.29.1",
-    "react-router": "^5.2.1",
-    "react-router-dom": "^5.3.0"
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0"
   }
 }

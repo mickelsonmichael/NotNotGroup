@@ -47,7 +47,9 @@ module.exports = (env, argv) => ({
         alias: {
             "@components": path.resolve(__dirname, "src/Components"),
             "@common": path.resolve(__dirname, "src/Common"),
-            "@data": path.resolve(__dirname, "src/Data")
+            "@data": path.resolve(__dirname, "src/Data"),
+            "@context": path.relative(__dirname, "src/Context"),
+            "@page": path.relative(__dirname, "src/Pages"),
         },
         extensions: [".js", ".jsx"]
     },

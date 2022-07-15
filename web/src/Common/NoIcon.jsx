@@ -1,9 +1,9 @@
 import React from "react";
 import { CancelOutlined } from "@mui/icons-material";
 
-const NoIcon = () => (
+const NoIcon = ({ mr }) => (
     <CancelOutlined
-        sx={{ color: "#DD3366" }}
+        sx={{ color: "#DD3366", marginRight: mr }}
     />
 );
 

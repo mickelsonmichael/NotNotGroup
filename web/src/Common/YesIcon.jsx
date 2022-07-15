@@ -1,9 +1,9 @@
 import React from "react";
 import { CheckOutlined } from "@mui/icons-material";
 
-const YesIcon = () => (
+const YesIcon = ({ mr }) => (
     <CheckOutlined
-        sx={{ color: "#33DD66" }}
+        sx={{ color: "#33DD66", marginRight: mr }}
     />
 );
 

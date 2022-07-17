@@ -24,9 +24,9 @@
     color: white;
     text-align: center;
     font-size: 8pt;
-    border: 1px solid #bbb;
     margin: 0 3px;
-    border-radius: 3px;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .diary-region__progress-indicator,

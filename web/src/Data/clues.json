@@ -19,6 +19,14 @@
         {
             "text": "22 degrees 30 minutes north\n03 degrees 01 minutes east",
             "solution": "Miscellania?"
+        },
+        {
+            "text": "08 degrees 06 degrees north\n31 degrees 16 minutes east (approximately)",
+            "solution": "Mort Meyer Swamp, South-west of the fairy ring"
+        },
+        {
+            "text": "04 degrees 03 minutes south\n03 degrees 11 minutes east",
+            "solution": "Ogre stronghold, south of Yanille"
         }
     ],
     "anagram": [
@@ -63,6 +71,16 @@
         {
             "text": "RUG DETER",
             "solution": "Gertrude, Varrock"
+        },
+        {
+            "text": "DRAGONS LAMENT",
+            "solution": "Strange Old Man, Barrows",
+            "challenge": "One pipe fills a barrel in 1 hour while another pipe can fill the same barrel in 2 hours. HOw many minutes will it take to fill the tank if both pipes are used?",
+            "answer": "40"
+        },
+        {
+            "text": "DEKAGRAM",
+            "solution": "Dark Mage"
         }
     ],
     "stash": [

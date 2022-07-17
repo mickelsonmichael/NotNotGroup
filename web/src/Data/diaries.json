@@ -700,5 +700,344 @@
                 "players": []
             }
         ]
+    },
+    "falador": {
+        "easy": [
+            {
+                "description": "Find out what your family crest is from Sir Renitee.",
+                "quests": [],
+                "skills": {
+                    "Construction": 16
+                },
+                "players": []
+            },
+            {
+                "description": "Climb over the western Falador wall.",
+                "quests": [],
+                "skills": {
+                    "Agility": 5
+                },
+                "players": []
+            },
+            {
+                "description": "Browse Sarah's Farming Shop.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Get a haircut from the Falador hairdresser.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Fill a bucket from the pump north of Falador west Bank.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Kill a duck in Falador Park.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Make a mind tiara.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Take the boat to Entrana.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Repair a broken strut in the Motherlode Mine.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Claim a security book form the Security Guard upstairs at Port Sarim jail.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Smith some Blurite limbs on Doric's anvil.",
+                "quests": [
+                    "The Knight's Sword",
+                    "Doric's Quest"
+                ],
+                "skills": {
+                    "Mining": 10,
+                    "Smithing": 13
+                },
+                "players": []
+            }
+        ],
+        "medium": [
+            {
+                "description": "Light a bullseye lantern at the Chemist's in Rimmington.",
+                "quests": [],
+                "skills": {
+                    "Firemaking": 49
+                },
+                "players": []
+            },
+            {
+                "description": "Telegrab some Wine of Zamorak at the Chaos Temple just outside the Wilderness.",
+                "quests": [],
+                "skills": {
+                    "Magic": 33
+                },
+                "players": []
+            },
+            {
+                "description": "Unlock the crystal chest in Taverley.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Place a Scarecrow in the Falador farm flower patch.",
+                "quests": [],
+                "skills": {
+                    "Farming": 47
+                },
+                "players": []
+            },
+            {
+                "description": "Kill a Mogre at Mudskipper Point",
+                "quests": [],
+                "skills": {
+                    "Slayer": 32
+                },
+                "players": []
+            },
+            {
+                "description": "Visit the Port Sarim Rat Pits.",
+                "quests": [
+                    "Ratcatchers"
+                ],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Grapple up and then jump off the north Falador wall.",
+                "quests": [],
+                "skills": {
+                    "Agility": 11,
+                    "Strength": 37,
+                    "Ranged": 19
+                },
+                "players": []
+            },
+            {
+                "description": "Pickpocket a Falador guard.",
+                "quests": [],
+                "skills": {
+                    "Thieving": 40
+                },
+                "players": []
+            },
+            {
+                "description": "Pray at the Altar of Guthix in Taverley whilst wearing full Initiate armour.",
+                "quests": [
+                    "Recruitment Drive"
+                ],
+                "skills": {
+                    "Prayer": 10,
+                    "Defence": 20
+                },
+                "players": []
+            },
+            {
+                "description": "Mine some gold ore at the Crafting Guild.",
+                "quests": [],
+                "skills": {
+                    "Crafting": 40,
+                    "Mining": 40
+                },
+                "players": []
+            },
+            {
+                "description": "Squeeze through the crevice in the Dwarven Mines.",
+                "quests": [],
+                "skills": {
+                    "Agility": 42
+                },
+                "players": []
+            },
+            {
+                "description": "Chop and burn some willow logs in Taverley.",
+                "quests": [],
+                "skills": {
+                    "Woodcutting": 30,
+                    "Firemaking": 30
+                },
+                "players": []
+            },
+            {
+                "description": "Craft a basket on the Falador farm loom.",
+                "quests": [],
+                "skills": {
+                    "Crafting": 36,
+                    "Farming": 30
+                },
+                "players": []
+            },
+            {
+                "description": "Teleport to Falador.",
+                "quests": [],
+                "skills": {
+                    "Magic": 37
+                },
+                "players": []
+            }
+        ],
+        "hard": [
+            {
+                "description": "Craft 140 mind runes simultaneously from essence.",
+                "quests": [],
+                "skills": {
+                    "Runecraft": 56
+                },
+                "players": []
+            },
+            {
+                "description": "Change your family crest to the Saradomin symbol.",
+                "quests": [],
+                "skills": {
+                    "Prayer": 70
+                },
+                "players": []
+            },
+            {
+                "description": "Kill the Giant Mole beneath Falador Park.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Kill a Skeletal Wyvern in the Asgarnia Ice Dungeon.",
+                "quests": [],
+                "skills": {
+                    "Slayer": 72
+                },
+                "players": []
+            },
+            {
+                "description": "Complete a lap of the Falador Rooftop Agility Course.",
+                "quests": [],
+                "skills": {
+                    "Agility": 50
+                },
+                "players": []
+            },
+            {
+                "description": "Enter the Mining Guild wearing full Prospector.",
+                "quests": [],
+                "skills": {
+                    "Mining": 60
+                },
+                "players": []
+            },
+            {
+                "description": "Kill the blue dragon under the Heroes' Guild.",
+                "quests": [
+                    "Heroes' Quest"
+                ],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Crack a wall safe within Rouges' Den",
+                "quests": [],
+                "skills": {
+                    "Thieving": 50
+                },
+                "players": []
+            },
+            {
+                "description": "Recharge your Prayer in the Port Sarim church while wearing full Proselyte.",
+                "quests": [
+                    "The Slug Menace"
+                ],
+                "skills": {
+                    "Defence": 30
+                },
+                "players": []
+            },
+            {
+                "description": "Enter the Warriors' Guild.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Equip a Dwarven helmet within the Dwarven Mines.",
+                "quests": [
+                    "Grim Tales"
+                ],
+                "skills": {
+                    "Defence": 50
+                },
+                "players": []
+            }
+        ],
+        "elite": [
+            {
+                "description": "Craft 252 air runes simultaneously from essence.",
+                "quests": [],
+                "skills": {
+                    "Runecraft": 88
+                },
+                "players": []
+            },
+            {
+                "description": "Purchase a white 2h sword from Sir Vyvin.",
+                "quests": [
+                    "Wanted!"
+                ],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Find at least 3 magic roots at once when digging up your magic tree in Falador.",
+                "quests": [],
+                "skills": {
+                    "Farming": 91,
+                    "Woodcutting": 75
+                },
+                "players": []
+            },
+            {
+                "description": "Perform a Skillcape or Quest cape emote at the top of Falador Castle.",
+                "quests": [],
+                "skills": {},
+                "players": []
+            },
+            {
+                "description": "Jump over the strange floor in Taverley Dungeon.",
+                "quests": [],
+                "skills": {
+                    "Agility": 80
+                },
+                "players": []
+            },
+            {
+                "description": "Mix a Saradomin brew in Falador East Bank.",
+                "quests": [],
+                "skills": {
+                    "Herblore": 81
+                },
+                "players": []
+            }
+        ]
     }
 }

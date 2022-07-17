@@ -7,12 +7,25 @@
     "azureFunctions.preDeployTask": "npm prune (functions)",
     "cSpell.words": [
         "Ardougne",
+        "Blurite",
         "Burthorpe",
+        "Defence",
+        "Entrana",
         "Eohric",
+        "Falador",
+        "Firemaking",
+        "Guthix",
         "Kharazi",
+        "Motherlode",
         "Rellekka",
+        "Rimmington",
+        "Runecraft",
         "Sarim",
         "Shilo",
-        "Wintertodt"
+        "Smithing",
+        "Taverley",
+        "Telegrab",
+        "Wintertodt",
+        "Zamorak"
     ]
 }

@@ -1,6 +1,7 @@
 import { Box, Button, Input } from "@mui/material";
 import ArrowDownIcon from "@mui/icons-material/ArrowDownwardRounded"
 import CheckIcon from "@mui/icons-material/Check"
+import { Shuffle, Delete, ArrowUpwardRounded } from "@mui/icons-material"
 import React from "react";
 
 import useAnagramHelper from "./useAnagramHelper";
@@ -16,9 +17,12 @@ const AnagramHelper = () => {
         setBank,
         setGuess,
         addLetter,
+        removeAt,
         addHistory,
         start,
-        reset
+        reset,
+        clear,
+        shuffle
     } = useAnagramHelper();
 
     if (!started) {
@@ -60,19 +64,43 @@ const AnagramHelper = () => {
 
             <Button
                 variant="contained"
+                color="warning"
+                onClick={clear}
+                sx={{ marginRight: "1rem" }}
+            >
+                <Delete sx={{ color: "#934200" }} />
+            </Button>
+
+            <Button
+                variant="contained"
                 color="secondary"
                 onClick={reset}
+                sx={{ marginRight: "1rem" }}
             >
-                Reset
+                <ArrowUpwardRounded sx={{ color: "#5b5b5b" }} />
+            </Button>
+
+            <Button
+                variant="contained"
+                color="secondary"
+                onClick={shuffle}
+            >
+                <Shuffle sx={{ color: "#5b5b5b" }} />
             </Button>
 
             <div style={{ marginTop: "2rem" }}>
-                <Input
-                    sx={{ marginRight: "1rem" }}
-                    value={guess}
-                    onChange={({ target: { value } }) => setGuess(value)}
-                    placeholder="Enter guess"
-                />
+                <ul className="guess-container">
+                    {guess.split("").map((l, i) => (
+                        <li
+                            key={`${l}-${i}`}
+                            className="guess-container__letter"
+                            onClick={() => removeAt(i)}
+                            role="button"
+                        >
+                            {l}
+                        </li>
+                    ))}
+                </ul>
                 <Button
                     variant="contained"
                     color="info"

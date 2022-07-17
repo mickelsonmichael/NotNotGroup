@@ -19,7 +19,24 @@ const reducer = (state, action) => {
                 started: true
             };
         case "RESET":
+            return {
+                ...state,
+                bank: [...state.letters],
+                guess: ""
+            }
+        case "CLEAR":
             return initState;
+        case "SHUFFLE":
+            const randomized = [...state.bank].map(letter => ({ letter, n: Math.random()}));
+
+            randomized.sort((a, b) => a.n > b.n);
+
+            const result = randomized.map(({ letter }) => letter);
+
+            return {
+                ...state,
+                bank: result
+            }
         case "BANK/SET":
             return {
                 ...state,
@@ -58,8 +75,17 @@ const reducer = (state, action) => {
             }
 
             return state;
+        case "GUESS/REMOVE":
+            const { index } = action;
+
+            const letter = state.guess[index];
+            return {
+                ...state,
+                guess: [...state.guess.substr(0, index), ...state.guess.substr(index+1)].join(""),
+                bank: [...state.bank, letter]
+            }
         case "HISTORY/ADD":
-            if (state.guess.length != state.letters.length) {
+            if (state.guess.length != state.letters.length || state.history.includes(state.guess)) {
                 return state;
             }
 
@@ -90,6 +116,12 @@ const useAnagramHelper = () => {
 
     const reset = () => dispatch({ type: "RESET" });
 
+    const clear = () => dispatch({ type: "CLEAR" });
+
+    const shuffle = () => dispatch({ type: "SHUFFLE" });
+
+    const removeAt = (index) => dispatch({ type: "GUESS/REMOVE", index });
+
     return {
         ...state,
         setBank,
@@ -97,7 +129,10 @@ const useAnagramHelper = () => {
         addLetter,
         addHistory,
         start,
-        reset
+        clear,
+        reset,
+        shuffle,
+        removeAt
     };
 }
 

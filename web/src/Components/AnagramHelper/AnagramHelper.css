@@ -10,7 +10,8 @@
 }
 
 .word-history__word,
-.word-bank__letter {
+.word-bank__letter,
+.guess-container__letter {
     border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 0.25rem 0.75rem;
     margin: 0.25rem;
@@ -22,7 +23,7 @@
 }
 
 .word-history__word {
-    background-color: #666;
+    background-color: #333366;
 }
 
 .word-bank__letter {
@@ -55,4 +56,10 @@
 .word-bank__letter:nth-child(6n) {
     background-color: #673ab7;
     color: inherit;
+}
+
+.guess-container {
+    list-style: none;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0 1rem 0;
 }

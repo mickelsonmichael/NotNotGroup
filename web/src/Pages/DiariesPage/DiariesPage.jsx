@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { Grid, Typography } from "@mui/material";
-import { useParams, useNavigate, Navigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 
 import { usePlayer } from "../../Context/AccountContext";
 import diaries from "@data/diaries.json";
@@ -8,7 +8,6 @@ import TaskRow from "@components/DiariesTable/TaskRow";
 
 const DiariesPage = () => {
     const { region, playerName } = useParams();
-    const navigate = useNavigate();
 
     const difficulties = useMemo(() => diaries[region.toLowerCase()], [region]);
 

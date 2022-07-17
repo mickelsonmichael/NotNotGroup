@@ -2,6 +2,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 0.5rem;
     border-radius: 3px;
+    padding: 0.25rem;
 }
 
 .diary-region__name {
@@ -15,21 +16,39 @@
     display: grid;
     row-gap: 0;
     grid-template-columns: 25% 25% 25% 25%;
-    background-color: darkred;
-    height: 5px;
+    height: 20px;
 }
 
 .diary-region__progress-wrapper {
     display: flex;
+    color: white;
+    text-align: center;
+    font-size: 8pt;
+    border: 1px solid #bbb;
+    margin: 0 3px;
+    border-radius: 3px;
 }
 
-.diary-region__progress-wrapper:not(:last-child) {
-    border-right: 1px solid lightgray;
+.diary-region__progress-indicator,
+.diary-region__potential-indicator,
+.diary-region__remaining-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .diary-region__progress-indicator {
     background-color: green;
     width: 0;
+}
+
+.diary-region__potential-indicator {
+    background-color: goldenrod;
+    width: 0;
+}
+
+.diary-region__remaining-indicator {
+        background-color: darkred;
 }
 
 .diary-difficulty__name {
@@ -42,8 +61,7 @@
     padding: 1rem 0.5rem;
 }
 
-.diary-difficulty__tasks-task {
-}
+.diary-difficulty__tasks-task {}
 
 .diary-difficulty__tasks-task__name {
     cursor: pointer;

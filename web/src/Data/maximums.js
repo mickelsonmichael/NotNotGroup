@@ -1,5 +1,5 @@
 import questData from "./questData.json";
-import diaries from "./diaries.json";
+import diaries from "./diaries";
 
 const { quests } = questData;
 

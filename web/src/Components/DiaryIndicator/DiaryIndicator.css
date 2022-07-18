@@ -1,0 +1,52 @@
+.diary-indicator {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.5rem;
+  border-radius: 3px;
+  padding: 0.25rem;
+}
+
+.diary-indicator__name {
+  text-align: left;
+  text-transform: capitalize;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.diary-indicator__progress {
+  display: grid;
+  row-gap: 0;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: 20px;
+}
+
+.diary-indicator__progress-wrapper {
+  display: flex;
+  color: white;
+  text-align: center;
+  font-size: 8pt;
+  margin: 0 3px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.diary-indicator__progress-indicator,
+.diary-indicator__potential-indicator,
+.diary-indicator__remaining-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diary-indicator__progress-indicator {
+  background-color: green;
+  width: 0;
+}
+
+.diary-indicator__potential-indicator {
+  background-color: goldenrod;
+  width: 0;
+}
+
+.diary-indicator__remaining-indicator {
+  background-color: darkred;
+}

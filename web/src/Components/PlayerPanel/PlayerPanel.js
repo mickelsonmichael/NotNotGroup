@@ -6,48 +6,45 @@ import HiScoresTable from "@components/HiScoresTable";
 import DiariesTable from "@components/DiariesTable";
 
 import "./PlayerPanel.css";
+import DiaryIndicator from "../DiaryIndicator";
+import DiaryPanel from "../DiaryPanel";
 
 const PlayerPanel = ({ playerName }) => {
-    const player = usePlayer(playerName);
+  const player = usePlayer(playerName);
 
-    const [tab, setTab] = useState("stats");
+  const [tab, setTab] = useState("stats");
 
-    return (
-        <div className="player-panel">
-            <NameHeader name={playerName} />
+  return (
+    <div className="player-panel">
+      <NameHeader name={playerName} />
 
-            <ul className="player-panel__tab">
-                <li
-                    onClick={() => setTab("stats")}
-                    className={"player-panel__tab-btn" + (tab === "stats" ? " active" : "")}
-                >
-                    Stats
-                </li>
-                <li
-                    onClick={() => setTab("diaries")}
-                    className={"player-panel__tab-btn" + (tab === "diaries" ? " active" : "")}
-                >
-                    Diaries
-                </li>
-            </ul>
+      <ul className="player-panel__tab">
+        <li
+          onClick={() => setTab("stats")}
+          className={
+            "player-panel__tab-btn" + (tab === "stats" ? " active" : "")
+          }
+        >
+          Stats
+        </li>
+        <li
+          onClick={() => setTab("diaries")}
+          className={
+            "player-panel__tab-btn" + (tab === "diaries" ? " active" : "")
+          }
+        >
+          Diaries
+        </li>
+      </ul>
 
-            {
-                tab === "stats" && (
-                    <HiScoresTable
-                        skills={player?.skills}
-                        overall={player?.Overall}
-                    />
-                )
-            }
-            {
-                tab === "diaries" && (
-                    <DiariesTable
-                        player={player}
-                    />
-                )
-            }
-        </div>
-    )
-}
+      {tab === "stats" && (
+        <HiScoresTable skills={player?.skills} overall={player?.Overall} />
+      )}
+      {tab === "diaries" && (
+        <DiaryPanel player={player} />
+      )}
+    </div>
+  );
+};
 
 export default PlayerPanel;

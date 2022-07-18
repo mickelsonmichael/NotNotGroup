@@ -1,74 +1,34 @@
-.diary-region {
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-bottom: 0.5rem;
-    border-radius: 3px;
-    padding: 0.25rem;
-}
-
-.diary-region__name {
-    text-align: left;
-    text-transform: capitalize;
-    padding: 0.5rem 0.5rem;
-    cursor: pointer;
-}
-
-.diary-region__progress {
-    display: grid;
-    row-gap: 0;
-    grid-template-columns: 25% 25% 25% 25%;
-    height: 20px;
-}
-
-.diary-region__progress-wrapper {
-    display: flex;
-    color: white;
-    text-align: center;
-    font-size: 8pt;
-    margin: 0 3px;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.diary-region__progress-indicator,
-.diary-region__potential-indicator,
-.diary-region__remaining-indicator {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.diary-region__progress-indicator {
-    background-color: green;
-    width: 0;
-}
-
-.diary-region__potential-indicator {
-    background-color: goldenrod;
-    width: 0;
-}
-
-.diary-region__remaining-indicator {
-        background-color: darkred;
-}
-
 .diary-difficulty__name {
-    text-transform: capitalize;
-    padding-top: 1rem;
+  text-transform: capitalize;
+  padding-top: 1rem;
 }
 
 .diary-difficulty__tasks {
-    text-align: left;
-    padding: 1rem 0.5rem;
+  text-align: left;
+  padding: 1rem 0.5rem;
 }
 
-.diary-difficulty__tasks-task {}
+.diary-difficulty__tasks-task {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  padding: 0;
+}
 
 .diary-difficulty__tasks-task__name {
-    cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.diary-difficulty__tasks-requirements {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.2rem 2rem;
 }
 
 .diary-difficulty__tasks-requirements__req {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

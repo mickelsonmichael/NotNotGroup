@@ -1,4 +1,4 @@
-import diaries from "./diaries.json";
+import diaries from "./diaries";
 import { quests } from "./questData.json";
 
 const expectedPlayers = [

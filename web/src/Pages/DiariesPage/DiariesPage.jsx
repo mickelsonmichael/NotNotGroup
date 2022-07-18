@@ -3,7 +3,7 @@ import { Grid, Typography } from "@mui/material";
 import { useParams, Navigate } from "react-router-dom";
 
 import { usePlayer } from "../../Context/AccountContext";
-import diaries from "@data/diaries.json";
+import diaries from "@data/diaries";
 import TaskRow from "@components/DiariesTable/TaskRow";
 
 const DiariesPage = () => {
@@ -21,7 +21,7 @@ const DiariesPage = () => {
 
     return (
         <Grid container justifyContent="center" sx={{ height: "100%", paddingBottom: "5rem" }}>
-            <Grid item lg={6} md={12} sx={{ height: "100%", maxWidth: "100%" }}>
+            <Grid item lg={8} md={12} sx={{ height: "100%", maxWidth: "100%" }}>
                 <Typography sx={{ typography: { xs: "h3", sm: "h2" }, textTransform: "capitalize" }} textAlign="center" borderBottom={1} marginBottom={2} paddingBottom={5}>
                     {playerName} {region}
                 </Typography>

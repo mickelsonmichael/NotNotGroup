@@ -80,7 +80,9 @@
         },
         {
             "text": "DEKAGRAM",
-            "solution": "Dark Mage"
+            "solution": "Dark Mage, the Abyss",
+            "challenge": "How many rifts are found here in the Abyss",
+            "answer": "13"
         }
     ],
     "stash": [

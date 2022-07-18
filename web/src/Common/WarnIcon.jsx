@@ -1,9 +1,9 @@
 import React from "react";
 import { ErrorOutlineOutlined } from "@mui/icons-material";
 
-const WarnIcon = () => (
+const WarnIcon = ({ mr }) => (
     <ErrorOutlineOutlined
-        sx={{ color: "#DDDD66" }}
+        sx={{ color: "#DDDD66", marginRight: mr }}
     />
 );
 

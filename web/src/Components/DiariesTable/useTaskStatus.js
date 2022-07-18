@@ -29,7 +29,7 @@ const useTaskStatus = (task, player) => {
 
 
     const hasQuest =  q => completedQuests[player?.name.toLowerCase()]?.includes(q);
-    const hasSkill = sk => player.skills[sk].level >= task.skills[sk].level;
+    const hasSkill = sk => player.skills[sk].level >= task.skills[sk];
     
   return {
     isComplete: false,

@@ -1,9 +1,6 @@
-import completedQuests from "@data/completedQuests.json";
-
 const useNumberOfReadyTasks = (player, tasks) => {
-  if (player == null) return 0;
 
-  const lowerCasePlayerName = player.name.toLowerCase();
+  if (player == null) return 0;
 
   const incompleteTasks = tasks.filter(
     (task) => !task.players.some((p) => p === player.name)
@@ -15,7 +12,7 @@ const useNumberOfReadyTasks = (player, tasks) => {
     );
 
   const hasRequiredQuests = (task) =>
-    task.quests.every((q) => completedQuests[lowerCasePlayerName]?.includes(q));
+    task.quests.every((q) => player.quests.includes(q));
 
   const hasSpecialRequirements = (task) =>
     task.test == null ? true : task.test(player).isMet;

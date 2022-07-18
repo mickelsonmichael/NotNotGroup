@@ -19,6 +19,7 @@ jobs:
           npm run build --if-present
         env:
           HISCORES_URL: "https://mickelsonosrs.azurewebsites.net/api/GetHiScores"
+          QUESTS_URL: "https://mickelsonosrs.azurewebsites.net/api/getquestprogress"
           REFETCH_INTERVAL: 300000
       - name: Deploy with gh-pages
         run: |

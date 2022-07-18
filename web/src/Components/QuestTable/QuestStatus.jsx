@@ -10,7 +10,8 @@ const QuestStatus = ({ quest, player }) => (
         ? <YesIcon />
         : (
             player != null
-            && quest.skills.every(skill => player.skills[skill.name].level >= skill.level)
+            && player.skills != null
+            && quest.skills.every(skill => player.skills[skill.name] != null && player.skills[skill.name].level >= skill.level)
             && quest.quests.every(q => player.quests.includes(q))
                 ? <WarnIcon />
                 : <NoIcon />

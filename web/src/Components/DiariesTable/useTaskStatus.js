@@ -1,4 +1,4 @@
-import completedQuests from "@data/completedQuests.json";
+import { useQuests } from "../../Context/AccountContext";
 
 const useTaskStatus = (task, player) => {
   if (player == null)
@@ -28,7 +28,7 @@ const useTaskStatus = (task, player) => {
     };
 
 
-    const hasQuest =  q => completedQuests[player?.name.toLowerCase()]?.includes(q);
+    const hasQuest =  q => player.quests.includes(q);
     const hasSkill = sk => player.skills[sk].level >= task.skills[sk];
     
   return {

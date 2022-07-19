@@ -4,6 +4,7 @@ import axios from "axios";
 
 import MapQuests from "./MapQuests";
 import MapSkills from "./MapSkills";
+import MapDiaries from "./MapDiaries";
 
 const AccountContext = createContext({
   notNotThomas: null,
@@ -37,6 +38,20 @@ const useStats = (account) =>
     }
   );
 
+  
+const useDiaries = () =>
+  useQuery(
+    "/diaries",
+    async () => {
+      const response = await axios(`${process.env.DIARIES_URL}`);
+
+      const questData = MapDiaries(response.data);
+
+      return questData;
+    },
+    { staleTime: Number(process.env.REFETCH_INTERVAL) }
+  );
+
 const useQuests = () =>
   useQuery(
     "/quests",
@@ -57,11 +72,13 @@ const useQuests = () =>
 
 const useAccount = (account) => {
   const quests = useQuests();
+  const diaries = useDiaries();
   const stats = useStats(account);
 
   return {
     name: account,
     quests: quests.data?.filter((q) => q[account]).map((q) => q.quest) ?? [],
+    diaries: diaries.data?.filter((d) => d.players.includes(account)).map((d) => d.description) ?? [],
     isLoading: quests.isLoading || stats.isLoading,
     isError: quests.isError || stats.isError,
     ...(stats.data ?? { skills: [], Overall: -1, bosses: [] }),
@@ -80,8 +97,6 @@ const AccountProvider = ({ children }) => {
     isError: isNotNotThomasError,
     ...notNotThomas
   } = useAccount("NotNotThomas");
-
-  console.log(notNotMike);
 
   return (
     <AccountContext.Provider
@@ -111,4 +126,4 @@ const usePlayer = (playerName) => {
   return context[key];
 };
 
-export { AccountProvider, useAccounts, usePlayer, useQuests };
+export { AccountProvider, useAccounts, usePlayer, useQuests, useDiaries };

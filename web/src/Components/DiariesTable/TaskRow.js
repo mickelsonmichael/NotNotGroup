@@ -6,7 +6,7 @@ import WarnIcon from "@common/WarnIcon";
 import useTaskStatus from "./useTaskStatus";
 
 const TaskRow = ({ task, player }) => {
-  const { isComplete, hasQuests, hasSkills, special, hasSkill, hasQuest } = useTaskStatus(
+  const { complete, hasQuests, hasSkills, special, hasSkill, hasQuest } = useTaskStatus(
     task,
     player
   );
@@ -14,7 +14,7 @@ const TaskRow = ({ task, player }) => {
   return (
     <div className="diary-difficulty__tasks-task">
       <div className="diary-difficulty__tasks-task__name">
-        {isComplete ? (
+        {complete ? (
           <YesIcon mr="0.5rem" />
         ) : hasQuests && hasSkills && (special == null || special.isMet) ? (
           <WarnIcon mr="0.5rem" />

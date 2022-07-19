@@ -20,6 +20,7 @@ jobs:
         env:
           HISCORES_URL: "https://mickelsonosrs.azurewebsites.net/api/GetHiScores"
           QUESTS_URL: "https://mickelsonosrs.azurewebsites.net/api/getquestprogress"
+          DIARIES_URL: "https://mickelsonosrs.azurewebsites.net/api/getdiaryprogress"
           REFETCH_INTERVAL: 300000
       - name: Deploy with gh-pages
         run: |

@@ -1,5 +1,3 @@
-import { useQuests } from "../../Context/AccountContext";
-
 const useTaskStatus = (task, player) => {
   if (player == null)
     return {
@@ -9,12 +7,14 @@ const useTaskStatus = (task, player) => {
       hasRequirements: false,
       special: null,
       hasQuest: () => false,
-      hasSkill: () => false
+      hasSkill: () => false,
     };
 
-  const isComplete = task.players.includes(player.name);
-    const hasRequirements =
-      task.quests.length > 0 || Object.keys(task.skills).length > 0 || task.test;
+  const isComplete =
+    player.diaries != null && player.diaries.includes(task.description);
+
+  const hasRequirements =
+    task.quests.length > 0 || Object.keys(task.skills).length > 0 || task.test;
 
   if (isComplete)
     return {
@@ -27,10 +27,12 @@ const useTaskStatus = (task, player) => {
       hasSkill: () => true,
     };
 
+  const hasQuest = (q) => player.quests != null && player.quests.includes(q);
+  const hasSkill = (sk) =>
+    player.skills != null &&
+    player.skills[sk] != null &&
+    player.skills[sk].level >= task.skills[sk];
 
-    const hasQuest =  q => player.quests.includes(q);
-    const hasSkill = sk => player.skills[sk].level >= task.skills[sk];
-    
   return {
     isComplete: false,
     hasRequirements,
@@ -38,7 +40,10 @@ const useTaskStatus = (task, player) => {
     hasQuest,
     hasSkills: Object.keys(task.skills).every(hasSkill),
     hasSkill,
-    special: task.test != null && player != null ? task.test(player) : null,
+    special:
+      task.test != null && player != null && player.skills != null
+        ? task.test(player)
+        : null,
   };
 };
 

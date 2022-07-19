@@ -3,12 +3,12 @@ import { Box } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
 
 import Navigation from "@components/Navigation";
-import Wintertodt from "@components/Wintertodt";
 import HomePage from "../Pages/HomePage";
 import QuestPage from "../Pages/QuestPage";
 import TreasureTrailsPage from "../Pages/TreasureTrailsPage";
 import AnagramHelperPage from "../Pages/AnagramHelperPage";
 import DiariesPage from "../Pages/DiariesPage";
+import BossPage from "../Pages/BossPage/BossPage";
 
 const Layout = () => (
     <Box
@@ -26,7 +26,7 @@ const Layout = () => (
         <Box sx={{ padding: "1rem", flexGrow: 1 }}>
             <Routes>
                 <Route path="/" exact element={<HomePage />} />
-                <Route path="/wintertodt" element={<Wintertodt />} />
+                <Route path="/bosses/*" element={<BossPage />} />
                 <Route path="/quests" element={<QuestPage />} />
                 <Route path="/treasure-trails/anagrams" element={<AnagramHelperPage />} />
                 <Route path="/treasure-trails" element={<TreasureTrailsPage />} />

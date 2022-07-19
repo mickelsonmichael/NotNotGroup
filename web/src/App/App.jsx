@@ -1,4 +1,4 @@
-import { createTheme, CssBaseline, ThemeProvider, Box } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import React from "react";
 import { HashRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -12,26 +12,28 @@ import Layout from "./Layout";
 import "./App.css";
 
 const queryClient = new QueryClient();
-const localStoragePersistor = createWebStoragePersistor({ storage: window.localStorage });
+const localStoragePersistor = createWebStoragePersistor({
+  storage: window.localStorage,
+});
 
 persistQueryClient({
-    queryClient,
-    persistor: localStoragePersistor
+  queryClient,
+  persistor: localStoragePersistor,
 });
 
 const theme = useTheme();
 
 const App = () => (
-    <QueryClientProvider client={queryClient}>
-        <AccountProvider>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
-                <HashRouter>
-                    <Layout />
-                </HashRouter>
-            </ThemeProvider>
-        </AccountProvider>
-    </QueryClientProvider>
+  <QueryClientProvider client={queryClient}>
+    <AccountProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <HashRouter>
+          <Layout />
+        </HashRouter>
+      </ThemeProvider>
+    </AccountProvider>
+  </QueryClientProvider>
 );
 
 export default App;

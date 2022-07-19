@@ -3,13 +3,13 @@ const diaries = {
     easy: [
       {
         description:
-          "Have Wizard Cromperty teleport you to the Rune Essence mine.",
+          "Have Wizard Cromperty teleport you to the Rune Essence mine",
         skills: {},
         quests: ["Rune Mysteries"],
         players: ["NotNotThomas", "NotNotMike"],
       },
       {
-        description: "Steal a cake from the Ardougne market stalls.",
+        description: "Steal a cake from the Ardougne market stalls",
         quests: [],
         skills: {
           Thieving: 5,
@@ -18,50 +18,50 @@ const diaries = {
       },
       {
         description:
-          "Sell silk to the Silk trader in East Ardougne for 60 coins each.",
+          "Sell silk to the Silk trader in East Ardougne for 60 coins each",
         quests: [],
         skills: {},
         players: ["NotNotThomas", "NotNotMike"],
       },
       {
-        description: "Use the altar in East Ardougne's church.",
+        description: "Use the altar in East Ardougne's church",
         quests: [],
         skills: {},
         players: ["NotNotThomas", "NotNotMike"],
       },
       {
-        description: "Go out fishing on the Fishing Trawler.",
+        description: "Go out fishing on the Fishing Trawler",
         quests: [],
         skills: {},
         players: ["NotNotThomas", "NotNotMike"],
       },
       {
-        description: "Enter the Combat Training Camp north of West Ardougne.",
+        description: "Enter the Combat Training Camp north of West Ardougne",
         quests: ["Biohazard"],
         skills: {},
         players: ["NotNotThomas", "NotNotMike"],
       },
       {
-        description: "Have Tindel Marchant identify a rusty sword for you.",
+        description: "Have Tindel Marchant identify a rusty sword for you",
         quests: [],
         skills: {},
         players: ["NotNotThomas", "NotNotMike"],
       },
       {
-        description: "Use the Ardougne lever to teleport to the wilderness.",
+        description: "Use the Ardougne lever to teleport to the wilderness",
         quests: [],
         skills: {},
         players: ["NotNotThomas", "NotNotMike"],
       },
       {
-        description: "View Aleck's Hunter Emporium in Yanille.",
+        description: "View Aleck's Hunter Emporium in Yanille",
         quests: [],
         skills: {},
         players: ["NotNotThomas", "NotNotMike"],
       },
       {
         description:
-          "Check what pets you have insured with Probita in East Ardougne.",
+          "Check what pets you have insured with Probita in East Ardougne",
         quests: [],
         skills: {},
         players: ["NotNotThomas", "NotNotMike"],
@@ -69,13 +69,13 @@ const diaries = {
     ],
     medium: [
       {
-        description: "Enter the unicorn pen in Ardougne Zoo using Fairy rings.",
+        description: "Enter the unicorn pen in Ardougne Zoo using Fairy rings",
         quests: ["Fairytale I - Growing Pains"],
         skills: {},
         players: [],
       },
       {
-        description: "Grapple over Yanille's south wall and jump off.",
+        description: "Grapple over Yanille's south wall and jump off",
         quests: [],
         skills: {
           Agility: 39,
@@ -86,7 +86,7 @@ const diaries = {
       },
       {
         description:
-          "Harvest some strawberries form the Ardougne farming patch.",
+          "Harvest some strawberries form the Ardougne farming patch",
         quests: [],
         skills: {
           Farming: 31,
@@ -102,7 +102,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Travel to Castle Wars by Hot Air Balloon.",
+        description: "Travel to Castle Wars by Hot Air Balloon",
         quests: ["Enlightened Journey"],
         skills: {
           Firemaking: 50,
@@ -110,7 +110,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Claim buckets of sand from Bert in Yanille.",
+        description: "Claim buckets of sand from Bert in Yanille",
         quests: ["The Hand in the Sand"],
         skills: {},
         players: [],
@@ -122,7 +122,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Pickpocket the master farmer north of East Ardougne.",
+        description: "Pickpocket the master farmer north of East Ardougne",
         quests: [],
         skills: {
           Thieving: 38,
@@ -143,7 +143,7 @@ const diaries = {
       },
       {
         description:
-          "Equip an Iban's upgraded staff or upgrade an Iban's staff.",
+          "Equip an Iban's upgraded staff or upgrade an Iban's staff",
         quests: ["Underground Pass"],
         skills: {},
         players: [],
@@ -158,7 +158,7 @@ const diaries = {
     hard: [
       {
         description:
-          "Recharge some jewellery at the Totem pole in the Legends' Guild.",
+          "Recharge some jewelry at the Totem pole in the Legends' Guild",
         quests: ["Legends' Quest"],
         skills: {},
         players: [],
@@ -172,7 +172,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Attempt to steal from a chest in Ardougne Castle.",
+        description: "Attempt to steal from a chest in Ardougne Castle",
         quests: [],
         skills: {
           Thieving: 72,
@@ -181,13 +181,13 @@ const diaries = {
       },
       {
         description:
-          "Have a zookeeper put you in the Ardougne Zoo's monkey cage.",
+          "Have a zookeeper put you in the Ardougne Zoo's monkey cage",
         quests: ["Monkey Madness I"],
         skills: {},
         players: [],
       },
       {
-        description: "Teleport to the Watchtower.",
+        description: "Teleport to the Watchtower",
         quests: ["Watchtower"],
         skills: {
           Magic: 58,
@@ -195,7 +195,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Catch a Red Salamander.",
+        description: "Catch a Red Salamander",
         quests: [],
         skills: {
           Hunter: 59,
@@ -203,7 +203,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Check the health of a palm tree near Tree Gnome Village.",
+        description: "Check the health of a palm tree near Tree Gnome Village",
         quests: [],
         skills: {
           Farming: 68,
@@ -212,7 +212,7 @@ const diaries = {
       },
       {
         description:
-          "Pick some poison ivy berries form the patch south of East Ardougne.",
+          "Pick some poison ivy berries form the patch south of East Ardougne",
         quests: [],
         skills: {
           Farming: 70,
@@ -220,13 +220,13 @@ const diaries = {
         players: [],
       },
       {
-        description: "Smith a Mithril platebody near Ardougne.",
+        description: "Smith a Mithril platebody near Ardougne",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Enter your POH from Yanille.",
+        description: "Enter your POH from Yanille",
         quests: [],
         skills: {
           Construction: 50,
@@ -234,7 +234,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Smith a Dragon sq. shield in West Ardougne.",
+        description: "Smith a Dragon sq. shield in West Ardougne",
         quests: [],
         skills: {
           Smithing: 60,
@@ -242,7 +242,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Craft some death runes from essence.",
+        description: "Craft some death runes from essence",
         quests: ["Mourning's End Part II"],
         skills: {
           Runecraft: 65,
@@ -253,7 +253,7 @@ const diaries = {
     elite: [
       {
         description:
-          "Catch a manta ray in the Fishing Trawler and cook it in Port Khazard.",
+          "Catch a manta ray in the Fishing Trawler and cook it in Port Khazard",
         quests: [],
         skills: {
           Fishing: 81,
@@ -263,7 +263,7 @@ const diaries = {
       },
       {
         description:
-          "Attempt to pickpocket the door to the basement of Yanille Agility dungeon.",
+          "Attempt to pickpocket the door to the basement of Yanille Agility dungeon",
         quests: [],
         skills: {
           Thieving: 80,
@@ -280,7 +280,7 @@ const diaries = {
       },
       {
         description:
-          "Make a rune crossbow yourself from scratch within Witchhaven or Yanille.",
+          "Make a rune crossbow yourself from scratch within Witchhaven or Yanille",
         quests: [],
         skills: {
           Crafting: 10,
@@ -291,13 +291,13 @@ const diaries = {
       },
       {
         description:
-          "Imbue a salve amulet at Nightmare Zone or equip a salve amulet(i).",
+          "Imbue a salve amulet at Nightmare Zone or equip a salve amulet(i)",
         quests: ["Haunted Mine"],
         skills: {},
         players: [],
       },
       {
-        description: "Pick some torstol from the patch nor of East Ardougne.",
+        description: "Pick some torstol from the patch nor of East Ardougne",
         quests: [],
         skills: {
           Farming: 85,
@@ -305,7 +305,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Complete a lap of Ardougne's rooftop agility course.",
+        description: "Complete a lap of Ardougne's rooftop agility course",
         quests: [],
         skills: {
           Agility: 90,
@@ -313,7 +313,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Cast Ice Barrage on another player within Castle Wars.",
+        description: "Cast Ice Barrage on another player within Castle Wars",
         quests: ["Desert Treasure"],
         skills: {
           Magic: 94,
@@ -325,7 +325,7 @@ const diaries = {
   desert: {
     easy: [
       {
-        description: "Catch a golden warbler.",
+        description: "Catch a golden warbler",
         quests: [],
         skills: {
           Hunter: 5,
@@ -333,50 +333,50 @@ const diaries = {
         players: [],
       },
       {
-        description: "Mine five clay in the north-eastern desert.",
+        description: "Mine five clay in the north-eastern desert",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Enter the Kalphite Hive.",
+        description: "Enter the Kalphite Hive",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Enter the Desert with a set of desert robes equipped.",
+        description: "Enter the Desert with a set of desert robes equipped",
         quests: [],
         skills: {},
         players: ["NotNotMike"],
       },
       {
-        description: "Kill a vulture.",
+        description: "Kill a vulture",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Have the Nardah herbalist clean an herb for you.",
+        description: "Have the Nardah herbalist clean an herb for you",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Collect 5 potato cacti from the Kalphite Hive.",
+        description: "Collect 5 potato cacti from the Kalphite Hive",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Sell some artefacts to Simon Templeton.",
+        description: "Sell some artefacts to Simon Templeton",
         quests: [],
         skills: {},
         players: [],
       },
       {
         description:
-          "Open the sarcophagus in the first room of Pyramid Plunder.",
+          "Open the sarcophagus in the first room of Pyramid Plunder",
         quests: ["Icthlarin's Little Helper"],
         skills: {
           Thieving: 21,
@@ -384,14 +384,13 @@ const diaries = {
         players: [],
       },
       {
-        description: "Cut a desert cactus open to fill a waterskin.",
+        description: "Cut a desert cactus open to fill a waterskin",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description:
-          "Travel from Shantay pass to Pollnivneach by magic carpet.",
+        description: "Travel from Shantay pass to Pollnivneach by magic carpet",
         quests: [],
         skills: {},
         players: ["NotNotMike"],
@@ -399,7 +398,7 @@ const diaries = {
     ],
     medium: [
       {
-        description: "Climb to the summit of the Agility Pyramid.",
+        description: "Climb to the summit of the Agility Pyramid",
         quests: [],
         skills: {
           Agility: 30,
@@ -423,7 +422,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Steal a Phoenix feather from the Desert phoenix.",
+        description: "Steal a Phoenix feather from the Desert phoenix",
         quests: [],
         skills: {
           Thieving: 25,
@@ -431,25 +430,25 @@ const diaries = {
         players: [],
       },
       {
-        description: "Travel to Uzer via magic carpet.",
+        description: "Travel to Uzer via magic carpet",
         quests: ["The Golem"],
         skills: {},
         players: [],
       },
       {
-        description: "Travel to the desert via the Eagle transport system.",
+        description: "Travel to the desert via the Eagle transport system",
         quests: ["Eagles' Peak"],
         skills: {},
         players: [],
       },
       {
-        description: "Pray at the Elidinis Statuette in Nardah.",
+        description: "Pray at the Elidinis Statuette in Nardah",
         quests: ["Spirits of the Elid"],
         skills: {},
         players: [],
       },
       {
-        description: "Create a combat potion in the desert.",
+        description: "Create a combat potion in the desert",
         quests: [],
         skills: {
           Herblore: 36,
@@ -457,20 +456,20 @@ const diaries = {
         players: [],
       },
       {
-        description: "Teleport to Enakhra's Temple with the Camulet.",
+        description: "Teleport to Enakhra's Temple with the Camulet",
         quests: ["Enakhra's Lament"],
         skills: {},
         players: [],
       },
       {
-        description: "Visit the genie.",
+        description: "Visit the genie",
         quests: [],
         skills: {},
         players: [],
       },
       {
         description:
-          "Teleport to Pollnivneach with a redirected telport to house tablet.",
+          "Teleport to Pollnivneach with a redirected teleport to house tablet",
         quests: [],
         skills: {
           Construction: 20,
@@ -478,7 +477,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Chop some teak logs near Uzer.",
+        description: "Chop some teak logs near Uzer",
         quests: [],
         skills: {
           Woodcutting: 35,
@@ -488,7 +487,7 @@ const diaries = {
     ],
     hard: [
       {
-        description: "Knock out and pickpocket a Menaphite Thug.",
+        description: "Knock out and pickpocket a Menaphite Thug",
         quests: ["The Feud"],
         skills: {
           Thieving: 65,
@@ -504,7 +503,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Refill your waterskins in the Desert using Lunar spells.",
+        description: "Refill your waterskins in the Desert using Lunar spells",
         quests: ["Dream Mentor"],
         skills: {
           Magic: 68,
@@ -512,13 +511,13 @@ const diaries = {
         players: [],
       },
       {
-        description: "Kill the Kalphite Queen.",
+        description: "Kill the Kalphite Queen",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Complete a lap of the Pollnivneach Rooftop Course.",
+        description: "Complete a lap of the Pollnivneach Rooftop Course",
         quests: [],
         skills: {
           Agility: 70,
@@ -527,7 +526,7 @@ const diaries = {
       },
       {
         description:
-          "Slay a Dust devil in the desert cave with a Slayer helmet equipped.",
+          "Slay a Dust devil in the desert cave with a Slayer helmet equipped",
         quests: ["Desert Treasure"],
         skills: {
           Slayer: 65,
@@ -537,13 +536,13 @@ const diaries = {
       },
       {
         description:
-          "Activate Ancient Magicks at the altar in the Jaldraocht Pyramid.",
+          "Activate Ancient Magicks at the altar in the Jaldraocht Pyramid",
         quests: ["Desert Treasure"],
         skills: {},
         players: [],
       },
       {
-        description: "Defeat a locust rider or scarab mage with Keris.",
+        description: "Defeat a locust rider or scarab mage with Keris",
         quests: ["Contact!"],
         skills: {
           Attack: 50,
@@ -551,7 +550,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Burn some yew logs on the Nardah Mayor's balcony.",
+        description: "Burn some yew logs on the Nardah Mayor's balcony",
         quests: [],
         skills: {
           Firemaking: 60,
@@ -559,7 +558,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Create a Mithril platebody in Nardah.",
+        description: "Create a Mithril platebody in Nardah",
         quests: [],
         skills: {
           Smithing: 68,
@@ -577,7 +576,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Cast Ice Barrage against a foe in the Desert.",
+        description: "Cast Ice Barrage against a foe in the Desert",
         quests: ["Desert Treasure"],
         skills: {
           Magic: 94,
@@ -585,7 +584,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Fletch some Dragon darts at the Bedabin Camp.",
+        description: "Fletch some Dragon darts at the Bedabin Camp",
         quests: ["The Tourist Trap"],
         skills: {
           Fletching: 95,
@@ -593,7 +592,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Speak to the Kq head in your POH.",
+        description: "Speak to the Kq head in your POH",
         quests: ["Priest in Peril"],
         skills: {
           Construction: 78,
@@ -602,7 +601,7 @@ const diaries = {
       },
       {
         description:
-          "Steal from the Grand Gold Chest in the final room of Pyramid Plunder.",
+          "Steal from the Grand Gold Chest in the final room of Pyramid Plunder",
         quests: ["Icthlarin's Little Helper"],
         skills: {
           Thieving: 91,
@@ -611,7 +610,7 @@ const diaries = {
       },
       {
         description:
-          "Restore at least 85 Prayer points when praying at the altar in Sophanem.",
+          "Restore at least 85 Prayer points when praying at the altar in Sophanem",
         quests: ["Icthlarin's Little Helper"],
         skills: {
           Prayer: 85,
@@ -623,7 +622,7 @@ const diaries = {
   falador: {
     easy: [
       {
-        description: "Find out what your family crest is from Sir Renitee.",
+        description: "Find out what your family crest is from Sir Renitee",
         quests: [],
         skills: {
           Construction: 16,
@@ -631,7 +630,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Climb over the western Falador wall.",
+        description: "Climb over the western Falador wall",
         quests: [],
         skills: {
           Agility: 5,
@@ -639,56 +638,56 @@ const diaries = {
         players: [],
       },
       {
-        description: "Browse Sarah's Farming Shop.",
+        description: "Browse Sarah's Farming Shop",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Get a haircut from the Falador hairdresser.",
+        description: "Get a haircut from the Falador hairdresser",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Fill a bucket from the pump north of Falador west Bank.",
+        description: "Fill a bucket from the pump north of Falador west Bank",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Kill a duck in Falador Park.",
+        description: "Kill a duck in Falador Park",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Make a mind tiara.",
+        description: "Make a mind tiara",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Take the boat to Entrana.",
+        description: "Take the boat to Entrana",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Repair a broken strut in the Motherlode Mine.",
+        description: "Repair a broken strut in the Motherlode Mine",
         quests: [],
         skills: {},
         players: [],
       },
       {
         description:
-          "Claim a security book form the Security Guard upstairs at Port Sarim jail.",
+          "Claim a security book form the Security Guard upstairs at Port Sarim jail",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Smith some Blurite limbs on Doric's anvil.",
+        description: "Smith some Blurite limbs on Doric's anvil",
         quests: ["The Knight's Sword", "Doric's Quest"],
         skills: {
           Mining: 10,
@@ -699,7 +698,7 @@ const diaries = {
     ],
     medium: [
       {
-        description: "Light a bullseye lantern at the Chemist's in Rimmington.",
+        description: "Light a bullseye lantern at the Chemist's in Rimmington",
         quests: [],
         skills: {
           Firemaking: 49,
@@ -708,7 +707,7 @@ const diaries = {
       },
       {
         description:
-          "Telegrab some Wine of Zamorak at the Chaos Temple just outside the Wilderness.",
+          "Telegrab some Wine of Zamorak at the Chaos Temple just outside the Wilderness",
         quests: [],
         skills: {
           Magic: 33,
@@ -716,13 +715,13 @@ const diaries = {
         players: [],
       },
       {
-        description: "Unlock the crystal chest in Taverley.",
+        description: "Unlock the crystal chest in Taverley",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Place a Scarecrow in the Falador farm flower patch.",
+        description: "Place a Scarecrow in the Falador farm flower patch",
         quests: [],
         skills: {
           Farming: 47,
@@ -738,13 +737,13 @@ const diaries = {
         players: [],
       },
       {
-        description: "Visit the Port Sarim Rat Pits.",
+        description: "Visit the Port Sarim Rat Pits",
         quests: ["Ratcatchers"],
         skills: {},
         players: [],
       },
       {
-        description: "Grapple up and then jump off the north Falador wall.",
+        description: "Grapple up and then jump off the north Falador wall",
         quests: [],
         skills: {
           Agility: 11,
@@ -754,7 +753,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Pickpocket a Falador guard.",
+        description: "Pickpocket a Falador guard",
         quests: [],
         skills: {
           Thieving: 40,
@@ -763,7 +762,7 @@ const diaries = {
       },
       {
         description:
-          "Pray at the Altar of Guthix in Taverley whilst wearing full Initiate armour.",
+          "Pray at the Altar of Guthix in Taverley whilst wearing full Initiate armour",
         quests: ["Recruitment Drive"],
         skills: {
           Prayer: 10,
@@ -772,7 +771,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Mine some gold ore at the Crafting Guild.",
+        description: "Mine some gold ore at the Crafting Guild",
         quests: [],
         skills: {
           Crafting: 40,
@@ -781,7 +780,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Squeeze through the crevice in the Dwarven Mines.",
+        description: "Squeeze through the crevice in the Dwarven Mines",
         quests: [],
         skills: {
           Agility: 42,
@@ -789,7 +788,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Chop and burn some willow logs in Taverley.",
+        description: "Chop and burn some willow logs in Taverley",
         quests: [],
         skills: {
           Woodcutting: 30,
@@ -798,7 +797,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Craft a basket on the Falador farm loom.",
+        description: "Craft a basket on the Falador farm loom",
         quests: [],
         skills: {
           Crafting: 36,
@@ -807,7 +806,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Teleport to Falador.",
+        description: "Teleport to Falador",
         quests: [],
         skills: {
           Magic: 37,
@@ -817,7 +816,7 @@ const diaries = {
     ],
     hard: [
       {
-        description: "Craft 140 mind runes simultaneously from essence.",
+        description: "Craft 140 mind runes simultaneously from essence",
         quests: [],
         skills: {
           Runecraft: 56,
@@ -825,7 +824,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Change your family crest to the Saradomin symbol.",
+        description: "Change your family crest to the Saradomin symbol",
         quests: [],
         skills: {
           Prayer: 70,
@@ -833,13 +832,13 @@ const diaries = {
         players: [],
       },
       {
-        description: "Kill the Giant Mole beneath Falador Park.",
+        description: "Kill the Giant Mole beneath Falador Park",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Kill a Skeletal Wyvern in the Asgarnia Ice Dungeon.",
+        description: "Kill a Skeletal Wyvern in the Asgarnia Ice Dungeon",
         quests: [],
         skills: {
           Slayer: 72,
@@ -847,7 +846,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Complete a lap of the Falador Rooftop Agility Course.",
+        description: "Complete a lap of the Falador Rooftop Agility Course",
         quests: [],
         skills: {
           Agility: 50,
@@ -855,7 +854,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Enter the Mining Guild wearing full Prospector.",
+        description: "Enter the Mining Guild wearing full Prospector",
         quests: [],
         skills: {
           Mining: 60,
@@ -863,7 +862,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Kill the blue dragon under the Heroes' Guild.",
+        description: "Kill the blue dragon under the Heroes' Guild",
         quests: ["Heroes' Quest"],
         skills: {},
         players: [],
@@ -878,7 +877,7 @@ const diaries = {
       },
       {
         description:
-          "Recharge your Prayer in the Port Sarim church while wearing full Proselyte.",
+          "Recharge your Prayer in the Port Sarim church while wearing full Proselyte",
         quests: ["The Slug Menace"],
         skills: {
           Defence: 30,
@@ -886,7 +885,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Enter the Warriors' Guild.",
+        description: "Enter the Warriors' Guild",
         quests: [],
         skills: {},
         players: [],
@@ -897,11 +896,11 @@ const diaries = {
             player.skills["Strength"].level >= 99 ||
             player.skills["Attack"].level >= 99,
           description:
-            "Combined attack and strength level greater than 130 or 99 in either skill.",
+            "Combined attack and strength level greater than 130 or 99 in either skill",
         }),
       },
       {
-        description: "Equip a Dwarven helmet within the Dwarven Mines.",
+        description: "Equip a Dwarven helmet within the Dwarven Mines",
         quests: ["Grim Tales"],
         skills: {
           Defence: 50,
@@ -911,7 +910,7 @@ const diaries = {
     ],
     elite: [
       {
-        description: "Craft 252 air runes simultaneously from essence.",
+        description: "Craft 252 air runes simultaneously from essence",
         quests: [],
         skills: {
           Runecraft: 88,
@@ -919,14 +918,14 @@ const diaries = {
         players: [],
       },
       {
-        description: "Purchase a white 2h sword from Sir Vyvin.",
+        description: "Purchase a white 2h sword from Sir Vyvin",
         quests: ["Wanted!"],
         skills: {},
         players: [],
       },
       {
         description:
-          "Find at least 3 magic roots at once when digging up your magic tree in Falador.",
+          "Find at least 3 magic roots at once when digging up your magic tree in Falador",
         quests: [],
         skills: {
           Farming: 91,
@@ -936,13 +935,13 @@ const diaries = {
       },
       {
         description:
-          "Perform a Skillcape or Quest cape emote at the top of Falador Castle.",
+          "Perform a Skillcape or Quest cape emote at the top of Falador Castle",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "Jump over the strange floor in Taverley Dungeon.",
+        description: "Jump over the strange floor in Taverley Dungeon",
         quests: [],
         skills: {
           Agility: 80,
@@ -950,7 +949,7 @@ const diaries = {
         players: [],
       },
       {
-        description: "Mix a Saradomin brew in Falador East Bank.",
+        description: "Mix a Saradomin brew in Falador East Bank",
         quests: [],
         skills: {
           Herblore: 81,
@@ -962,213 +961,216 @@ const diaries = {
   fremennik: {
     easy: [
       {
-        description: "Catch a cerulean twitch.",
+        description: "Catch a cerulean twitch",
         quests: [],
         skills: { Hunter: 11 },
         players: [],
       },
       {
-        description: "Change your boots at Yrsa's Shoe Store.",
+        description: "Change your boots at Yrsa's Shoe Store",
         quests: ["The Fremennik Trials"],
         skills: {},
         players: [],
       },
       {
-        description: "",
+        description: "Kill 5 Rock Crabs",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "",
+        description: "Craft a tiara from scratch in Rellekka",
+        quests: [],
+        skills: { Crafting: 23, Mining: 20, Smithing: 20 },
+        players: [],
+      },
+      {
+        description: "Browse the Stonemason's shop",
+        quests: ["The Giant Dwarf"],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Collect 5 snape grass on Waterbirth Island",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "",
+        description: "Steal from the Keldagrim crafting or baker's stall",
+        quests: ["The Giant Dwarf"],
+        skills: { Thieving: 5 },
+        players: [],
+      },
+      {
+        description: "Fill a bucket with water at the Rellekka well",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "",
-        quests: [],
+        description: "Enter the Troll Stronghold",
+        quests: ["Death Plateau", "Troll Stronghold"],
         skills: {},
         players: [],
       },
       {
-        description: "",
+        description: "Chop and burn some oak logs in the Fremennik Province",
         quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
+        skills: { Woodcutting: 15, Firemaking: 15 },
         players: [],
       },
     ],
     medium: [
       {
-        description: "",
-        quests: [],
+        description: "Slay a brine rat",
+        quests: ["Olaf's Quest"],
+        skills: { Slayer: 47 },
+        players: [],
+      },
+      {
+        description:
+          "Travel to the Snowy Hunter Area via the Eagle transport system",
+        quests: ["Eagles' Peak"],
         skills: {},
         players: [],
       },
       {
-        description: "",
-        quests: [],
+        description: "Mine some coal in Rellekka",
+        quests: ["The Fremennik Trials"],
+        skills: { Mining: 30 },
+        players: [],
+      },
+      {
+        description: "Steal from the Rellekka fish stalls",
+        quests: ["The Fremennik Trials"],
+        skills: { Thieving: 42 },
+        players: [],
+      },
+      {
+        description: "Travel to Miscellania by fairy ring",
+        quests: ["The Fremennik Trials"],
         skills: {},
         players: [],
       },
       {
-        description: "",
+        description: "Catch a Snowy knight",
         quests: [],
+        skills: { Hunter: 35 },
+        players: [],
+      },
+      {
+        description: "Pick up your pet rock from you POH menagerie",
+        quests: ["The Fremennik Trials"],
+        skills: { Construction: 37 },
+        players: [],
+      },
+      {
+        description: "Visit the Lighthouse from Waterbirth Island",
+        quests: ["Horror from the Deep", "The Fremennik Trials"],
         skills: {},
         players: [],
       },
       {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
+        description: "Mine some gold at the Arzinian Mine",
+        quests: ["Between a Rock..."],
+        skills: { Mining: 40 },
         players: [],
       },
     ],
     hard: [
       {
-        description: "",
+        description: "Teleport to Trollheim",
+        quests: ["Eadgar's Ruse"],
+        skills: { Magic: 61 },
+        players: [],
+      },
+      {
+        description: "Catch a Sabre-toothed kyatt",
         quests: [],
+        skills: { Hunter: 55 },
+        players: [],
+      },
+      {
+        description: "Mix a Super defence potion in the Fremennik Province",
+        quests: [],
+        skills: { Herblore: 66 },
+        players: [],
+      },
+      {
+        description: "Steal from the Keldagrim Gem Stall",
+        quests: ["The Giant Dwarf"],
+        skills: { Thieving: 75 },
+        players: [],
+      },
+      {
+        description: "Craft a Fremennik shield on Neitiznot",
+        quests: ["The Fremennik Isles"],
+        skills: { Woodcutting: 56 },
+        players: [],
+      },
+      {
+        description: "Mine 5 adamantite ores on Jatizso",
+        quests: [],
+        skills: { Mining: 70 },
+        players: [],
+      },
+      {
+        description: "Obtain 100% support from your kingdom subjects",
+        quests: ["Throne of Miscellania"],
         skills: {},
         players: [],
       },
       {
-        description: "",
-        quests: [],
+        description: "Teleport to Waterbirth Island",
+        quests: ["Lunar Diplomacy"],
         skills: {},
         players: [],
       },
       {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
-        skills: {},
-        players: [],
-      },
-      {
-        description: "",
-        quests: [],
+        description:
+          "Obtain the Blast Furnace Foreman's permission to use the Blast Furnace for free",
+        quests: ["The Giant Dwarf"],
         skills: {},
         players: [],
       },
     ],
     elite: [
       {
-        description: "",
+        description: "Kill each of the Dagannoth Kings",
         quests: [],
         skills: {},
         players: [],
       },
       {
-        description: "",
-        quests: [],
-        skills: {},
+        description: "Craft 56 astral runes at once from essence",
+        quests: ["Lunar Diplomacy"],
+        skills: { Runecraft: 82 },
         players: [],
       },
       {
-        description: "",
-        quests: [],
-        skills: {},
+        description: "Create a dragonstone amulet in the Neitiznot furnace",
+        quests: ["The Fremennik Isles"],
+        skills: { Crafting: 80 },
         players: [],
       },
       {
-        description: "",
+        description: "Complete a lap of the Rellekka Rooftop Course",
         quests: [],
-        skills: {},
+        skills: { Agility: 80 },
         players: [],
       },
       {
-        description: "",
-        quests: [],
-        skills: {},
+        description:
+          "Kill the generals of Armadyl, Bandos, Saradomin, and Zamorak in the God Wars Dungeon",
+        quests: ["Troll Stronghold"],
+        skills: { Agility: 70, Strength: 70, Hitpoints: 70, Ranged: 70 },
         players: [],
       },
       {
-        description: "",
-        quests: [],
-        skills: {},
+        description: "Slay a Spiritual mage within the God Wars Dungeon",
+        quests: ["Troll Stronghold"],
+        skills: { Slayer: 83 },
         players: [],
       },
     ],

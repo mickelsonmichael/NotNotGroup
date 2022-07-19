@@ -36,19 +36,19 @@ const DiaryIndicator = ({ name, player, difficulties }) => {
           return (
             <div key={diffKey} className="diary-indicator__progress-wrapper">
               <DiaryIndicatorSegment
-                color="green"
+                color="rgba(0, 200, 0, 0.3)"
                 value={completedTasks}
                 total={numberOfTasks}
               />
 
               <DiaryIndicatorSegment
-                color="goldenrod"
+                color="rgb(255,255,50, 0.6)"
                 value={readyTasks}
                 total={numberOfTasks}
               />
 
               <DiaryIndicatorSegment
-                color="darkred"
+                color="rgba(200, 0, 0, 0.5)"
                 value={notReadyTasks}
                 total={numberOfTasks}
               />

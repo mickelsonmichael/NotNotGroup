@@ -9,20 +9,28 @@
 .player-panel__tab {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0.5rem 0;
     display: flex;
     justify-content: space-around;
 }
 
-.player-panel__tab li {
+.player-panel__tab-btn {
+    flex-grow: 1;
     cursor: pointer;
     padding: 0.25rem;
+    margin: 0 0.15rem;
+    background-color: rgba(75, 75, 75, 0.1);
+    border: 1px solid rgba(100, 100, 100, 0.2);
     color: #aaa;
     user-select: none;
+    text-align: center;
 }
 
-.player-panel__tab li.active {
+.player-panel__tab-btn.active {
+    background-color: rgba(100, 100, 100, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
+    border-radius: 4px;
 }
 
 @media (min-width: 1200px) {

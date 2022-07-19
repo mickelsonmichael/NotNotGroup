@@ -1,12 +1,13 @@
 import React from "react";
+import { Tooltip } from "@mui/material";
 
 const DiaryIndicatorSegment = ({ color, value, total }) => (
-  <span
-    className="diary-indicator__segment"
-    style={{ backgroundColor: color, width: `${(value / total) * 100}%` }}
-  >
-    {value > 0 && value}
-  </span>
+  <Tooltip title={`${value > 0 && value}`} placement="top">
+    <span
+      className="diary-indicator__segment"
+      style={{ backgroundColor: color, width: `${(value / total) * 100}%` }}
+    />
+  </Tooltip>
 );
 
 export default DiaryIndicatorSegment;

@@ -2812,6 +2812,14 @@
                     "level": 4
                 }
             ]
+        },
+        {
+            "name": "Alfred Grimhand's Barcrawl",
+            "description": "Miniquest",
+            "notes": [],
+            "quests": [],
+            "skills": [],
+            "miniquest": true
         }
     ],
     "emptyQuest": {

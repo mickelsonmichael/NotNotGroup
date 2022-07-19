@@ -1175,6 +1175,282 @@ const diaries = {
       },
     ],
   },
+  kandarin: {
+    easy: [
+      {
+        description: "Catch a mackerel at Catherby",
+        quests: [],
+        skills: { Fishing: 16 },
+        players: [],
+      },
+      {
+        description: "Buy a candle from the candle maker in Catherby",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Collect 5 flax from the Seers' Village flax field",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Play the Church organ in the Seers' Village church",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description:
+          "Plant jute seeds in the farming patch north of McGrubor's Wood",
+        quests: [],
+        skills: { Farming: 13 },
+        players: [],
+      },
+      {
+        description: "Have Galahad make you a cup of tea",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Defeat one of each elemental in the Elemental Workshop",
+        quests: ["Elemental Workshop I"],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Get a pet fish from Harry in Catherby",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Buy a stew from the Seers' Village pub",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description:
+          "Speak to Sherlock between the Sorcerer's Tower and Keep Le Faye",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Cross the Coal truck log shortcut",
+        quests: [],
+        skills: { Agility: 20 },
+        players: [],
+      },
+    ],
+    medium: [
+      {
+        description: "Complete a lap of the Barbarian agility course",
+        quests: ["Alfred Grimhand's Barcrawl"],
+        skills: { Agility: 35 },
+        players: [],
+      },
+      {
+        description:
+          "Create a Superantipoison potion from scratch in the Seers/Catherby area",
+        quests: [],
+        skills: { Herblore: 48 },
+        players: [],
+      },
+      {
+        description: "Enter the Ranging Guild",
+        quests: [],
+        skills: { Ranged: 40 },
+        players: [],
+      },
+      {
+        description:
+          "Use the grapple shortcut to get from the water obelisk to Catherby shore",
+        quests: [],
+        skills: { Agility: 36, Strength: 22, Ranged: 39 },
+        players: [],
+      },
+      {
+        description: "Catch and cook a bass in Catherby",
+        quests: [],
+        skills: { Fishing: 46, Cooking: 43 },
+        players: [],
+      },
+      {
+        description: "Teleport to Camelot",
+        quests: [],
+        skills: { Magic: 45 },
+        players: [],
+      },
+      {
+        description: "String a maple shortbow in Seers' Village bank",
+        quests: [],
+        skills: { Fletching: 50 },
+        players: [],
+      },
+      {
+        description:
+          "Pick some limpwurt root from the farming patch in Catherby",
+        quests: [],
+        skills: { Farming: 26 },
+        players: [],
+      },
+      {
+        description: "Create a mind helmet",
+        quests: ["Elemental Workshop II"],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Kill a fire giant in the Waterfall Dungeon",
+        quests: ["Waterfall Quest"],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Complete a wave of Barbarian Assault",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Steal from the chest in Hemenster",
+        quests: [],
+        skills: { Thieving: 47 },
+        players: [],
+      },
+      {
+        description: "Travel to McGrubor's Wood by Fairy ring",
+        quests: ["Fairytale I - Growing Pains"],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Mine some coal near the coal trucks",
+        quests: [],
+        skills: { Mining: 30 },
+        players: [],
+      },
+    ],
+    hard: [
+      {
+        description: "Catch a leaping sturgeon",
+        quests: [],
+        skills: { Fishing: 70, Agility: 45, Strength: 45 },
+        players: [],
+      },
+      {
+        description: "Complete a lap of the Seers' Village Rooftop Course",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Create a yew longbow from scratch around Seers' Village",
+        quests: [],
+        skills: { Fletching: 70, Woodcutting: 60 },
+        players: [],
+      },
+      {
+        description: "Enter the Seers' Village courthouse with Piety turned on",
+        quests: ["King's Ransom"],
+        skills: { Prayer: 70, Defence: 70 },
+        players: [],
+      },
+      {
+        description: "Charge a water orb",
+        quests: [],
+        skills: { Magic: 56 },
+        players: [],
+      },
+      {
+        description: "Burn some maple logs with a bow in Seers' Village",
+        quests: [],
+        skills: { Firemaking: 65 },
+        players: [],
+      },
+      {
+        description: "Kill a shadow hound in the SHadow Dungeon",
+        quests: ["Desert Treasure"],
+        skills: { Thieving: 53 },
+        players: [],
+      },
+      {
+        description: "Kill a Mithril dragon",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Purchase and equip a granite body from Barbarian Assault",
+        quests: [],
+        skills: { Strength: 50, Defence: 50 },
+        players: [],
+      },
+      {
+        description:
+          "Have the Seers' Village estate agent decorate your house with Fancy Stone",
+        quests: [],
+        skills: { Construction: 50 },
+        players: [],
+      },
+      {
+        description: "Smith an adamant spear at Otto's Grotto",
+        quests: [],
+        skills: { Smithing: 75 },
+        players: [],
+      },
+    ],
+    elite: [
+      {
+        description:
+          "Read the blackboard at Barbarian Assault after reaching level 5 in every role",
+        quests: [],
+        skills: {},
+        players: [],
+      },
+      {
+        description: "Pick som dwarf weed form the herb patch at Catherby",
+        quests: [],
+        skills: { Farming: 79 },
+        players: [],
+      },
+      {
+        description:
+          "Fish and cook 5 sharks in Catherby using the Cooking gauntlets",
+        quests: ["Family Crest"],
+        skills: { Fishing: 76, Cooking: 80 },
+        players: [],
+      },
+      {
+        description: "Mix a Stamina mix on top of the Seers' Village bank",
+        quests: [],
+        skills: { Herblore: 86, Agility: 60 },
+        players: [],
+      },
+      {
+        description: "Smith a rune hasta at Otto's Grotto",
+        quests: [],
+        skills: { Smithing: 90 },
+        players: [],
+      },
+      {
+        description: "Construct a pyre ship from magic logs",
+        quests: [],
+        skills: { Firemaking: 85, Crafting: 85 },
+        players: [],
+      },
+      {
+        description: "Teleport to Catherby",
+        quests: ["Lunar Diplomacy"],
+        skills: { Magic: 87 },
+        players: [],
+      },
+    ],
+  },
 };
 
 export default diaries;

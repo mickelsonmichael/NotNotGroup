@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IconButton } from "@mui/material";
+import { IconButton, TableCell, TableRow, Collapse } from "@mui/material";
 import { KeyboardArrowUp, KeyboardArrowDown } from "@mui/icons-material";
 
 const FancyTableRow = ({ columns, item, expandItem }) => {
@@ -17,10 +17,17 @@ const FancyTableRow = ({ columns, item, expandItem }) => {
     <>
       <TableRow key={item.key}>
         {columns.map((colInfo) => (
-          <TableCell key={`${item.key}-${colInfo.header}`}>
-            {typeof colInfo.cell === "function"
-              ? colInfo.cell(item, toggleButton)
-              : item[colInfo.cell]}
+          <TableCell
+            key={`${item.key}-${colInfo.header}`}
+            align={colInfo.alignment}
+          >
+            {typeof colInfo.cell === "function" ? (
+              colInfo.cell(item, toggleButton)
+            ) : (
+              <span style={{ textTransform: "capitalize" }}>
+                {item[colInfo.cell]}
+              </span>
+            )}
           </TableCell>
         ))}
       </TableRow>
@@ -32,7 +39,7 @@ const FancyTableRow = ({ columns, item, expandItem }) => {
               unmountOnExit
               sx={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
             >
-              {expandItem}
+              {expandItem(item)}
             </Collapse>
           </TableCell>
         </TableRow>

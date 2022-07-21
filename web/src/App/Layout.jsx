@@ -30,7 +30,7 @@ const Layout = () => (
                 <Route path="/quests" element={<QuestPage />} />
                 <Route path="/treasure-trails/anagrams" element={<AnagramHelperPage />} />
                 <Route path="/treasure-trails" element={<TreasureTrailsPage />} />
-                <Route path="/diaries/:region/:playerName" element={<DiariesPage />} />
+                <Route path="/diaries/*" element={<DiariesPage />} />
                 <Route path="">
                     Page Not Found
                 </Route>

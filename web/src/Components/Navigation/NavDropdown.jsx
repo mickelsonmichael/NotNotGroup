@@ -24,7 +24,6 @@ const NavDropdown = ({ text, items }) => {
   return (
     <>
       <Typography
-        aria-role="button"
         onClick={({ currentTarget }) => setAnchorEl(currentTarget)}
         sx={linkStyle}
       >

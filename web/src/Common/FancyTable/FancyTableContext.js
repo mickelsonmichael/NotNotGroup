@@ -57,7 +57,7 @@ const FancyTableContextProvider = ({
               searchRegex == null ||
               (typeof item[key] === "string" && item[key].match(searchRegex))
           ) &&
-          (activeFilter == null || activeFilter(item))
+          (activeFilter == null || filters[activeFilter] == null || filters[activeFilter](item))
       ),
     [items, searchRegex, activeFilter]
   );

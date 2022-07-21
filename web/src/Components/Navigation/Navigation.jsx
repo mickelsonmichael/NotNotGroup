@@ -48,6 +48,7 @@ const Navigation = () => {
           flexDirection="row"
         >
           <NavLink to="/quests">Quests</NavLink>
+          <NavLink to="/diaries">Diaries</NavLink>
           <NavLink to="/treasure-trails">Treasure Trails</NavLink>
           <NavDropdown
             text="Bosses"

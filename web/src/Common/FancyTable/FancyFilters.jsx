@@ -30,9 +30,9 @@ const FancyFilters = () => {
           variant="standard"
         >
           <option value="">#NoFilter</option>
-          {filters.map((f) => (
-            <option key={f.value} value={f.value}>
-              {f.label}
+          {Object.keys(filters).map((f) => (
+            <option key={f} value={f}>
+              {f}
             </option>
           ))}
         </Select>

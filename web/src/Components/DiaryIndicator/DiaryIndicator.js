@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 
 import useNumberOfReadyTasks from "./useNumberOfReadyTasks";
@@ -31,7 +31,7 @@ const DiaryIndicator = ({ name, player, difficulties }) => {
             difficulties[diffKey]
           );
 
-          const notReadyTasks = numberOfTasks - (completedTasks + readyTasks);
+          const notReadyTasks = useMemo(() => numberOfTasks - (completedTasks + readyTasks), [numberOfTasks, completedTasks, readyTasks]);
 
           return (
             <div key={diffKey} className="diary-indicator__progress-wrapper">

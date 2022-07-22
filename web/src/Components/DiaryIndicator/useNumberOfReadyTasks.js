@@ -1,9 +1,8 @@
 const useNumberOfReadyTasks = (player, tasks) => {
-
   if (player == null) return 0;
 
   const incompleteTasks = tasks.filter(
-    (task) => !task.players.some((p) => p === player.name)
+    ({ description }) => !player.diaries.includes(description)
   );
 
   const hasRequiredSkills = (task) =>

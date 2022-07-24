@@ -2,11 +2,13 @@ import React from "react";
 import {
   Box,
   Grid,
+  IconButton,
   Link as UILink,
   Menu,
   MenuItem,
   Typography,
 } from "@mui/material";
+import { Storage } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
 
 import NavDropdown from "./NavDropdown";
@@ -60,6 +62,11 @@ const Navigation = () => {
               },
             ]}
           />
+        </Grid>
+        <Grid item marginLeft="auto">
+          <IconButton href={process.env.SHEET_URL} target="_blank" size="small">
+            <Storage />
+          </IconButton>
         </Grid>
       </Grid>
     </Box>

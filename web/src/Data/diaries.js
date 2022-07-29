@@ -1,3 +1,7 @@
+import quests from "./questData.json";
+
+const allQuests = quests.quests.map((q) => q.name);
+
 const diaries = {
   ardougne: {
     easy: [
@@ -889,12 +893,13 @@ const diaries = {
         quests: [],
         skills: {},
         players: [],
-        test: (player) => ({
+        test: ({ skills }) => ({
           isMet:
-            player.skills["Strength"].level + player.skills["Attack"].level >
-              130 ||
-            player.skills["Strength"].level >= 99 ||
-            player.skills["Attack"].level >= 99,
+            skills != null &&
+            skills.length > 0 &&
+            (skills["Strength"].level + skills["Attack"].level > 130 ||
+              skills["Strength"].level >= 99 ||
+              skills["Attack"].level >= 99),
           description:
             "Combined attack and strength level greater than 130 or 99 in either skill",
         }),
@@ -1607,9 +1612,12 @@ const diaries = {
         description: "Mine a red topaz from a gem rock",
         quests: [],
         skills: {},
-        test: (player) =>
-          player.quests.includes("Jungle Potion") ||
-          player.quests.includes("Shilo Village"),
+        test: ({ quests }) => ({
+          isMet:
+            (quests != null && quests.includes("Jungle Potion")) ||
+            quests.includes("Shilo Village"),
+          description: "Completed 'Jungle Potion' or 'Shilo Village'",
+        }),
       },
     ],
     hard: [
@@ -1663,9 +1671,15 @@ const diaries = {
         description: "Be assigned a Slayer task by Duradel in Shilo Village",
         quests: [],
         skills: {},
-        test: (player) =>
-          (player.skills["Slayer"]?.level >= 50 && player.combatLevel >= 100) ||
-          player.skills["Slayer"].level >= 99,
+        test: ({ skills, combatLevel }) => ({
+          isMet:
+            (skills != null &&
+              skills.length > 0 &&
+              skills["Slayer"]?.level >= 50 &&
+              combatLevel >= 100) ||
+            skills["Slayer"].level >= 99,
+          description: "50 Slayer with 100 Combat Level or 99 Slayer",
+        }),
       },
       {
         description: "Kill a metal dragon in Brimhaven Dungeon",
@@ -1933,6 +1947,449 @@ const diaries = {
           "Create your own battlestaff from scratch within the Farming Guild",
         quests: [],
         skills: { Farming: 85, Fletching: 40 },
+      },
+    ],
+  },
+  "lumbridge & draynor": {
+    easy: [
+      {
+        description: "Compelte a lap of the Draynor Village Rooftop Course",
+        quests: [],
+        skills: { Agility: 10 },
+      },
+      {
+        description: "Slay a cave bug in the Lumbridge Swamp Caves",
+        quests: [],
+        skills: { Slayer: 7 },
+      },
+      {
+        description:
+          "Have Archmage Sedridor teleport you to the Rune essences mine",
+        quests: ["Rune Mysteries"],
+        skills: {},
+      },
+      {
+        description: "Craft some water runes",
+        quests: [],
+        skills: { Runecraft: 5 },
+      },
+      {
+        description: "Learn your age from Hans in Lumbridge",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Pickpocket a man or woman in Lumbridge",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Chop and burn some oak logs in Lumbridge",
+        quests: [],
+        skills: { Firemaking: 15, Woodcutting: 15 },
+      },
+      {
+        description: "Kill a zombie in the Draynor Sewers",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Catch some anchovies in Al-Kharid",
+        quests: [],
+        skills: { Fishing: 15 },
+      },
+      {
+        description: "Bake some bread on the Lumbridge castle kitchen range",
+        quests: ["Cook's Assistant"],
+        skills: {},
+      },
+      {
+        description: "Mine some iron ore at the Al-Kharid mine",
+        quests: [],
+        skills: { Mining: 15 },
+      },
+      {
+        description: "Enter the H.A.M. Hideout",
+        quests: [],
+        skills: {},
+      },
+    ],
+    medium: [
+      {
+        description: "Complete a lap of the Al Kharid Rooftop",
+        quests: [],
+        skills: { Agility: 20 },
+      },
+      {
+        description: "Grapple accross the River Lum",
+        quests: [],
+        skills: { Agility: 8, Strength: 19, Ranged: 37 },
+      },
+      {
+        description: "Purchase an upgraded device from Ava",
+        quests: ["Animal Magnetism"],
+        skills: { Ranged: 50 },
+      },
+      {
+        description: "Travel to the Wizards' Tower by Fairy ring",
+        quests: ["Fairytale I - Growing Pains"],
+        skills: {},
+      },
+      {
+        description: "Cast the Lumbridge Teleport spell",
+        quests: [],
+        skills: { Magic: 31 },
+      },
+      {
+        description: "Catch some salon in Lubridge",
+        quests: [],
+        skills: { Fishing: 30 },
+      },
+      {
+        description: "Craft a coif in the Lumbridge cow pen",
+        quests: [],
+        skills: { Crafting: 38 },
+      },
+      {
+        description: "Chop some willow logs in Draynor Village",
+        quests: [],
+        skills: { Woodcutting: 30 },
+      },
+      {
+        description: "Pickpocket Martin the Master Gardener",
+        quests: [],
+        skills: { Thieving: 38 },
+      },
+      {
+        description: "Get a Slayer task from Chaeldar",
+        quests: ["Lost City"],
+        skills: {},
+        test: ({ combatLevel }) => ({
+          isMet: combatLevel >= 70,
+          description: "Combat Level 70",
+        }),
+      },
+      {
+        description: "Catch an essence or eclectic impling in Puro-Puro",
+        quests: ["Lost City"],
+        skills: { Hunter: 42 },
+      },
+      {
+        description: "Craft some lava runes at the Fire Altar in Al-Kharid",
+        quests: [],
+        skills: { Runecraft: 23 },
+      },
+    ],
+    hard: [
+      {
+        description: "Cast Bones to Peaches in Al-Kharid Palace",
+        quests: [],
+        skills: { Magic: 60 },
+      },
+      {
+        description:
+          "Squeeze past the jutting wall on your way to the Cosmic Altar",
+        quests: ["Lost City"],
+        skills: { Agility: 46 },
+      },
+      {
+        description: "Craft 56 cosmic runes simultaneously from essence",
+        quests: ["Lost City"],
+        skills: { Runecraft: 59 },
+      },
+      {
+        description: "Travel from Lumbridge to Edgeville on a waka canoe",
+        quests: [],
+        skills: { Woodcutting: 57 },
+      },
+      {
+        description: "Collect at least 100 Tears of Guthix in one visit",
+        quests: ["Tears of Guthix"],
+        skills: {},
+      },
+      {
+        description: "Take the train from Dorgesh-Kaan to Keldagrim",
+        quests: ["Another Slice of H.A.M."],
+        skills: {},
+      },
+      {
+        description:
+          "Purchase some Barrows gloves from the Culinaromancer's Chest",
+        quests: ["Recipe for Disaster"],
+        skills: {},
+      },
+      {
+        description:
+          "Pick some belladonna from the farming patch at Draynor Manor",
+        quests: [],
+        skills: { Farming: 63 },
+      },
+      {
+        description:
+          "Light your mining helment in the Lumbridge Castle basement",
+        quests: [],
+        skills: { Farming: 65 },
+      },
+      {
+        description:
+          "Recharge your prayer at Emir's Arena with Smite activated",
+        quests: [],
+        skills: { Prayer: 52 },
+      },
+      {
+        description:
+          "Craft, string, and enchant an amulet of power in Lumbridge",
+        quests: [],
+        skills: { Crafting: 70, Magic: 57 },
+      },
+    ],
+    elite: [
+      {
+        description: "Steal from the Dorgesh-Kaan rich chest",
+        quests: ["Death to the Dorgeshuun"],
+        skills: { Thieving: 78 },
+      },
+      {
+        description: "Pickpocket Movario on the Dorgesh-Kaan Agility Course",
+        quests: ["Death to the Dorgeshuun", "Temple of Ikov"],
+        skills: { Thieving: 42, Agility: 70, Ranged: 70, Strength: 70 },
+      },
+      {
+        description: "Chop some magic logs at the Mage Training Arena",
+        quests: [],
+        skills: { Woodcutting: 75 },
+      },
+      {
+        description: "Smith an adamant platebody down in Dryanor Swewer",
+        quests: [],
+        skills: { Smithing: 88 },
+      },
+      {
+        description: "Craft 140 or more water ruens at once form essence",
+        quests: [],
+        skills: { Runecraft: 76 },
+      },
+      {
+        description:
+          "Perform the Quest point cape emote in the Wise Old Man's house",
+        quests: [],
+        skills: {},
+        test: ({ quests }) => ({
+          isMet: allQuests.every((q) => quests.includes(q)),
+          description: "Every quest completed",
+        }),
+      },
+    ],
+  },
+  morytania: {
+    easy: [
+      {
+        description: "Craft any snelm from scratch in Morytania",
+        quests: [],
+        skills: { Crafting: 15 },
+      },
+      {
+        description: "Cook a thin snail on the Port Phasmatys range",
+        quests: [],
+        skills: { Cooking: 12 },
+      },
+      {
+        description: "Get a Slayer task from Mazchna",
+        quests: [],
+        skills: {},
+        test: ({ combatLevel }) => ({
+          isMet: combatLevel >= 20,
+          description: "Combat Level 20",
+        }),
+      },
+      {
+        description: "Kill a banshee in the Slayer Tower",
+        quests: [],
+        skills: { Slayer: 15 },
+      },
+      {
+        description: "Have Sbott tan something for you",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Enter Mort Myre Swamp",
+        quests: ["Nature Spirit"],
+        skills: {},
+      },
+      {
+        description: "Kill a ghoul",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Place a Scarecrow in the Morytania flower patch",
+        quests: [],
+        skills: { Farming: 23 },
+      },
+      {
+        description: "Offer some Bonemeal at the Ectofuntus",
+        quests: [],
+        skills: {},
+      },
+      {
+        description:
+          "Kill a Werewolf in its human form using the Wolfbane dagger",
+        quests: ["Priest in Peril"],
+        skills: {},
+      },
+      {
+        description: "Restore your prayer points at the nature altar",
+        quests: ["Nature Spirit"],
+        skills: {},
+      },
+    ],
+    medium: [
+      {
+        description: "Catch a swamp lizard",
+        quests: [],
+        skills: { Hunter: 29 },
+      },
+      {
+        description: "Complete a lap of the Canifis Rooftop Agility Course",
+        quests: [],
+        skills: { Agility: 40 },
+      },
+      {
+        description: "Travel to Dragontooth Isle",
+        quests: ["The Restless Ghost"],
+        skills: {},
+      },
+      {
+        description: "Kill a Terror Dog",
+        quests: ["Haunted Mine"],
+        skills: { Slayer: 40 },
+      },
+      {
+        description: "Complete a game of trouble brewing",
+        quests: ["Cabin Fever"],
+        skills: { Cooking: 40 },
+      },
+      {
+        description: "Board the Swamp boaty at the Hollows",
+        quests: ["Nature Spirit"],
+        skills: {},
+      },
+      {
+        description:
+          "Make a batch of cannonballs at the Port Phasmatys furnace",
+        quests: ["Dwarf Cannon"],
+        skills: { Smithing: 35 },
+      },
+      {
+        description: "Kill a fever spider on Braindeath Island",
+        quests: ["Rum Deal"],
+        skills: { Slayer: 42 },
+      },
+      {
+        description: "Use an ectophial to return to Port Phasmatys",
+        quests: ["Ghosts Ahoy"],
+        skills: {},
+      },
+      {
+        description: "Mix a Guthix balance potion while in Morytania",
+        quests: ["In Aid of the Myreque"],
+        skills: { Herblore: 22 },
+      },
+    ],
+    hard: [
+      {
+        description: "Enter the Kharyrll portal in your POH",
+        quests: ["Desert Treasure"],
+        skills: { Magic: 66, Construction: 50 },
+      },
+      {
+        description: "Climb the advanced spike chain within Slayer Tower",
+        quests: [],
+        skills: { Agility: 71 },
+      },
+      {
+        description:
+          "Harvest some Watermelon from the allotment patch on Harmony Island",
+        quests: ["The Great Brain Robbery"],
+        skills: { Farming: 47 },
+      },
+      {
+        description: "Chop and burn some mahogany logs on Mos Le'Harmless",
+        quests: ["Cabin Fever"],
+        skills: { Woodcutting: 50, Firemaking: 50 },
+      },
+      {
+        description: "Complete a temple trek with a hard companion",
+        quests: ["In Aid of the Myreque"],
+        skills: {},
+      },
+      {
+        description: "Kill a Cave Horror",
+        quests: ["Cabin Fever"],
+        skills: { Slayer: 58 },
+      },
+      {
+        description:
+          "Harvest some Bittercap Mushrooms from the patch in Canifis",
+        quests: [],
+        skills: { Farming: 53 },
+      },
+      {
+        description: "Pray at the Altar of Nature with Piety activated",
+        quests: ["Nature Spirit"],
+        skills: { Prayer: 70, Defence: 70 },
+      },
+      {
+        description: "Use the shortcut to get to the bridge over the Salve",
+        quests: [],
+        skills: { Agility: 65 },
+      },
+      {
+        description: "Mine some mithril ore in the Abandoned Mine",
+        quests: ["Haunted Mine"],
+        skills: { Mining: 55 },
+      },
+    ],
+    elite: [
+      {
+        description: "Catch a shark in Burgh de Rott with your bare hands",
+        quests: ["In Aid of the Myreque"],
+        skills: { Fishing: 96, Strength: 76 },
+      },
+      {
+        description: "Cremate any Shade remains on a Magic or Redwood pyre",
+        quests: ["Shades of Mort'ton"],
+        skills: { Firemaking: 80 },
+      },
+      {
+        description: "Fertilize the Morytania herb patch using Lunar Magic",
+        quests: ["Lunar Diplomacy"],
+        skills: { Magic: 83 },
+      },
+      {
+        description: "Craft a Black dragonhide body in the Canifis bank",
+        quests: [],
+        skills: { Crafting: 84 },
+      },
+      {
+        description: "Kill an Abyssal demon in the Slayer Tower",
+        quests: [],
+        skills: { Slayer: 85 },
+      },
+      {
+        description:
+          "Loot the Barrows chest while wearing any complete barrows set",
+        quests: [],
+        skills: {},
+        test: ({ skills }) => ({
+          isMet:
+            skills != null &&
+            skills.length > 1 &&
+            skills["Defense"] >= 70 &&
+            (skills["Attack"].level >= 70 || skills["Ranged"].level >= 70),
+          description: "Can equip a full set",
+        }),
       },
     ],
   },

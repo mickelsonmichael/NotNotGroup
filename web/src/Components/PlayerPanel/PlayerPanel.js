@@ -38,11 +38,13 @@ const PlayerPanel = ({ playerName }) => {
       </ul>
 
       {tab === "stats" && (
-        <HiScoresTable skills={player?.skills} overall={player?.Overall} />
+        <HiScoresTable
+          skills={player?.skills}
+          overall={player?.Overall}
+          combatLevel={player?.combatLevel ?? 3}
+        />
       )}
-      {tab === "diaries" && (
-        <DiaryPanel player={player} />
-      )}
+      {tab === "diaries" && <DiaryPanel player={player} />}
     </div>
   );
 };

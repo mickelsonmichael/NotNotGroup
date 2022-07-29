@@ -15,6 +15,27 @@ const AccountContext = createContext({
   isNotNotMikeError: false,
 });
 
+const getCombatLevel = (skills) => {
+  if (skills == null) return 3;
+
+  const getLevelFor = (skillName) =>
+    skills[skillName]?.level == null ? 1 : Number(skills[skillName]?.level);
+
+  const baseLevel =
+    (getLevelFor("Defence") +
+      getLevelFor("Hitpoints") +
+      Math.floor(getLevelFor("Prayer") * 0.5)) /
+    4;
+
+  const meleeLevel = 0.325 * (getLevelFor("Attack") + getLevelFor("Strength"));
+
+  const rangedLevel = 0.325 * Math.floor((getLevelFor("Ranged") * 3) / 2);
+
+  const magicLevel = 0.325 * Math.floor((getLevelFor("Magic") * 3) / 2);
+
+  return Math.floor(baseLevel + Math.max(meleeLevel, rangedLevel, magicLevel));
+};
+
 const useStats = (account) =>
   useQuery(
     account,
@@ -38,7 +59,6 @@ const useStats = (account) =>
     }
   );
 
-  
 const useDiaries = () =>
   useQuery(
     "/diaries",
@@ -78,10 +98,14 @@ const useAccount = (account) => {
   return {
     name: account,
     quests: quests.data?.filter((q) => q[account]).map((q) => q.quest) ?? [],
-    diaries: diaries.data?.filter((d) => d.players.includes(account)).map((d) => d.description) ?? [],
+    diaries:
+      diaries.data
+        ?.filter((d) => d.players.includes(account))
+        .map((d) => d.description) ?? [],
     isLoading: quests.isLoading || stats.isLoading,
     isError: quests.isError || stats.isError,
     ...(stats.data ?? { skills: [], Overall: -1, bosses: [] }),
+    combatLevel: getCombatLevel(stats.data?.skills),
   };
 };
 

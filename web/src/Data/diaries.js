@@ -1702,6 +1702,240 @@ const diaries = {
       },
     ],
   },
+  "kourend & kebos": {
+    easy: [
+      {
+        description: "Mine some iron ore at the Mount Karuulm mine",
+        quests: [],
+        skills: { Mining: 15 },
+      },
+      {
+        description: "Kill a Sand Crab",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Hand in a book at the Arceuus Library",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Steal from a Hosidius Fruit Stall",
+        quests: [],
+        skills: { Thieving: 25 },
+      },
+      {
+        description: "Browse the Warrens General Store",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Take a boat to Land's End",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Pray at the altar on the top floor of the Kourend Castle",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Dig up some saltpetre",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Enter your player-owned house from Hosidius",
+        quests: [],
+        skills: { Construction: 25 },
+      },
+      {
+        description: "Heal a wounded Shayzien soldier",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Create a strength potion in the Lovakengj pub",
+        quests: ["Druidic Ritual"],
+        skills: { Herblore: 12 },
+      },
+      {
+        description: "Fish a Trout from the River Molch",
+        quests: [],
+        skills: { Fishing: 20 },
+      },
+    ],
+    medium: [
+      {
+        description: "Travel to the fairy ring south of Mount Karuulm",
+        quests: ["Fairytale I - Growing Pains"],
+        skills: {},
+      },
+      {
+        description: "Kill a lizardman",
+        quests: [],
+        skills: {},
+      },
+      {
+        description:
+          "Use Kharedst's memoirs to teleport to all five cities in the Great Kourend",
+        quests: [
+          "The Depths of Despair",
+          "The Queen of Thieves",
+          "Tale of the Righteous",
+          "The Forsaken Tower",
+          "The Ascent of Arceuus",
+        ],
+        skills: {},
+      },
+      {
+        description: "Mine some volcanic sulphur",
+        quests: [],
+        skills: { Mining: 42 },
+      },
+      {
+        description: "Enter the Farming Guild",
+        quests: [],
+        skills: { Farming: 45 },
+      },
+      {
+        description: "Switch to the Arceuus spellbook via Tyss",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Repair a crane within Port Piscarilius",
+        quests: [],
+        skills: { Crafting: 30 },
+      },
+      {
+        description: "Deliver some intelligence to Captain Ginea",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Catch a Bluegill on Lake Molch",
+        quests: [],
+        skills: { Fishing: 43, Hunter: 35 },
+      },
+      {
+        description: "Use the boulder leap shortcut in the dense essence mine",
+        quests: [],
+        skills: { Agility: 49 },
+      },
+      {
+        description: "Subdue the Wintertodt",
+        quests: [],
+        skills: { Firemaking: 50 },
+      },
+      {
+        description: "Catch a chinchompa in the Kourend Woodland",
+        quests: ["Eagles' Peak"],
+        skills: { Hunter: 53 },
+      },
+      {
+        description: "Chop some mahogany logs north of the Farming Guild",
+        quests: [],
+        skills: { Woodcutting: 50 },
+      },
+    ],
+    hard: [
+      {
+        description: "Enter the Woodcutting Guild",
+        quests: [],
+        skills: { Woodcutting: 60 },
+      },
+      {
+        description: "Smelt an adamantite bar in The Forsaken Tower",
+        quests: ["The Forsaken Tower"],
+        skills: { Smithing: 70 },
+      },
+      {
+        description: "Kill a lizardman shaman in the Lizardman Temple",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Mine some Lovakite ore",
+        quests: [],
+        skills: { Mining: 65 },
+      },
+      {
+        description: "Plant some Logavano seeds at the Tithe Farm",
+        quests: [],
+        skills: { Farming: 74 },
+      },
+      {
+        description: "Kill a zombie in the Shayzien Crypts",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Teleport to Xeric's Heart using Xeric's talisman",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Deliver an artefact to Captain Khaled",
+        quests: [],
+        skills: { Thieving: 49 },
+      },
+      {
+        description: "Kill a wyrm in the Karuulm Slayer Dungeon",
+        quests: [],
+        skills: { Slayer: 62 },
+      },
+      {
+        description:
+          "Cast Monster Examine on a mountain troll south of Mount Quidamortem",
+        quests: ["Dream Mentor"],
+        skills: { Magic: 66 },
+      },
+    ],
+    elite: [
+      {
+        description: "Craft one or more blood runes from essence",
+        quests: [],
+        skills: { Runecraft: 77, Mining: 38, Crafting: 38 },
+      },
+      {
+        description: "Chop some redwood logs",
+        quests: [],
+        skills: { Woodcutting: 90 },
+      },
+      {
+        description: "Defeat Skotizo in the Catacombs of Kourend",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Catch an anglerfish and cook it whilst in Great Kourend",
+        quests: [],
+        skills: { Cooking: 84, Fishing: 82 },
+      },
+      {
+        description: "Kill a hydra in the Karuulm Slayer Dungeon",
+        quests: [],
+        skills: { Slayer: 95 },
+      },
+      {
+        description: "Create an Ape Atoll telport tablet",
+        quests: [],
+        skills: { Magic: 90 },
+      },
+      {
+        description: "Complete a raid in the Chambers of Xeric",
+        quests: [],
+        skills: {},
+      },
+      {
+        description:
+          "Create your own battlestaff from scratch within the Farming Guild",
+        quests: [],
+        skills: { Farming: 85, Fletching: 40 },
+      },
+    ],
+  },
 };
 
 export default diaries;

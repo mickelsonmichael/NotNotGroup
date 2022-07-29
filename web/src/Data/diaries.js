@@ -1451,6 +1451,257 @@ const diaries = {
       },
     ],
   },
+  karamja: {
+    easy: [
+      {
+        description:
+          "Pick 5 bananas from the plantation located east of the volcano",
+        quests: [],
+        skills: {},
+      },
+      {
+        description:
+          "Use the rope swing to travel to the Moss Giant Island north-west of Karamja",
+        quests: [],
+        skills: { Agility: 10 },
+      },
+      {
+        description:
+          "Mine some gold from the rocks on the north-west peninsula of Karamja",
+        quests: [],
+        skills: { Mining: 40 },
+      },
+      {
+        description: "Travel to Port Sarim via the dock, east of Musa Point",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Travel to Ardougne via the port near Brimhaven",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Explore Cairn Isle to the west of Karamja",
+        quests: [],
+        skills: { Agility: 15 },
+      },
+      {
+        description: "Use the fishing spots north of the banana plantation",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Collect 5 seaweed from anywhere on Karamja",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Attempt the TzHaar Fight Pits or Fight Cave",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Kill a jogre in the Pothole Dungeon",
+        quests: [],
+        skills: {},
+      },
+    ],
+    medium: [
+      {
+        description: "Claim a ticket from the Agility arena in Brimhaven",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Discover hidden wall in the dungeon below the volcano",
+        quests: ["Dragon Slayer I"],
+        skills: {},
+      },
+      {
+        description:
+          "Visit the Isle of Crandor via the dungeon below the volcano",
+        quests: ["Dragon Slayer I"],
+        skills: {},
+      },
+      {
+        description: "Use Vigroy and Hajedy's cart service",
+        quests: ["Shilo Village"],
+        skills: {},
+      },
+      {
+        description: "Earn 100% favour in the Tai Bwo Wannai Cleanup minigame",
+        quests: ["Jungle Potion"],
+        skills: { Woodcutting: 10 },
+      },
+      {
+        description: "Cook a spider on a stick",
+        quests: [],
+        skills: { Cooking: 16 },
+      },
+      {
+        description:
+          "Charter the Lady of the Waves from south of Cairn Isle to Port Khazard",
+        quests: ["Shilo Village"],
+        skills: {},
+      },
+      {
+        description: "Cut a log from a teak tree",
+        quests: ["Jungle Potion"],
+        skills: { Woodcutting: 35 },
+      },
+      {
+        description: "Cut a log from a mahogany tree",
+        quests: ["Jungle Potion"],
+        skills: { Woodcutting: 50 },
+      },
+      {
+        description: "Catch a karambwan",
+        quests: ["Tai Bwo Wannai Trio"],
+        skills: { Fishing: 65 },
+      },
+      {
+        description: "Exchange gems for a machete",
+        quests: ["Jungle Potion"],
+        skills: {},
+      },
+      {
+        description: "Use the gnome glider to travel to Karamja",
+        quests: ["The Grand Tree"],
+        skills: {},
+      },
+      {
+        description: "Grow a healthy fruit tree in the patch near Brimhaven",
+        quests: [],
+        skills: { Farming: 27 },
+      },
+      {
+        description: "Trap a Horned Graahk",
+        quests: [],
+        skills: { Hunter: 41 },
+      },
+      {
+        description:
+          "Chop the vines to gain deeper access to Brimhaven Dungeon",
+        quests: [],
+        skills: { Woodcutting: 10 },
+      },
+      {
+        description:
+          "Cross the lava using the stepping stones within Brimhaven Dungeon",
+        quests: [],
+        skills: { Woodcutting: 10, Agility: 12 },
+      },
+      {
+        description: "Climb the stairs within Brimhaven Dungeon",
+        quests: [],
+        skills: { Woodcutting: 10 },
+      },
+      {
+        description:
+          "Charter a ship from the shipyard in the far east of Karamja",
+        quests: ["The Grand Tree"],
+        skills: {},
+      },
+      {
+        description: "Mine a red topaz from a gem rock",
+        quests: [],
+        skills: {},
+        test: (player) =>
+          player.quests.includes("Jungle Potion") ||
+          player.quests.includes("Shilo Village"),
+      },
+    ],
+    hard: [
+      {
+        description: "Become the champion of the Fight Pit",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Kill a Ket-Zek in the Fight Caves",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Eat an oomlie wrap",
+        quests: [],
+        skills: { Cooking: 50 },
+      },
+      {
+        description: "Craft some nature runes from essence",
+        quests: [],
+        skills: { Runecraft: 44 },
+      },
+      {
+        description: "Cook a raw karambwan thoroughly",
+        quests: ["Tai Bwo Wannai Trio"],
+        skills: { Cooking: 30 },
+      },
+      {
+        description: "Kill a deathwing in the dungeon under the Kharazi Jungle",
+        quests: ["Legends' Quest"],
+        skills: {
+          Woodcutting: 15,
+          Strength: 50,
+          Agility: 50,
+          Thieving: 50,
+          Mining: 52,
+        },
+      },
+      {
+        description: "Use the crossbow shortcut south of the volcano",
+        quests: [],
+        skills: { Agility: 53, Ranged: 42, Strength: 21 },
+      },
+      {
+        description: "Collect 5 palm leaves",
+        quests: ["Legends' Quest"],
+        skills: { Woodcutting: 15 },
+      },
+      {
+        description: "Be assigned a Slayer task by Duradel in Shilo Village",
+        quests: [],
+        skills: {},
+        test: (player) =>
+          (player.skills["Slayer"]?.level >= 50 && player.combatLevel >= 100) ||
+          player.skills["Slayer"].level >= 99,
+      },
+      {
+        description: "Kill a metal dragon in Brimhaven Dungeon",
+        quests: [],
+        skills: {},
+      },
+    ],
+    elite: [
+      {
+        description: "Craft 56 nature runes at once from essence",
+        quests: [],
+        skills: { Runecraft: 91 },
+      },
+      {
+        description: "Equip a fire cape or infernal cape in the Tzhaar city",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Check the health of a palm tree in Brimhaven",
+        quests: [],
+        skills: { Farming: 68 },
+      },
+      {
+        description:
+          "Create an antivenom potion whilst standing in the horse shoe mine",
+        quests: [],
+        skills: { Herblore: 87 },
+      },
+      {
+        description: "Check the health of your Calquat tree patch",
+        quests: [],
+        skills: { Farming: 72 },
+      },
+    ],
+  },
 };
 
 export default diaries;

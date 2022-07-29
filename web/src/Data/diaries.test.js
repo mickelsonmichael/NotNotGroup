@@ -58,15 +58,4 @@ describe("Diaries list", () => {
                 expect(questNames).toContain(quest);
             });
     });
-
-    test("all players valid", () => {
-        Object.keys(diaries)
-            .flatMap(region => Object.keys(diaries[region]).flatMap(difficulty => diaries[region][difficulty]))
-            .map(task => task.players)
-            .forEach(playerList => {
-                playerList.forEach(p => {
-                    expect(expectedPlayers).toContain(p);
-                })
-            })
-    })
 });

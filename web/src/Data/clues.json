@@ -83,6 +83,10 @@
             "solution": "Dark Mage, the Abyss",
             "challenge": "How many rifts are found here in the Abyss",
             "answer": "13"
+        },
+        {
+            "text": "CARPET AHOY",
+            "solution": "Apothecary, Varrock"
         }
     ],
     "stash": [
@@ -150,6 +154,14 @@
         {
             "text": "In a town where Wizards are known to gather, search a large house to the north",
             "solution": "Yanille, locked chest on the second floor. Requires killing a man on the first floor to get a key."
+        },
+        {
+            "text": "Gold I see, yet gold I require. Give me 875 if death you desire.",
+            "solution": "Saniboch, South-west of Brimhaven",
+            "puzzleBox": true
+        },
+        {
+            "text": "If a man carried my burden, he would break his back. I am not rich, but leave silver in my track. Speak to the keeper of my trail."
         }
     ]
 }

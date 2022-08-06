@@ -128,7 +128,8 @@ export default (skillStr) => {
             },
             bosses: {
                 Wintertodt,
-                RiftsClosed
+                RiftsClosed,
+                Tempoross
             }
         }
 };

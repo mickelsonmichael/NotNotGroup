@@ -60,6 +60,10 @@ const Navigation = () => {
                 to: "/bosses/guardians-of-the-rift",
                 text: "Guardians of the Rift",
               },
+              {
+                to: "/bosses/tempoross",
+                text: "Tempoross",
+              },
             ]}
           />
         </Grid>

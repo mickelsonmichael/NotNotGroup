@@ -58,4 +58,23 @@ describe("Diaries list", () => {
                 expect(questNames).toContain(quest);
             });
     });
+
+    test("all tests have required properties and handle nulls", () => {
+        const examplePlayer = {}
+
+        Object.keys(diaries)
+          .flatMap((region) =>
+            Object.keys(diaries[region]).flatMap(
+              (difficulty) => diaries[region][difficulty]
+            )
+          )
+          .flatMap((task) => task.test)
+          .filter(test => test != null)
+          .forEach((test) => {
+            const result = test(examplePlayer);
+
+            expect(result).toHaveProperty("isMet");
+            expect(result).toHaveProperty("description");
+          });
+    })
 });

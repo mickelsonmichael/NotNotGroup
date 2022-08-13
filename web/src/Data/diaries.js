@@ -1614,8 +1614,9 @@ const diaries = {
         skills: {},
         test: ({ quests }) => ({
           isMet:
-            (quests != null && quests.includes("Jungle Potion")) ||
-            quests.includes("Shilo Village"),
+            quests != null &&
+            (quests.includes("Jungle Potion") ||
+              quests.includes("Shilo Village")),
           description: "Completed 'Jungle Potion' or 'Shilo Village'",
         }),
       },
@@ -1673,11 +1674,10 @@ const diaries = {
         skills: {},
         test: ({ skills, combatLevel }) => ({
           isMet:
-            (skills != null &&
-              skills.length > 0 &&
-              skills["Slayer"]?.level >= 50 &&
-              combatLevel >= 100) ||
-            skills["Slayer"].level >= 99,
+            skills != null &&
+            combatLevel != null &&
+            ((skills["Slayer"]?.level >= 50 && combatLevel >= 100) ||
+              skills["Slayer"].level >= 99),
           description: "50 Slayer with 100 Combat Level or 99 Slayer",
         }),
       },
@@ -2175,7 +2175,7 @@ const diaries = {
         quests: [],
         skills: {},
         test: ({ quests }) => ({
-          isMet: allQuests.every((q) => quests.includes(q)),
+          isMet: quests != null && allQuests.every((q) => quests.includes(q)),
           description: "Every quest completed",
         }),
       },
@@ -2390,6 +2390,510 @@ const diaries = {
             (skills["Attack"].level >= 70 || skills["Ranged"].level >= 70),
           description: "Can equip a full set",
         }),
+      },
+    ],
+  },
+  varrock: {
+    easy: [
+      {
+        description: "Browse Thessalia's store",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Have Aubury teleport you to the essence mine",
+        quests: ["Rune Mysteries"],
+        skills: {},
+      },
+      {
+        description: "Mine some iron in the south-east Varrock mine",
+        quests: [],
+        skills: { Mining: 15 },
+      },
+      {
+        description: "Make a normal plank at the Sawmill",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Enter the second level of the Stronghold of Security",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Jump over the fence south of Varrock",
+        quests: [],
+        skills: { Agility: 13 },
+      },
+      {
+        description: "Chop down a dying tree in the Lumber Yard",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Buy a newspaper",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Give a dog a bone",
+        quests: [],
+        skills: {},
+      },
+      {
+        description:
+          "Spin a bowl on the pottery wheel and fire it in the oven in Barbarian Village",
+        quests: [],
+        skills: { Crafting: 8 },
+      },
+      {
+        description: "Speak to Haig Halen after obtaining at least 50 Kudos",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Craft some earth runes from Essence",
+        quests: [],
+        skills: { Runecraft: 9 },
+      },
+      {
+        description: "Catch some trout in the River Lum at Barbarian Village",
+        quests: [],
+        skills: { Fishing: 20 },
+      },
+      {
+        description: "Steal from the tea stall in Varrock",
+        quests: [],
+        skills: { Thieving: 5 },
+      },
+    ],
+    medium: [
+      {
+        description:
+          "Have the Apothecary in Varrock make you a Strength potion",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Enter the Champions' Guild",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Select a color for your kitten",
+        quests: ["Gertrude's Cat", "Garden of Tranquility"],
+        skills: {},
+      },
+      {
+        description:
+          "Use the Spirit tree in the north-eastern corner of the Grand Exchange",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Perform the 4 emotes from the Stronghold of Security",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Enter the Tolna dungeon after completing A Soul's Bane",
+        quests: ["A Soul's Bane"],
+        skills: {},
+      },
+      {
+        description: "Teleport to the digsite using a Digsite pendant",
+        quests: ["The Dig Site"],
+        skills: {},
+      },
+      {
+        description: "Cast the teleport to Varrock spell",
+        quests: [],
+        skills: { Magic: 25 },
+      },
+      {
+        description: "Get a Slayer task from Vannaka",
+        quests: [],
+        skills: {},
+        test: ({ combatLevel }) => ({
+          isMet: combatLevel != null && combatLevel >= 40,
+          description: "40 Combat level",
+        }),
+      },
+      {
+        description: "Make 20 mahogany planks in one go at the Lumber Yard",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Pick a white tree fruit",
+        quests: ["Garden of Tranquility"],
+        skills: { Farming: 25 },
+      },
+      {
+        description: "Use the balloon to travel from Varrock",
+        quests: ["Enlightened Journey"],
+        skills: { Farming: 30, Firemaking: 40 },
+      },
+      {
+        description: "Complete a lap of the Varrock Rooftop Course",
+        quests: [],
+        skills: { Agility: 30 },
+      },
+    ],
+    hard: [
+      {
+        description:
+          "Trade furs with the Fancy Dress Seller for a Spottier cape and equip it",
+        quests: [],
+        skills: { Hunter: 66 },
+      },
+      {
+        description: "Speak to Orlando Smith when you have achieved 153 Kudos",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Make a Waka canoe near Edgeville",
+        quests: [],
+        skills: { Woodcutting: 57 },
+      },
+      {
+        description: "Teleport to Paddewwa",
+        quests: ["Desert Treasure"],
+        skills: { Magic: 54 },
+      },
+      {
+        description: "Teleport to Barbarian Village with a Skull sceptre",
+        quests: [],
+        skills: {},
+      },
+      {
+        description:
+          "Chop some yew logs in Varrock and burn them at the top of the Varrock church",
+        quests: [],
+        skills: { Woodcutting: 60, Firemaking: 60 },
+      },
+      {
+        description:
+          "Have the Varrock estate agent decorate your house with Fancy Stone",
+        quests: [],
+        skills: { Construction: 50 },
+      },
+      {
+        description:
+          "Collect at least 2 yew roots from the tree patch in Varrock Palace",
+        quests: [],
+        skills: { Farming: 68, Woodcutting: 60 },
+      },
+      {
+        description: "Pray at the altar in Varrock Palace with Smite active",
+        quests: [],
+        skills: { Prayer: 52 },
+      },
+      {
+        description: "Squeeze through the obstacle pipe in Edgeville Dungeon",
+        quests: [],
+        skills: { Agility: 51 },
+      },
+    ],
+    elite: [
+      {
+        description: "Create a Super combat potion in Varrock West Bank",
+        quests: ["Druidic Ritual"],
+        skills: { Herblore: 90 },
+      },
+      {
+        description:
+          "Use Lunar magic to make 20 mahogany planks in the Varrock Lumber Yard",
+        quests: ["Dream Mentor"],
+        skills: { Magic: 86 },
+      },
+      {
+        description: "Bake a summer pie in the Cooking Guild",
+        quests: [],
+        skills: { Cooking: 95 },
+      },
+      {
+        description: "Smith and fletch ten rune darts within Varrock",
+        quests: ["The Tourist Trap"],
+        skills: { Smithing: 89, Fletching: 81 },
+      },
+      {
+        description:
+          "Craft 100 or more earth runes simultaneously from essence",
+        quests: ["Rune Mysteries"],
+        skills: { Runecraft: 78 },
+      },
+    ],
+  },
+  westernProvinces: {
+    easy: [
+      {
+        description: "Catch a copper longtail",
+        quests: [],
+        skills: { Hunter: 9 },
+      },
+      {
+        description: "Complete a novice game of Pest Control",
+        quests: [],
+        skills: {},
+        test: ({ combatLevel }) => ({
+          isMet: combatLevel != null && combatLevel >= 40,
+          description: "40 Combat level",
+        }),
+      },
+      {
+        description: "Mine some iron ore near Piscatoris",
+        quests: [],
+        skills: { Mining: 15 },
+      },
+      {
+        description: "Complete a lap of the Gnome Agility Course",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Score a goal in a Gnome Ball match",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Claim any Chompy bird hat from Rantz",
+        quests: ["Big Chompy Bird Hunting"],
+        skills: {},
+      },
+      {
+        description: "Teleport to Pest Control using the Minigame teleport",
+        quests: [],
+        skills: {},
+        test: ({ combatLevel }) => ({
+          isMet: combatLevel != null && combatLevel >= 40,
+          description: "40 Combat level",
+        }),
+      },
+      {
+        description: "Collect a swamp toad at the Gnome Stronghold",
+        quests: [],
+        skills: {},
+      },
+      {
+        description: "Have Brimstail teleport you to the Essence mine",
+        quests: ["Rune Mysteries"],
+        skills: {},
+      },
+      {
+        description: "Fletch an oak shortbow in the Gnome Stronghold",
+        quests: [],
+        skills: { Fletching: 20 },
+      },
+      {
+        description: "Kill a terrorbird in the terrorbird enclosure",
+        quests: [],
+        skills: {},
+      },
+    ],
+    medium: [
+      {
+        description:
+          "Take the agility shortcut form the Grand Tree to Otto's Grotto",
+        quests: ["Tree Gnome Village", "The Grand Tree"],
+        skills: { Agility: 37 },
+      },
+      {
+        description: "Travel to the Gnome Stronghold by Spirit tree",
+        quests: ["Tree Gnome Village"],
+        skills: {},
+      },
+      {
+        description: "Trap a Spined larupia",
+        quests: [],
+        skills: { Hunter: 31 },
+      },
+      {
+        description: "Fish some bass on Ape Atoll",
+        quests: ["Monkey Madness I"],
+        skills: { Fishing: 46 },
+      },
+      {
+        description: "Chop and burn some teak logs on Ape Atoll",
+        quests: ["Monkey Madness I"],
+        skills: { Woodcutting: 35, Firemaking: 35 },
+      },
+      {
+        description: "Complete an intermediate game of Pest Control",
+        quests: [],
+        skills: {},
+        test: ({ combatLevel }) => ({
+          isMet: combatLevel != null && combatLevel >= 70,
+          description: "70 Combat level",
+        }),
+      },
+      {
+        description: "Travel to the Feldip Hills by Gnome Glider",
+        quests: ["The Grand Tree", "One Small Favour"],
+        skills: {},
+      },
+      {
+        description:
+          "Claim a Chompy bird hat from Rantz after registering at least 125 kills",
+        quests: ["Big Chompy Bird Hunting"],
+        skills: {},
+      },
+      {
+        description: "Travel from Eagles' Peak to the Feldip Hills by Eagle",
+        quests: ["Eagles' Peak"],
+        skills: {},
+      },
+      {
+        description: "Make a Chocolate bomb at the Grand Tree",
+        quests: [],
+        skills: { Cooking: 42 },
+      },
+      {
+        description: "Complete a delivery for the Gnome Restaurant",
+        quests: [],
+        skills: { Cooking: 29 },
+      },
+      {
+        description: "Turn your crystal saw seed into a crystal saw",
+        quests: ["The Eyes of Glouphrie"],
+        skills: {},
+      },
+      {
+        description: "Mine some gold ore underneath the Grand Tree",
+        quests: ["The Grand Tree"],
+        skills: { Mining: 40 },
+      },
+    ],
+    hard: [
+      {
+        description: "Kill an elf with a crystal bow",
+        quests: ["Roving Elves"],
+        skills: { Ranged: 70 },
+      },
+      {
+        description:
+          "Catch and cook a monkfish in the Piscatoris Fishing Colony",
+        quests: ["Swan Song"],
+        skills: { Fishing: 62, Cooking: 62 },
+      },
+      {
+        description: "Complete a veteran game of Pest Control",
+        quests: [],
+        skills: {},
+        test: ({ combatLevel }) => ({
+          isMet: combatLevel != null && combatLevel >= 100,
+          description: "100 Combat level",
+        }),
+      },
+      {
+        description: "Catch a dashing kebbit",
+        quests: [],
+        skills: { Hunter: 69 },
+      },
+      {
+        description: "Complete a lap of the Ape Atoll Agility Course",
+        quests: ["Monkey Madness I"],
+        skills: { Agility: 48 },
+      },
+      {
+        description: "Chop and burn some mahogany logs on Ape Atoll",
+        quests: ["Monkey Madness I"],
+        skills: { Woodcutting: 50, Firemaking: 50 },
+      },
+      {
+        description: "Mine some adamantite ore in Tirannwn",
+        quests: ["Regicide"],
+        skills: { Mining: 70 },
+      },
+      {
+        description: "Check the health of your palm tree in Lletya",
+        quests: ["Mourning's End Part I"],
+        skills: { Farming: 68 },
+      },
+      {
+        description:
+          "Claim a Chompy bird hat from Rantz after registering at least 300 kills",
+        quests: ["Big Chompy Bird Hunting"],
+        skills: {},
+      },
+      {
+        description: "Build an Isafdar painting in your POH Quest Hall",
+        quests: ["Roving Elves"],
+        skills: { Construction: 65 },
+      },
+      {
+        description: "Kill Zulrah",
+        quests: ["Regicide"],
+        skills: {},
+      },
+      {
+        description: "Teleport to Ape Atoll",
+        quests: ["Recipe for Disaster - Freeing King Awowogei"],
+        skills: { Magic: 64 },
+      },
+      {
+        description: "Pickpocket a gnome",
+        quests: ["Tree Gnome Village"],
+        skills: { Thieving: 75 },
+      },
+    ],
+    elite: [
+      {
+        description: "Fletch a magic longbow in Tirannwn",
+        quests: [],
+        skills: {},
+        test: ({ quests }) => ({
+          isMet:
+            quests != null &&
+            (quests.includes("Regicide") ||
+              quests.includes("Fairytale I - Growing Pains")),
+          description:
+            "Completed Regicide or started Fairtale II - Cure a Queen",
+        }),
+      },
+      {
+        description: "Kill the Thermonuclear smoke devil",
+        quests: [],
+        skills: { Slayer: 93 },
+      },
+      {
+        description: "Have Pissy Scilla protect your magic tree",
+        quests: [],
+        skills: { Farming: 75 },
+      },
+      {
+        description: "Use the advanced elven overpass cliffside shortcut",
+        quests: ["Underground Pass"],
+        skills: { Agility: 85 },
+      },
+      {
+        description: "Equip any complete void set",
+        quests: [],
+        skills: {
+          Prayer: 22,
+          Attack: 42,
+          Strength: 42,
+          Defence: 42,
+          Hitpoints: 42,
+          Ranged: 42,
+          Magic: 42,
+        },
+        test: ({ combatLevel }) => ({
+          isMet: combatLevel != null && combatLevel >= 40,
+          description: "Ability to play Pest Control",
+        }),
+      },
+      {
+        description:
+          "Claim a Chompy bird hat from Rantz after registering at least 300 kills",
+        quests: ["Big Chompy Bird Hunting"],
+        skills: {},
+      },
+      {
+        description: "Pickpocket an elf",
+        quests: ["Mourning's End Part I"],
+        skills: { Thieving: 85 },
       },
     ],
   },

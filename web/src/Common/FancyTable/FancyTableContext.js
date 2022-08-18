@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useContext, createContext } from "react";
+import React, { useState, useMemo, useContext, createContext, useEffect } from "react";
 
 const FancyContext = createContext({
   searchValue: "",
@@ -28,7 +28,13 @@ const FancyTableContextProvider = ({
     activeFilter: null,
   });
 
-  const handleSearchValueChange = (value) => setSearchValue(value);
+  const handleSearchValueChange = (value) => {
+    setSearchValue(value);
+
+    if (page > 0) {
+      setState(s => ({ ...s, page: 0 }));
+    }
+  }
 
   const setPageSize = (pageSize) =>
     setState((st) => ({

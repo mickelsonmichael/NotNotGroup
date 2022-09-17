@@ -17,7 +17,7 @@ const BossTrackerGauge = ({
     </Typography>
     <LiquidFillGauge
       waveAmplitude={0}
-      textStyle={{ fill: "white" }}
+      textStyle={{ fill: "#eee" }}
       waveStyle={{ fill: color }}
       circleStyle={{ fill: color }}
       value={((player?.skills[primarySkill]?.experience ?? 0) / xp[99]) * 100}
@@ -28,7 +28,7 @@ const BossTrackerGauge = ({
     <Typography textAlign="center">
       <div className="boss-tracker__skill">
         <span>{primarySkill}</span>
-        <span style={{ backgroundColor: color, color: "#333" }}>
+        <span style={{ backgroundColor: color, color: "#eee" }}>
           {player?.skills[primarySkill]?.level ?? 0}
         </span>
       </div>

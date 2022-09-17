@@ -1,34 +1,40 @@
 import React from "react";
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 
 import { useAccounts } from "../../Context/AccountContext";
 import HiScoresTable from "../HiScoresTable";
 import NameHeader from "../NameHeader";
 
 const wrapperStyle = {
-    borderColor: "text.primary",
-    textAlign: "center"
-}
+  borderColor: "text.primary",
+  textAlign: "center",
+};
 
 const Home = () => {
-    const { notNotMike, notNotThomas } = useAccounts();
+  const { accounts } = useAccounts();
 
-    return (
-        <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "row", flexWrap: "wrap" }}>
-            <Box padding={1}>
-                <NameHeader name="NotNotMike" />
-                <Box sx={wrapperStyle}>
-                    <HiScoresTable skills={notNotMike?.skills} overall={notNotMike?.Overall} />
-                </Box>
-            </Box>
-            <Box padding={1}>
-                <NameHeader name="NotNotThomas" />
-                <Box sx={wrapperStyle}>
-                    <HiScoresTable skills={notNotThomas?.skills} overall={notNotThomas?.Overall} />
-                </Box>
-            </Box>
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "row",
+        flexWrap: "wrap",
+      }}
+    >
+      {accounts.map((account) => (
+        <Box padding={1}>
+          <NameHeader name={account.name} />
+          <Box sx={wrapperStyle}>
+            <HiScoresTable
+              skills={account?.skills}
+              overall={account?.Overall}
+            />
+          </Box>
         </Box>
-    );
-}
+      ))}
+    </Box>
+  );
+};
 
 export default Home;

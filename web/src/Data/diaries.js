@@ -1676,8 +1676,10 @@ const diaries = {
           isMet:
             skills != null &&
             combatLevel != null &&
-            ((skills["Slayer"]?.level >= 50 && combatLevel >= 100) ||
-              skills["Slayer"].level >= 99),
+            ((skills["Slayer"] != null &&
+              skills["Slayer"].level >= 50 &&
+              combatLevel >= 100) ||
+              (skills["Slayer"] != null && skills["Slayer"].level >= 99)),
           description: "50 Slayer with 100 Combat Level or 99 Slayer",
         }),
       },

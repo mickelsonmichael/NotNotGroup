@@ -6,8 +6,10 @@ const useNumberOfReadyTasks = (player, tasks) => {
   );
 
   const hasRequiredSkills = (task) =>
-    Object.keys(task.skills).every(
-      (sk) => player.skills[sk].level >= task.skills[sk]
+    Object.keys(task.skills).every((sk) =>
+      player.skills != null && player.skills[sk] != undefined
+        ? player.skills[sk].level >= task.skills[sk]
+        : false
     );
 
   const hasRequiredQuests = (task) =>

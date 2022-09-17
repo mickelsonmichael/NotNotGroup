@@ -1,11 +1,6 @@
 import diaries from "./diaries";
 import { quests } from "./questData.json";
 
-const expectedPlayers = [
-    "NotNotThomas",
-    "NotNotMike"
-];
-
 const expectedSkills = [
     "Attack",
     "Defence",

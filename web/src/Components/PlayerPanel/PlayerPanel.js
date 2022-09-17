@@ -1,22 +1,17 @@
 import React, { useState } from "react";
-import { usePlayer } from "../../Context/AccountContext";
 
 import NameHeader from "@components/NameHeader";
 import HiScoresTable from "@components/HiScoresTable";
-import DiariesTable from "@components/DiariesTable";
 
 import "./PlayerPanel.css";
-import DiaryIndicator from "../DiaryIndicator";
 import DiaryPanel from "../DiaryPanel";
 
-const PlayerPanel = ({ playerName }) => {
-  const player = usePlayer(playerName);
-
+const PlayerPanel = ({ player }) => {
   const [tab, setTab] = useState("stats");
 
   return (
     <div className="player-panel">
-      <NameHeader name={playerName} />
+      <NameHeader name={player.name} />
 
       <ul className="player-panel__tab">
         <li

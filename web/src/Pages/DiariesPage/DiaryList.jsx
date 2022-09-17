@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useMemo } from "react";
 
 import diaries from "../../Data/diaries";
 import FancyTable from "@common/FancyTable";
@@ -34,7 +34,7 @@ const filters = {
 };
 
 const DiaryList = () => {
-  const { notNotMike, notNotThomas } = useAccounts();
+  const { accounts } = useAccounts();
 
   const columns = [
     {
@@ -54,20 +54,16 @@ const DiaryList = () => {
       header: "Difficulty",
       cell: "difficulty",
     },
-    {
-      header: "NotNotMike",
-      cell: diaryStatusFor(notNotMike),
+    ...accounts.map((account) => ({
+      header: account.name,
+      cell: diaryStatusFor(account),
       alignment: "center",
-    },
-    {
-      header: "NotNotThomas",
-      cell: diaryStatusFor(notNotThomas),
-      alignment: "center",
-    },
+    })),
   ];
 
-  const expandItem = (item) => (
-    <DiaryRequirements task={item} players={[notNotMike, notNotThomas]} />
+  const expandItem = useCallback(
+    (item) => <DiaryRequirements task={item} players={accounts} />,
+    [accounts]
   );
 
   return (

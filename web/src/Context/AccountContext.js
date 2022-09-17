@@ -6,13 +6,14 @@ import MapQuests from "./MapQuests";
 import MapSkills from "./MapSkills";
 import MapDiaries from "./MapDiaries";
 
+const playerColors = {
+  NotNotThomas: "Brown",
+  NotNotConor: "MediumSeaGreen",
+  NotNotMike: "RebeccaPurple",
+};
+
 const AccountContext = createContext({
-  notNotThomas: null,
-  isNotNotThomasLoading: false,
-  isNotNotThomasError: false,
-  notNotMike: null,
-  isNotNotMikeLoading: false,
-  isNotNotMikeError: false,
+  accounts: [],
 });
 
 const getCombatLevel = (skills) => {
@@ -90,13 +91,17 @@ const useQuests = () =>
     { staleTime: Number(process.env.REFETCH_INTERVAL) }
   );
 
+const usePlayerColor = (account) => playerColors[account] ?? "gold";
+
 const useAccount = (account) => {
   const quests = useQuests();
   const diaries = useDiaries();
   const stats = useStats(account);
+  const color = usePlayerColor(account);
 
   return {
     name: account,
+    color,
     quests: quests.data?.filter((q) => q[account]).map((q) => q.quest) ?? [],
     diaries:
       diaries.data
@@ -109,28 +114,19 @@ const useAccount = (account) => {
   };
 };
 
-const AccountProvider = ({ children }) => {
-  const {
-    isLoading: isNotNotMikeLoading,
-    isError: isNotNotMikeError,
-    ...notNotMike
-  } = useAccount("NotNotMike");
+const useAllAccounts = (accounts) => accounts.map((acct) => useAccount(acct));
 
-  const {
-    isLoading: isNotNotThomasLoading,
-    isError: isNotNotThomasError,
-    ...notNotThomas
-  } = useAccount("NotNotThomas");
+const AccountProvider = ({ children }) => {
+  const accounts = useAllAccounts([
+    "NotNotMike",
+    "NotNotThomas",
+    "NotNotConor",
+  ]);
 
   return (
     <AccountContext.Provider
       value={{
-        notNotThomas,
-        isNotNotThomasLoading,
-        isNotNotThomasError,
-        notNotMike,
-        isNotNotMikeLoading,
-        isNotNotMikeError,
+        accounts,
       }}
     >
       {children}
@@ -141,13 +137,11 @@ const AccountProvider = ({ children }) => {
 const useAccounts = () => useContext(AccountContext);
 
 const usePlayer = (playerName) => {
-  const context = useAccounts();
+  const { accounts } = useAccounts();
 
-  const key = Object.keys(context).find(
-    (key) => key.toLowerCase() === playerName.toLowerCase()
+  return accounts.find(
+    (acct) => acct.name.toLowerCase() === playerName.toLowerCase()
   );
-
-  return context[key];
 };
 
 export { AccountProvider, useAccounts, usePlayer, useQuests, useDiaries };

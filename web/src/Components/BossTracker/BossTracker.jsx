@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material"
+import { Grid, Typography } from "@mui/material";
 
 import { useAccounts } from "../../Context/AccountContext";
 
@@ -12,7 +12,8 @@ const BossTracker = ({
   bossName,
   hiScoresName,
 }) => {
-  const { notNotMike, notNotThomas } = useAccounts();
+  const { accounts } = useAccounts();
+
   return (
     <>
       <Typography
@@ -28,23 +29,17 @@ const BossTracker = ({
         justifyContent="center"
         sx={{ marginTop: "1rem" }}
       >
-        <Grid item>
-          <BossTrackerGauge
-            player={notNotMike}
-            primarySkill={primarySkill}
-            secondarySkills={secondarySkills}
-            hiScoresName={hiScoresName}
-          />
-        </Grid>
-        <Grid item>
-          <BossTrackerGauge
-            player={notNotThomas}
-            primarySkill={primarySkill}
-            secondarySkills={secondarySkills}
-            hiScoresName={hiScoresName}
-            color="gold"
-          />
-        </Grid>
+        {accounts.map((account) => (
+          <Grid item key={account.name}>
+            <BossTrackerGauge
+              player={account}
+              primarySkill={primarySkill}
+              secondarySkills={secondarySkills}
+              hiScoresName={hiScoresName}
+              color={account.color}
+            />
+          </Grid>
+        ))}
       </Grid>
     </>
   );

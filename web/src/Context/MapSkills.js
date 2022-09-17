@@ -89,6 +89,8 @@ export default (skillStr) => {
       TheatreofBlood,
       TheatreofBloodHardMode,
       ThermonuclearSmokeDevil,
+      TombsOfAmascut,
+      TombsOfAmascutExpertMode,
       TzKalZuk,
       TzTokJad,
       Venenatis,

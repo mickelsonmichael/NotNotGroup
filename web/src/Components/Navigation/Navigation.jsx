@@ -4,12 +4,10 @@ import {
   Grid,
   IconButton,
   Link as UILink,
-  Menu,
-  MenuItem,
   Typography,
 } from "@mui/material";
-import { Storage, EmojiEvents } from "@mui/icons-material";
-import { Link, useNavigate } from "react-router-dom";
+import { Storage, EmojiEvents, GitHub } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 import NavDropdown from "./NavDropdown";
 
@@ -69,6 +67,13 @@ const Navigation = () => {
           <NavLink to="/memories">Memories</NavLink>
         </Grid>
         <Grid item marginLeft="auto">
+          <IconButton
+            href={process.env.GITHUB_URL}
+            target="_blank"
+            size="small"
+          >
+            <GitHub />
+          </IconButton>
           <IconButton
             href={process.env.HISCORE_OFFICIAL_URL}
             target="_blank"

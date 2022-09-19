@@ -66,6 +66,7 @@ const Navigation = () => {
               },
             ]}
           />
+          <NavLink to="/memories">Memories</NavLink>
         </Grid>
         <Grid item marginLeft="auto">
           <IconButton

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode=production",
-    "start": "webpack serve --open --mode=development",
+    "start": "webpack serve --mode=development",
     "test": "jest --watch"
   },
   "repository": {
@@ -45,6 +45,8 @@
     "dotenv-webpack": "^7.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-grid-gallery": "^1.0.0",
+    "react-image-lightbox": "^5.1.4",
     "react-liquid-gauge": "^1.2.4",
     "react-query": "^3.29.1",
     "react-router": "^6.3.0",

@@ -23,9 +23,7 @@ const Tracker = ({ track, displayName }) => {
       <div
         className="tracker-image-container"
         style={{ backgroundImage: `url(images/${track}.png)` }}
-      >
-        {/* <img src={`images/${track}.png`} className="tracker-image" /> */}
-      </div>
+      />
 
       <Grid flexGrow={1} className="tracker-text-container">
         <Typography

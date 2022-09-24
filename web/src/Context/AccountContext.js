@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from "react";
-import { useQuery } from "react-query";
+import { useQuery, useQueryClient } from "react-query";
 import axios from "axios";
 
 import MapQuests from "./MapQuests";
@@ -14,6 +14,7 @@ const playerColors = {
 
 const AccountContext = createContext({
   accounts: [],
+  refetch: () => {},
 });
 
 const getCombatLevel = (skills) => {
@@ -39,7 +40,7 @@ const getCombatLevel = (skills) => {
 
 const useStats = (account) =>
   useQuery(
-    account,
+    ["accounts", account],
     async () => {
       const cancellationToken = axios.CancelToken;
       const cancellationSource = cancellationToken.source();
@@ -109,6 +110,7 @@ const useAccount = (account) => {
         .map((d) => d.description) ?? [],
     isLoading: quests.isLoading || stats.isLoading,
     isError: quests.isError || stats.isError,
+    isRefetching: stats.isRefetching,
     ...(stats.data ?? { skills: [], Overall: -1, bosses: [] }),
     combatLevel: getCombatLevel(stats.data?.skills),
   };
@@ -123,10 +125,15 @@ const AccountProvider = ({ children }) => {
     "NotNotConor",
   ]);
 
+  const queryClient = useQueryClient();
+
+  const refetch = () => queryClient.invalidateQueries(["accounts"]);
+
   return (
     <AccountContext.Provider
       value={{
         accounts,
+        refetch,
       }}
     >
       {children}

@@ -6,10 +6,11 @@ import {
   Link as UILink,
   Typography,
 } from "@mui/material";
-import { Storage, EmojiEvents, GitHub } from "@mui/icons-material";
+import { Storage, EmojiEvents, GitHub, Cached } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 import NavDropdown from "./NavDropdown";
+import { useAccounts } from "../../Context/AccountContext";
 
 const linkStyle = {
   paddingRight: "1.5rem",
@@ -33,10 +34,17 @@ const NavLink = ({ to, children }) => (
 );
 
 const Navigation = () => {
+  const { refetch } = useAccounts();
+
   return (
     <Box sx={{ padding: "1rem", backgroundColor: "primary.dark" }}>
       <Grid container spacing={2}>
-        <Grid item columns={{ xs: 12, sm: "auto" }}>
+        <Grid
+          item
+          columns={{ xs: 12, sm: "auto" }}
+          display="flex"
+          alignItems="center"
+        >
           <NavLink to="/">
             <Typography fontWeight={700}>NotNotGroup</Typography>
           </NavLink>
@@ -46,6 +54,7 @@ const Navigation = () => {
           columns={{ xs: 12, sm: "auto" }}
           display="flex"
           flexDirection="row"
+          alignItems="center"
         >
           <NavLink to="/quests">Quests</NavLink>
           <NavLink to="/diaries">Diaries</NavLink>
@@ -67,6 +76,9 @@ const Navigation = () => {
           <NavLink to="/memories">Memories</NavLink>
         </Grid>
         <Grid item marginLeft="auto">
+          <IconButton onClick={refetch} size="small">
+            <Cached />
+          </IconButton>
           <IconButton
             href={process.env.GITHUB_URL}
             target="_blank"

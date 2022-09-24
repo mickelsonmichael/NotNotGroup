@@ -8,6 +8,4 @@ const images = imageContext.keys().map((img) => ({
   src: img,
 }));
 
-console.log(images);
-
 export default images;

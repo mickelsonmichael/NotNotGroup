@@ -11,7 +11,11 @@ const PlayerPanel = ({ player }) => {
 
   return (
     <div className="player-panel">
-      <NameHeader name={player.name} />
+      <NameHeader
+        name={player.name}
+        loading={player.isLoading || player.isRefetching}
+        color={player.color}
+      />
 
       <ul className="player-panel__tab">
         <li

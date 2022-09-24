@@ -11,11 +11,9 @@ const QuestPage = () => {
 
   return (
     <Grid
-      container
-      justifyContent="center"
       sx={{ height: "100%", paddingBottom: "5rem" }}
     >
-      <Grid item lg={6} md={12} sx={{ height: "100%", maxWidth: "100%" }}>
+      <Grid item sx={{ height: "100%", maxWidth: "100%" }}>
         <QuestTable players={players} />
       </Grid>
     </Grid>

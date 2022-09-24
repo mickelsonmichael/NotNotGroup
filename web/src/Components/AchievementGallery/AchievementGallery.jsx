@@ -8,10 +8,23 @@ import "react-image-lightbox/style.css";
 
 import Images from "./Images";
 
+const CaptionPattern = new RegExp(/(?:.*)?[\/\\](.+)\..+/, "i");
+const getCaption = (path) => {
+  if (!path) return "";
+
+  const [_, name] = CaptionPattern.exec(path);
+
+  return name.charAt(0).toUpperCase() + name.replace(/_/g, " ").substr(1);
+};
+
 const AchievementGallery = () => {
   const [i, setI] = useState(-1);
 
   const currentImage = useMemo(() => Images[i], [i]);
+  const currentCaption = useMemo(
+    () => (currentImage == null ? "" : getCaption(currentImage.src)),
+    [currentImage]
+  );
   const next = useMemo(() => (i + 1) % Images.length, [i]);
   const nextImg = useMemo(() => Images[next] || currentImage, [i]);
   const prev = useMemo(() => (i + Images.length - 1) % Images.length, [i]);
@@ -37,6 +50,7 @@ const AchievementGallery = () => {
           onCloseRequest={handleClose}
           onMovePrevRequest={handlePrev}
           onMoveNextRequest={handleNext}
+          imageCaption={currentCaption}
         />
       )}
     </div>

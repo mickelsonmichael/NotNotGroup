@@ -58,6 +58,7 @@ const Navigation = () => {
         >
           <NavLink to="/quests">Quests</NavLink>
           <NavLink to="/diaries">Diaries</NavLink>
+          <NavLink to="/memories">Memories</NavLink>
           <NavDropdown
             text="Skill&nbsp;Bosses"
             items={[
@@ -72,7 +73,6 @@ const Navigation = () => {
               },
             ]}
           />
-          <NavLink to="/memories">Memories</NavLink>
         </Grid>
         <Grid item marginLeft="auto">
           <IconButton onClick={refetch} size="small">

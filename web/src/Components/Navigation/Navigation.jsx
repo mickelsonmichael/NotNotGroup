@@ -59,15 +59,15 @@ const Navigation = () => {
           <NavLink to="/quests">Quests</NavLink>
           <NavLink to="/diaries">Diaries</NavLink>
           <NavDropdown
-            text="Bosses"
+            text="Skill&nbsp;Bosses"
             items={[
-              { to: "/bosses/wintertodt", text: "Wintertodt" },
+              { to: "/skill-bosses/wintertodt", text: "Wintertodt" },
               {
-                to: "/bosses/guardians-of-the-rift",
+                to: "/skill-bosses/guardians-of-the-rift",
                 text: "Guardians of the Rift",
               },
               {
-                to: "/bosses/tempoross",
+                to: "/skill-bosses/tempoross",
                 text: "Tempoross",
               },
             ]}

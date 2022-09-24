@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import BossTracker from "../../Components/BossTracker";
-import BossList from "./BossList";
+import SkillBossList from "./SkillBossList";
 
 const bosses = [
   {
@@ -27,16 +27,16 @@ const bosses = [
   },
 ];
 
-const BossPage = () => {
+const SkillBossPage = () => {
   return (
     <Routes>
       {bosses.map(({ path, ...boss }) => (
         <Route key={path} path={path} element={<BossTracker {...boss} />} />
       ))}
 
-      <Route path="" element={<BossList />} />
+      <Route path="" element={<SkillBossList />} />
     </Routes>
   );
 };
 
-export default BossPage;
+export default SkillBossPage;

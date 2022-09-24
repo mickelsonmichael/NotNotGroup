@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BossList = () => (
+const SkillBossList = () => (
   <div>
     <Link to="Wintertodt">Wintertodt</Link>
     <Link to="guardians-of-the-rift">Guardians of the Rift</Link>
@@ -9,4 +9,4 @@ const BossList = () => (
   </div>
 );
 
-export default BossList;
+export default SkillBossList;

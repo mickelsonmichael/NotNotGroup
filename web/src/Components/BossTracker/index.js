@@ -1,1 +1,1 @@
-export { default } from "./BossTracker";
+export { default } from "./SkillBossTracker";

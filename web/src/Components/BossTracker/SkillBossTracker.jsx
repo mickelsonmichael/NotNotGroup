@@ -3,10 +3,10 @@ import { Grid, Typography } from "@mui/material";
 
 import { useAccounts } from "../../Context/AccountContext";
 
-import BossTrackerGauge from "./BossTrackerGuage";
-import "./BossTracker.css";
+import SkillBossTrackerGauge from "./SkillBossTrackerGuage";
+import "./SkillBossTracker.css";
 
-const BossTracker = ({
+const SkillBossTracker = ({
   primarySkill,
   secondarySkills,
   bossName,
@@ -31,7 +31,7 @@ const BossTracker = ({
       >
         {accounts.map((account) => (
           <Grid item key={account.name}>
-            <BossTrackerGauge
+            <SkillBossTrackerGauge
               player={account}
               primarySkill={primarySkill}
               secondarySkills={secondarySkills}
@@ -45,4 +45,4 @@ const BossTracker = ({
   );
 };
 
-export default BossTracker;
+export default SkillBossTracker;

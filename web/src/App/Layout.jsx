@@ -8,7 +8,7 @@ import QuestPage from "../Pages/QuestPage";
 import TreasureTrailsPage from "../Pages/TreasureTrailsPage";
 import AnagramHelperPage from "../Pages/AnagramHelperPage";
 import DiariesPage from "../Pages/DiariesPage";
-import BossPage from "../Pages/BossPage/BossPage";
+import SkillBossPage from "../Pages/SkillBossPage";
 import MemoriesPage from "../Pages/MemoriesPage";
 
 const Layout = () => (
@@ -27,7 +27,7 @@ const Layout = () => (
     <Box sx={{ padding: "1rem", flexGrow: 1 }}>
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="/bosses/*" element={<BossPage />} />
+        <Route path="/skill-bosses/*" element={<SkillBossPage />} />
         <Route path="/quests" element={<QuestPage />} />
         <Route
           path="/treasure-trails/anagrams"

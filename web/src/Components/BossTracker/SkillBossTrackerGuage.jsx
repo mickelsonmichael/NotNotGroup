@@ -4,7 +4,7 @@ import LiquidFillGauge from "react-liquid-gauge";
 
 import xp from "../../xp";
 
-const BossTrackerGauge = ({
+const SkillBossTrackerGauge = ({
   color = "cyan",
   player,
   primarySkill,
@@ -42,4 +42,4 @@ const BossTrackerGauge = ({
   </div>
 );
 
-export default BossTrackerGauge;
+export default SkillBossTrackerGauge;

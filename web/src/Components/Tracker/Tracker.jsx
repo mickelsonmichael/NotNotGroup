@@ -19,35 +19,44 @@ const Tracker = ({ track, displayName }) => {
   );
 
   return (
-    <Grid className="tracker">
-      <Typography
-        fontSize="large"
-        fontWeight="bold"
-        display="flex"
-        justifyContent="space-between"
-        borderBottom="1px solid white"
+    <Grid className="tracker" display="flex" flexDirection="row">
+      <div
+        className="tracker-image-container"
+        style={{ backgroundImage: `url(images/${track}.png)` }}
       >
-        <span>{displayName}</span> <span>{total}</span>
-      </Typography>
-
-      <div>
-        {accounts.map(({ trackers, name }) => {
-          const lvl = Number(trackers[track]?.level ?? 0);
-
-          return (
-            <Typography
-              key={name}
-              fontSize="smaller"
-              display="flex"
-              justifyContent="space-between"
-              fontWeight="light"
-            >
-              <span>{name}</span>
-              <span>{lvl < 0 ? 0 : lvl}</span>
-            </Typography>
-          );
-        })}
+        {/* <img src={`images/${track}.png`} className="tracker-image" /> */}
       </div>
+
+      <Grid flexGrow={1} className="tracker-text-container">
+        <Typography
+          fontSize="large"
+          fontWeight="bold"
+          display="flex"
+          justifyContent="space-between"
+          borderBottom="1px solid white"
+        >
+          <span>{displayName}</span> <span>{total}</span>
+        </Typography>
+
+        <div>
+          {accounts.map(({ trackers, name }) => {
+            const lvl = Number(trackers[track]?.level ?? 0);
+
+            return (
+              <Typography
+                key={name}
+                fontSize="smaller"
+                display="flex"
+                justifyContent="space-between"
+                fontWeight="light"
+              >
+                <span>{name}</span>
+                <span>{lvl < 0 ? 0 : lvl}</span>
+              </Typography>
+            );
+          })}
+        </div>
+      </Grid>
     </Grid>
   );
 };

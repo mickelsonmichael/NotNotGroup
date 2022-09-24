@@ -1,8 +1,40 @@
 .tracker {
-    width: 350px;
-    display: inline-block;
-    background-color: rgba(50, 50, 50, 0.4);
-    padding: 1rem;
-    border-radius: 5px;
-    margin: 0.3rem 0.5rem;
+  width: 350px;
+  display: inline-block;
+  background-color: rgba(50, 50, 50, 0.4);
+  border-radius: 5px;
+  margin: 0.3rem 0.5rem;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 1px;
+}
+
+.tracker-image-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(50, 50, 50, 0.4);
+  box-shadow: rgba(100, 100, 100, 0.1) 2px 0 2px 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: content-box;
+  display: block;
+  width: 25%;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+}
+
+.tracker-image {
+  display: block;
+  height: auto;
+  max-height: 100%;
+  padding: 1rem;
+
+  width: 100%;
+  position: relative;
+}
+
+.tracker-text-container {
+  padding: 0.3rem 0.7rem;
 }

@@ -111,7 +111,7 @@ const useAccount = (account) => {
     isLoading: quests.isLoading || stats.isLoading,
     isError: quests.isError || stats.isError,
     isRefetching: stats.isRefetching,
-    ...(stats.data ?? { skills: [], Overall: -1, bosses: [] }),
+    ...(stats.data ?? { skills: [], Overall: -1, bosses: [], trackers: [] }),
     combatLevel: getCombatLevel(stats.data?.skills),
   };
 };

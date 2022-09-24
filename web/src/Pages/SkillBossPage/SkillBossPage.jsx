@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import BossTracker from "../../Components/BossTracker";
+import SkillBossTracker from "../../Components/SkillBossTracker";
 import SkillBossList from "./SkillBossList";
 
 const bosses = [
@@ -31,7 +31,7 @@ const SkillBossPage = () => {
   return (
     <Routes>
       {bosses.map(({ path, ...boss }) => (
-        <Route key={path} path={path} element={<BossTracker {...boss} />} />
+        <Route key={path} path={path} element={<SkillBossTracker {...boss} />} />
       ))}
 
       <Route path="" element={<SkillBossList />} />

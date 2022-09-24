@@ -10,6 +10,7 @@ import AnagramHelperPage from "../Pages/AnagramHelperPage";
 import DiariesPage from "../Pages/DiariesPage";
 import SkillBossPage from "../Pages/SkillBossPage";
 import MemoriesPage from "../Pages/MemoriesPage";
+import TrackersPage from "../Pages/TrackersPage";
 
 const Layout = () => (
   <Box
@@ -35,6 +36,7 @@ const Layout = () => (
         />
         <Route path="/treasure-trails" element={<TreasureTrailsPage />} />
         <Route path="/diaries/*" element={<DiariesPage />} />
+        <Route path="/trackers" element={<TrackersPage />} />
         <Route path="/memories" element={<MemoriesPage />} />
         <Route path="">Page Not Found</Route>
       </Routes>

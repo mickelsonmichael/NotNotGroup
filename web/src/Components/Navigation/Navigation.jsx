@@ -58,6 +58,7 @@ const Navigation = () => {
         >
           <NavLink to="/quests">Quests</NavLink>
           <NavLink to="/diaries">Diaries</NavLink>
+          <NavLink to="/trackers">Trackers</NavLink>
           <NavLink to="/memories">Memories</NavLink>
           <NavDropdown
             text="Skill&nbsp;Bosses"

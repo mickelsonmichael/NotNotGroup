@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Storage, EmojiEvents, GitHub, Cached } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { NavLink as RouterLink } from "react-router-dom";
 
 import NavDropdown from "./NavDropdown";
 import { useAccounts } from "../../Context/AccountContext";
@@ -24,7 +24,7 @@ const linkStyle = {
 const NavLink = ({ to, children }) => (
   <UILink
     to={to}
-    component={Link}
+    component={RouterLink}
     underline="none"
     color="text.primary"
     sx={linkStyle}

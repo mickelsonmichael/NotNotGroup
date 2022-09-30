@@ -55,6 +55,7 @@ const Navigation = () => {
           display="flex"
           flexDirection="row"
           alignItems="center"
+          flexWrap="wrap"
         >
           <NavLink to="/quests">Quests</NavLink>
           <NavLink to="/diaries">Diaries</NavLink>

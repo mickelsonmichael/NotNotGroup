@@ -10,6 +10,7 @@ const playerColors = {
   NotNotThomas: "Brown",
   NotNotConor: "MediumSeaGreen",
   NotNotMike: "RebeccaPurple",
+  NotNotDick: "DarkOrange",
 };
 
 const AccountContext = createContext({
@@ -123,6 +124,7 @@ const AccountProvider = ({ children }) => {
     "NotNotMike",
     "NotNotThomas",
     "NotNotConor",
+    "NotNotDick",
   ]);
 
   const queryClient = useQueryClient();

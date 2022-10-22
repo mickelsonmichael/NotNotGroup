@@ -12,17 +12,20 @@ const SkillBossTrackerGauge = ({
   hiScoresName,
 }) => (
   <div className="boss-tracker-wrapper">
-    <Typography variant="h4" textAlign="center" marginBottom={3}>
+    <Typography variant="h4" textAlign="center" marginBottom={1}>
       {player?.name}
     </Typography>
-    <LiquidFillGauge
-      waveAmplitude={0}
-      textStyle={{ fill: "#eee" }}
-      waveStyle={{ fill: color }}
-      circleStyle={{ fill: color }}
-      value={((player?.skills[primarySkill]?.experience ?? 0) / xp[99]) * 100}
-    />
-    <Typography variant="h3" textAlign="center" marginTop={3}>
+    <div className="boss-tracker-gauge-wrapper">
+      <LiquidFillGauge
+        waveAmplitude={0}
+        width={320}
+        textStyle={{ fill: "#eee" }}
+        waveStyle={{ fill: color }}
+        circleStyle={{ fill: color }}
+        value={((player?.skills[primarySkill]?.experience ?? 0) / xp[99]) * 100}
+      />
+    </div>
+    <Typography variant="h4" textAlign="center" marginTop={1}>
       {player?.bosses[hiScoresName]?.level ?? 0} Kills
     </Typography>
     <Typography textAlign="center">

@@ -17,7 +17,7 @@ const SkillBossTracker = ({
   return (
     <>
       <Typography
-        sx={{ typography: { xs: "h3", sm: "h2" } }}
+        sx={{ typography: { xs: "h3" } }}
         textAlign="center"
       >
         {bossName}

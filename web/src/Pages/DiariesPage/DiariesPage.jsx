@@ -6,7 +6,7 @@ import DiaryList from "./DiaryList";
 
 const DiariesPage = () => (
   <Routes>
-    <Route path=":region/:playerName" element={<SingleDiary />} />
+    <Route path=":region" element={<SingleDiary />} />
     <Route path="" element={<DiaryList />} />
   </Routes>
 );

@@ -13,7 +13,7 @@ const DiaryIndicator = ({ name, player, difficulties }) => {
     <div className="diary-indicator">
       <div
         className="diary-indicator__name"
-        onClick={() => navigate(`/diaries/${name}/${player?.name}`)}
+        onClick={() => navigate(`/diaries/${name}`)}
       >
         {name}
       </div>

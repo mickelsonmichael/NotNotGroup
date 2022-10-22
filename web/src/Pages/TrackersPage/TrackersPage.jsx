@@ -11,10 +11,16 @@ const toTrack = [
   { track: "ClueScrollshard", displayName: "Hard Clues" },
   { track: "ClueScrollselite", displayName: "Elite Clues" },
   { track: "ClueScrollsmaster", displayName: "Master Clues" },
-  { track: "ChaosElemental", displayName: "Chaos Elemental" },
-  { track: "Obor", displayName: "Obor" },
+  { track: "BarrowsChests", displayName: "Barrows" },
   { track: "Bryophyta", displayName: "Bryophyta" },
+  { track: "ChaosElemental", displayName: "Chaos Elemental" },
+  { track: "Bryophyta", displayName: "Bryophyta" },
+  { track: "RiftsClosed", displayName: "Guardians of the Rift" },
+  { track: "Hespori", displayName: "Hespori" },
+  { track: "Obor", displayName: "Obor" },
   { track: "Sarachnis", displayName: "Saranchnis" },
+  { track: "Tempoross", displayName: "Tempoross" },
+  { track: "Wintertodt", displayName: "WinterTodt" },
 ];
 
 const TrackersPage = () => {
@@ -43,7 +49,12 @@ const TrackersPage = () => {
           </InputAdornment>
         }
       />
-      <Grid display="flex" justifyContent="center" flexWrap="wrap" marginTop="1rem">
+      <Grid
+        display="flex"
+        justifyContent="center"
+        flexWrap="wrap"
+        marginTop="1rem"
+      >
         {filteredTrackers.map(({ track, displayName }) => (
           <Tracker key={track} track={track} displayName={displayName} />
         ))}

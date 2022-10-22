@@ -144,6 +144,11 @@ export default (skillStr) => {
       Obor,
       Bryophyta,
       Sarachnis,
+      Hespori,
+      BarrowsChests,
+      Tempoross,
+      RiftsClosed,
+      Wintertodt
     },
   };
 };

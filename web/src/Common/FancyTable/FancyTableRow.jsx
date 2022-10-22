@@ -31,19 +31,7 @@ const FancyTableRow = ({ columns, item, expandItem }) => {
           </TableCell>
         ))}
       </TableRow>
-      {expandItem && (
-        <TableRow>
-          <TableCell style={{ padding: 0 }} colSpan={columns.length}>
-            <Collapse
-              in={expandIsOpen}
-              unmountOnExit
-              sx={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
-            >
-              {expandItem(item)}
-            </Collapse>
-          </TableCell>
-        </TableRow>
-      )}
+      {expandItem && expandIsOpen && expandItem(item)}
     </>
   );
 };

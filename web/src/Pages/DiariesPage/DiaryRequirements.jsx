@@ -1,27 +1,18 @@
 import React from "react";
-import { Table, TableBody, TableRow, TableCell, Box } from "@mui/material";
+import { TableRow, TableCell, Box } from "@mui/material";
 
 import YesIcon from "@common/YesIcon";
 import NoIcon from "@common/NoIcon";
 
+const backgroundColor = "rgba(0, 0, 0, 0.1)";
+
 const QuestList = ({ quests, players }) =>
   quests.map((questName) => (
-    <TableRow key={questName}>
-      <TableCell>{questName}</TableCell>
+    <TableRow key={questName} sx={{ backgroundColor: backgroundColor }}>
+      <TableCell colSpan={3}>{questName}</TableCell>
       {players.map((player) => (
-        <TableCell
-          key={player.name}
-          style={{ textAlign: "center" }}
-          width="15%"
-        >
-          <Box display="flex" alignItems="center">
-            {player.quests.includes(questName) ? (
-              <YesIcon mr="0.25rem" />
-            ) : (
-              <NoIcon mr="0.25rem" />
-            )}
-            {player.name}
-          </Box>
+        <TableCell key={player.name} style={{ textAlign: "center" }}>
+          {player.quests.includes(questName) ? <YesIcon /> : <NoIcon />}
         </TableCell>
       ))}
     </TableRow>
@@ -29,24 +20,17 @@ const QuestList = ({ quests, players }) =>
 
 const SkillList = ({ skills, players }) =>
   Object.keys(skills).map((skill) => (
-    <TableRow key={skill}>
-      <TableCell>
+    <TableRow key={skill} sx={{ backgroundColor: backgroundColor }}>
+      <TableCell colSpan={3}>
         {skills[skill]} {skill}
       </TableCell>
       {players.map((player) => (
-        <TableCell
-          key={player.name}
-          style={{ textAlign: "center" }}
-          width="15%"
-        >
-          <Box display="flex" alignItems="center">
-            {skills[skill] <= player.skills[skill]?.level ? (
-              <YesIcon mr="0.25rem" />
-            ) : (
-              <NoIcon mr="0.25rem" />
-            )}
-            {player.name}
-          </Box>
+        <TableCell key={player.name} style={{ textAlign: "center" }}>
+          {skills[skill] <= player.skills[skill]?.level ? (
+            <YesIcon />
+          ) : (
+            <NoIcon />
+          )}
         </TableCell>
       ))}
     </TableRow>
@@ -55,16 +39,18 @@ const SkillList = ({ skills, players }) =>
 const DiaryRequirements = ({ task, players }) => (
   <>
     {Object.keys(task.skills).length > 0 || task.quests.length > 0 ? (
-      <Table>
-        <TableBody>
-          <QuestList quests={task.quests} players={players} />
-          <SkillList skills={task.skills} players={players} />
-        </TableBody>
-      </Table>
+      <>
+        <QuestList quests={task.quests} players={players} />
+        <SkillList skills={task.skills} players={players} />
+      </>
     ) : (
-      <Box textAlign="center" padding="1rem">
-        There are no requirements
-      </Box>
+      <TableRow sx={{ backgroundColor: backgroundColor }}>
+        <TableCell colSpan={420}>
+          <Box textAlign="center" padding="1rem">
+            There are no requirements
+          </Box>
+        </TableCell>
+      </TableRow>
     )}
   </>
 );

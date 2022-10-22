@@ -33,7 +33,7 @@
     border-radius: 4px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 2020px) {
     .player-panel {
         width: 480px;
     }

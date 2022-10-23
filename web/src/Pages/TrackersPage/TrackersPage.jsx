@@ -14,13 +14,16 @@ const toTrack = [
   { track: "BarrowsChests", displayName: "Barrows" },
   { track: "Bryophyta", displayName: "Bryophyta" },
   { track: "ChaosElemental", displayName: "Chaos Elemental" },
-  { track: "Bryophyta", displayName: "Bryophyta" },
+  { track: "CrazyArchaeologist", displayName: "Crazy Archaeologist" },
+  { track: "DerangedArchaeologist", displayName: "Deranged Archaeologist" },
   { track: "RiftsClosed", displayName: "Guardians of the Rift" },
   { track: "Hespori", displayName: "Hespori" },
+  { track: "KingBlackDragon", displayName: "King Black Dragon" },
   { track: "Obor", displayName: "Obor" },
   { track: "Sarachnis", displayName: "Saranchnis" },
+  { track: "Skotizo", displayName: "Skotizo" },
   { track: "Tempoross", displayName: "Tempoross" },
-  { track: "Wintertodt", displayName: "WinterTodt" },
+  { track: "Wintertodt", displayName: "Wintertodt" },
 ];
 
 const TrackersPage = () => {

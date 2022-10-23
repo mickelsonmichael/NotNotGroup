@@ -148,7 +148,11 @@ export default (skillStr) => {
       BarrowsChests,
       Tempoross,
       RiftsClosed,
-      Wintertodt
+      Wintertodt,
+      CrazyArchaeologist,
+      DerangedArchaeologist,
+      KingBlackDragon,
+      Skotizo
     },
   };
 };

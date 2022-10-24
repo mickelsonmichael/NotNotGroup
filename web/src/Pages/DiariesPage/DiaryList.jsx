@@ -1,9 +1,9 @@
-import React, { useCallback, useMemo } from "react";
+import React, { useCallback } from "react";
 
 import diaries from "../../Data/diaries";
 import FancyTable from "@common/FancyTable";
 import { useAccounts } from "../../Context/AccountContext";
-import DiaryStatusIcon from "../../Common/DiaryStatusIcon/DiaryStatusIcon";
+import { DiaryStatusIcon } from "@common/Icons";
 import DiaryRequirements from "./DiaryRequirements";
 
 const detailedDiaries = Object.keys(diaries).flatMap((regionName) =>

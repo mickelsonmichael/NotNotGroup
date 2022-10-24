@@ -1,7 +1,5 @@
 import React from "react";
-import NoIcon from "../NoIcon";
-import YesIcon from "../YesIcon";
-import WarnIcon from "../WarnIcon";
+import {YesIcon, WarnIcon, NoIcon } from "@common/Icons";
 
 const playerLevelExceedsRequirement = (skill) => skill.playerLevel >= skill.requiredLevel;
 

@@ -1,8 +1,7 @@
 import React from "react";
 import { TableRow, TableCell, Box } from "@mui/material";
 
-import YesIcon from "@common/YesIcon";
-import NoIcon from "@common/NoIcon";
+import { YesIcon, NoIcon } from "@common/Icons";
 
 const backgroundColor = "rgba(0, 0, 0, 0.1)";
 

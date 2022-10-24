@@ -10,9 +10,7 @@ import {
 
 import useDifficulty from "./useDifficulty";
 import { useAccounts } from "../../../Context/AccountContext";
-import YesIcon from "@common/YesIcon";
-import NoIcon from "@common/NoIcon";
-import WarnIcon from "@common/WarnIcon";
+import { YesIcon, WarnIcon, NoIcon } from "@common/Icons";
 import { Box } from "@mui/system";
 
 const backgroundDark = "rgba(0, 0, 0, 0.15)";
@@ -22,7 +20,13 @@ const DiaryDifficulty = ({ region, difficulty }) => {
   const { accounts } = useAccounts();
 
   return (
-    <Box border="1px solid white" borderRadius="4px" paddingTop={2} marginY={4} backgroundColor={backgroundDark}>
+    <Box
+      border="1px solid white"
+      borderRadius="4px"
+      paddingTop={2}
+      marginY={4}
+      backgroundColor={backgroundDark}
+    >
       <Typography
         sx={{
           typography: { xs: "h4", sm: "h3" },

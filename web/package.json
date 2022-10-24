@@ -25,6 +25,8 @@
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.5.0",
+    "eslint": "^8.26.0",
+    "eslint-plugin-react": "^7.31.10",
     "file-loader": "^6.2.0",
     "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",

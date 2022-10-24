@@ -38,3 +38,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.diary-indicator__segment {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diary-indicator__segment-icon {
+  width: 8pt !important;
+  height: 8pt !important;
+  color:rgba(0, 0, 0, 0.4) !important;
+}

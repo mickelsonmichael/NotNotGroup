@@ -39,18 +39,21 @@ const DiaryIndicator = ({ name, player, difficulties }) => {
                 color="rgba(0, 200, 0, 0.3)"
                 value={completedTasks}
                 total={numberOfTasks}
+                type="done"
               />
 
               <DiaryIndicatorSegment
                 color="rgb(255,255,50, 0.6)"
                 value={readyTasks}
                 total={numberOfTasks}
+                type="ready"
               />
 
               <DiaryIndicatorSegment
                 color="rgba(200, 0, 0, 0.5)"
                 value={notReadyTasks}
                 total={numberOfTasks}
+                type="not_ready"
               />
             </div>
           );

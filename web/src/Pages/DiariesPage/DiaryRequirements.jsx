@@ -45,7 +45,7 @@ const DiaryRequirements = ({ task, players }) => (
     ) : (
       <TableRow sx={{ backgroundColor: backgroundColor }}>
         <TableCell colSpan={420}>
-          <Box textAlign="center" padding="1rem">
+          <Box textAlign="center">
             There are no requirements
           </Box>
         </TableCell>

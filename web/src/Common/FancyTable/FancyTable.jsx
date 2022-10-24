@@ -19,7 +19,7 @@ const FancyTable = ({ items, columns, expandItem, filters }) => (
     </Box>
 
     <TableContainer>
-      <Table>
+      <Table size="small">
         <FancyHeader />
         <FancyBody />
         <FancyFooter />

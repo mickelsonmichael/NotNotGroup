@@ -12,7 +12,7 @@ const Tracker = ({ id, displayName }) => {
     () =>
       accounts.reduce(
         (tot, acct) =>
-          tot + Math.max(Number(acct.activities.find(a => a.id === id)?.level ?? 0), 0),
+          tot + Math.max(Number(acct.activities.find(a => a.id === id)?.score ?? 0), 0),
         0
       ),
     [accounts]
@@ -22,7 +22,7 @@ const Tracker = ({ id, displayName }) => {
     <Grid className="tracker" display="flex" flexDirection="row">
       <div
         className="tracker-image-container"
-        style={{ backgroundImage: `url(images/${displayName}.png)` }}
+        style={{ backgroundImage: `url('images/${displayName}.png')` }}
       />
 
       <Grid flexGrow={1} className="tracker-text-container">
@@ -38,7 +38,7 @@ const Tracker = ({ id, displayName }) => {
 
         <div>
           {accounts.map(({ activities, name }) => {
-            const lvl = Number(activities.find(a => a.id === id)?.level ?? 0);
+            const lvl = Number(activities.find(a => a.id === id)?.score ?? 0);
 
             return (
               <Typography

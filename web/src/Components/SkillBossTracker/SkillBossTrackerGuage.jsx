@@ -22,11 +22,11 @@ const SkillBossTrackerGauge = ({
         textStyle={{ fill: "#eee" }}
         waveStyle={{ fill: color }}
         circleStyle={{ fill: color }}
-        value={((player?.skills[primarySkill]?.experience ?? 0) / xp[99]) * 100}
+        value={((player?.skills[primarySkill]?.xp ?? 0) / xp[99]) * 100}
       />
     </div>
     <Typography variant="h4" textAlign="center" marginTop={1}>
-      {player?.bosses.find(b => b.id === id)?.level ?? 0} Kills
+      {player?.activities.find(b => b.id === id)?.level ?? 0} Kills
     </Typography>
     <Typography textAlign="center">
       <div className="boss-tracker__skill">

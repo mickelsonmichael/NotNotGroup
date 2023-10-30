@@ -63,7 +63,7 @@ const Skill = ({ skillName, skillData }) => {
                         </tr>
                         <tr>
                             <td>XP</td>
-                            <td>{formatNum(skillData?.experience)}</td>
+                            <td>{formatNum(skillData?.xp)}</td>
                         </tr>
                         {skillName !== "Overall" && (
                             <>

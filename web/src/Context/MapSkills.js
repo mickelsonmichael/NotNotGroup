@@ -1,24 +1,11 @@
-const splitSkill = (skillStr) => {
-  const [rank, level, experience] = skillStr.split(",");
+
+export default ({ skills, activities }) => {
+  const overall = skills.slice(0, 1)[0];
+  const mappedSkills = skills.slice(1).reduce((result, skill) => ({ ...result, [skill.name]: skill }), {});
 
   return {
-    rank,
-    level,
-    experience,
-  };
-};
-
-
-export default (skillStr) => {
-  const { skills, activities } = JSON.parse(skillStr);
-
-  const mappedSkills = skills.except(s => s.name === "Overall").reduce(result, skill => ({ ...result, [skill.name]: skill }), {});
-
-  const mappedActivities = activities.reduce(result, skill => ({ ...result, [skill.name]: skill }), {});
-
-  return {
-    Overall: mappedSkills.Overall,
+    Overall: overall,
     skills: mappedSkills,
-    activities: mappedActivities
+    activities: activities
   };
 };

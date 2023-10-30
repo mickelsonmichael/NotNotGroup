@@ -20,7 +20,7 @@ const toTrack = [
   { id: 40, displayName: "Hespori" },
   { id: 42, displayName: "King Black Dragon" },
   { id: 50, displayName: "Obor" },
-  { id: 52, displayName: "Saranchnis" },
+  { id: 52, displayName: "Sarachnis" },
   { id: 54, displayName: "Skotizo" },
   { id: 56, displayName: "Tempoross" },
   { id: 72, displayName: "Wintertodt" },

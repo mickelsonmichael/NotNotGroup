@@ -15,10 +15,13 @@ import {
 } from "@mui/material";
 import FilterIcon from "@mui/icons-material/FilterAlt"
 
+import { useAccounts } from "../../Context/AccountContext";
 import useQuestTable from "./useQuestTable";
 import QuestRow from "./QuestRow";
 
-const QuestTable = ({ players }) => {
+const QuestTable = () => {
+  const { accounts } = useAccounts();
+
     const {
         filter,
         page,
@@ -30,7 +33,7 @@ const QuestTable = ({ players }) => {
         setFilter,
         setPageSize,
         setSelectedFilter
-    } = useQuestTable(players);
+    } = useQuestTable(accounts);
 
     const handleChangePageSize = ({ target: { value } }) => setPageSize(value);
 
@@ -68,7 +71,7 @@ const QuestTable = ({ players }) => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Name</TableCell>
-                            {players.map(p => (
+                            {accounts.map(p => (
                                 <TableCell key={p.name} align="center">
                                     <div>NotNot</div>
                                     {p.name.substr(6)}
@@ -78,14 +81,14 @@ const QuestTable = ({ players }) => {
                     </TableHead>
                     <TableBody>
                         {quests.map(q => (
-                            <QuestRow key={q.name} quest={q} players={players} />
+                            <QuestRow key={q.name} quest={q} players={accounts} />
                         ))}
                     </TableBody>
                     <TableFooter>
                         <TableRow>
                             <TablePagination
                                 rowsPerPageOptions={[5, 10, 25, { label: "All", value: -1 }]}
-                                colSpan={1 + players.length}
+                                colSpan={1 + accounts.length}
                                 count={totalQuests}
                                 page={page}
                                 rowsPerPage={questsPerPage}

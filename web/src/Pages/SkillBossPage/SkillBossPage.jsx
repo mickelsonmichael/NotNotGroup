@@ -9,21 +9,21 @@ const bosses = [
     bossName: "Wintertodt",
     primarySkill: "Firemaking",
     secondarySkills: ["Fletching", "Construction"],
-    hiScoresName: "Wintertodt",
+    id: 72,
   },
   {
     path: "guardians-of-the-rift",
     bossName: "Guardians of the Rift",
     primarySkill: "Runecraft",
     secondarySkills: ["Crafting", "Mining"],
-    hiScoresName: "RiftsClosed",
+    id: 16,
   },
   {
     path: "tempoross",
     bossName: "Tempoross",
     primarySkill: "Fishing",
     secondarySkills: ["Construction", "Cooking"],
-    hiScoresName: "Tempoross",
+    id: 56,
   },
 ];
 

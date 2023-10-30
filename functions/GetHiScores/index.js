@@ -17,12 +17,10 @@ module.exports = async function (context, req) {
 
     context.log("Sending request for " + name);
 
-    const response = await axios("http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player=" + name);
+    const response = await axios("https://secure.runescape.com/m=hiscore_oldschool/index_lite.json?player=" + name);
 
     context.res = {
         statusCode: response.statusCode,
-        body: {
-            hiScores: response.data.toString()
-        }
+        body: response.data
     }
 }

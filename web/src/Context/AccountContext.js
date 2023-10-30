@@ -53,7 +53,7 @@ const useStats = (account) =>
         }
       );
 
-      const mapped = MapSkills(response.data.hiScores);
+      const mapped = MapSkills(response.data);
 
       return mapped;
     },
@@ -112,7 +112,7 @@ const useAccount = (account) => {
     isLoading: quests.isLoading || stats.isLoading,
     isError: quests.isError || stats.isError,
     isRefetching: stats.isRefetching,
-    ...(stats.data ?? { skills: [], Overall: -1, bosses: [], trackers: [] }),
+    ...(stats.data ?? { skills: {}, Overall: -1, activities: [] }),
     combatLevel: getCombatLevel(stats.data?.skills),
   };
 };

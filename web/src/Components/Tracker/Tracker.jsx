@@ -5,14 +5,14 @@ import { useAccounts } from "../../Context/AccountContext";
 
 import "./Tracker.css";
 
-const Tracker = ({ track, displayName }) => {
+const Tracker = ({ id, displayName }) => {
   const { accounts } = useAccounts();
 
   const total = useMemo(
     () =>
       accounts.reduce(
         (tot, acct) =>
-          tot + Math.max(Number(acct.trackers[track]?.level ?? 0), 0),
+          tot + Math.max(Number(acct.activities.find(a => a.id === id)?.score ?? 0), 0),
         0
       ),
     [accounts]
@@ -22,7 +22,7 @@ const Tracker = ({ track, displayName }) => {
     <Grid className="tracker" display="flex" flexDirection="row">
       <div
         className="tracker-image-container"
-        style={{ backgroundImage: `url(images/${track}.png)` }}
+        style={{ backgroundImage: `url('images/${displayName}.png')` }}
       />
 
       <Grid flexGrow={1} className="tracker-text-container">
@@ -37,8 +37,8 @@ const Tracker = ({ track, displayName }) => {
         </Typography>
 
         <div>
-          {accounts.map(({ trackers, name }) => {
-            const lvl = Number(trackers[track]?.level ?? 0);
+          {accounts.map(({ activities, name }) => {
+            const lvl = Number(activities.find(a => a.id === id)?.score ?? 0);
 
             return (
               <Typography

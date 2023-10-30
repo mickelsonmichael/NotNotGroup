@@ -4,26 +4,26 @@ import { Search } from "@mui/icons-material";
 import Tracker from "../../Components/Tracker";
 
 const toTrack = [
-  { track: "ClueScrollsall", displayName: "All Clues" },
-  { track: "ClueScrollsbeginner", displayName: "Beginner Clues" },
-  { track: "ClueScrollseasy", displayName: "Easy Clues" },
-  { track: "ClueScrollsmedium", displayName: "Medium Clues" },
-  { track: "ClueScrollshard", displayName: "Hard Clues" },
-  { track: "ClueScrollselite", displayName: "Elite Clues" },
-  { track: "ClueScrollsmaster", displayName: "Master Clues" },
-  { track: "BarrowsChests", displayName: "Barrows" },
-  { track: "Bryophyta", displayName: "Bryophyta" },
-  { track: "ChaosElemental", displayName: "Chaos Elemental" },
-  { track: "CrazyArchaeologist", displayName: "Crazy Archaeologist" },
-  { track: "DerangedArchaeologist", displayName: "Deranged Archaeologist" },
-  { track: "RiftsClosed", displayName: "Guardians of the Rift" },
-  { track: "Hespori", displayName: "Hespori" },
-  { track: "KingBlackDragon", displayName: "King Black Dragon" },
-  { track: "Obor", displayName: "Obor" },
-  { track: "Sarachnis", displayName: "Saranchnis" },
-  { track: "Skotizo", displayName: "Skotizo" },
-  { track: "Tempoross", displayName: "Tempoross" },
-  { track: "Wintertodt", displayName: "Wintertodt" },
+  { id: 6, displayName: "All Clues" },
+  { id: 7, displayName: "Beginner Clues" },
+  { id: 8, displayName: "Easy Clues" },
+  { id: 9, displayName: "Medium Clues" },
+  { id: 10, displayName: "Hard Clues" },
+  { id: 11, displayName: "Elite Clues" },
+  { id: 12, displayName: "Master Clues" },
+  { id: 20, displayName: "Barrows" },
+  { id: 21, displayName: "Bryophyta" },
+  { id: 27, displayName: "Chaos Elemental" },
+  { id: 31, displayName: "Crazy Archaeologist" },
+  { id: 35, displayName: "Deranged Archaeologist" },
+  { id: 16, displayName: "Guardians of the Rift" },
+  { id: 40, displayName: "Hespori" },
+  { id: 42, displayName: "King Black Dragon" },
+  { id: 50, displayName: "Obor" },
+  { id: 52, displayName: "Sarachnis" },
+  { id: 54, displayName: "Skotizo" },
+  { id: 56, displayName: "Tempoross" },
+  { id: 72, displayName: "Wintertodt" },
 ];
 
 const TrackersPage = () => {
@@ -58,8 +58,8 @@ const TrackersPage = () => {
         flexWrap="wrap"
         marginTop="1rem"
       >
-        {filteredTrackers.map(({ track, displayName }) => (
-          <Tracker key={track} track={track} displayName={displayName} />
+        {filteredTrackers.map(({ id, displayName }) => (
+          <Tracker key={id} id={id} displayName={displayName} />
         ))}
       </Grid>
     </div>

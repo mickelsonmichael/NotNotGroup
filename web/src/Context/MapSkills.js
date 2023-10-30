@@ -37,6 +37,8 @@ export default (skillStr) => {
     Extra,
     BountyHunterHunter,
     BountyHunterRogue,
+    BountyHunterLegacy,
+    BountyHungerLegacyRogue,
     ClueScrollsall,
     ClueScrollsbeginner,
     ClueScrollseasy,
@@ -50,9 +52,11 @@ export default (skillStr) => {
     RiftsClosed,
     AbyssalSire,
     AlchemicalHydra,
+    Artio,
     BarrowsChests,
     Bryophyta,
     Callisto,
+    Calvarion,
     Cerberus,
     ChambersofXeric,
     ChambersofXericChallengeMode,
@@ -65,6 +69,7 @@ export default (skillStr) => {
     DagannothRex,
     DagannothSupreme,
     DerangedArchaeologist,
+    DukeSucellus,
     GeneralGraardor,
     GiantMole,
     GrotesqueGuardians,
@@ -79,12 +84,16 @@ export default (skillStr) => {
     Nightmare,
     PhosanisNightmare,
     Obor,
+    PhantomMuspah,
     Sarachnis,
     Scorpia,
     Skotizo,
+    Spindel,
     Tempoross,
     TheGauntlet,
     TheCorruptedGauntlet,
+    Leviathan,
+    Whisperer,
     TheatreofBlood,
     TheatreofBloodHardMode,
     ThermonuclearSmokeDevil,
@@ -92,12 +101,14 @@ export default (skillStr) => {
     TombsOfAmascutExpertMode,
     TzKalZuk,
     TzTokJad,
+    Vardorvis,
     Venenatis,
     Vetion,
     Vorkath,
     Wintertodt,
     Zalcano,
     Zulrah,
+    ...rest
   ] = skillStr.split("\n").map((skillStr) => splitSkill(skillStr));
 
   return {
@@ -154,5 +165,6 @@ export default (skillStr) => {
       KingBlackDragon,
       Skotizo
     },
+    unmapped: rest
   };
 };

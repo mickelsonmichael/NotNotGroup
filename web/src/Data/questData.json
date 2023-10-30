@@ -21,12 +21,20 @@
           "level": 35
         }
       ],
-      "quests": ["The Restless Ghost", "Ernest the Chicken", "Priest in Peril"]
+      "quests": [
+        "The Restless Ghost",
+        "Ernest the Chicken",
+        "Priest in Peril"
+      ]
     },
     {
       "name": "Another Slice of H.A.M.",
       "description": "I can start this quest by speaking to Ambassador Alvijar, who is in Ur-tag's house in Dorgesh-Kaan.",
-      "quests": ["Death to the Dorgeshuun", "The Dig Site", "The Giant Dwarf"],
+      "quests": [
+        "Death to the Dorgeshuun",
+        "The Dig Site",
+        "The Giant Dwarf"
+      ],
       "skills": [
         {
           "name": "Attack",
@@ -41,8 +49,12 @@
     {
       "name": "The Ascent of Arceuus",
       "description": "I can start this quest by talking to Mori north of the pub in Arceuus.",
-      "notes": ["Requires 20% Areuus favor."],
-      "quests": ["Client of Kourend"],
+      "notes": [
+        "Requires 20% Areuus favor."
+      ],
+      "quests": [
+        "Client of Kourend"
+      ],
       "skills": [
         {
           "name": "Hunter",
@@ -64,8 +76,12 @@
     {
       "name": "Beneath Cursed Sands",
       "description": "I can start this quest by talking to Jamila in Sophanem",
-      "notes": ["Combat Level 85 Recommended"],
-      "quests": ["Contact!"],
+      "notes": [
+        "Combat Level 85 Recommended"
+      ],
+      "quests": [
+        "Contact!"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -88,7 +104,10 @@
         "You must defeat a level 75 enemy.",
         "Higher mining levels are beneficial."
       ],
-      "quests": ["Fishing Contest", "Dwarf Cannon"],
+      "quests": [
+        "Fishing Contest",
+        "Dwarf Cannon"
+      ],
       "skills": [
         {
           "name": "Defence",
@@ -126,8 +145,12 @@
     {
       "name": "Biohazard",
       "description": "I can start this quest by talking to Elena at her home, north east of the Flying Horse Inn in East Ardougne",
-      "notes": ["Combat Level 10 Recommended"],
-      "quests": ["Plague City"],
+      "notes": [
+        "Combat Level 10 Recommended"
+      ],
+      "quests": [
+        "Plague City"
+      ],
       "skills": []
     },
     {
@@ -140,15 +163,24 @@
     {
       "name": "Bone Voyage",
       "description": "I can start the quest by speaking to Curator Haig Halen in Varrock Museum.",
-      "notes": ["Requires 100 Museum Kudos"],
-      "quests": ["The Dig Site"],
+      "notes": [
+        "Requires 100 Museum Kudos"
+      ],
+      "quests": [
+        "The Dig Site"
+      ],
       "skills": []
     },
     {
       "name": "Cabin Fever",
       "description": "I can start this quest by talking to Bill Teach in Port Phasmatys.",
-      "notes": ["Also requires Priest in Peril to get to Port Phasmatys."],
-      "quests": ["Rum Deal", "Pirate's Treasure"],
+      "notes": [
+        "Also requires Priest in Peril to get to Port Phasmatys."
+      ],
+      "quests": [
+        "Rum Deal",
+        "Pirate's Treasure"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -171,13 +203,17 @@
     {
       "name": "Client of Kourend",
       "description": "I can start this quest by talking to Veos on the docks of Port Piscarilius.",
-      "quests": ["X Marks the Spot"],
+      "quests": [
+        "X Marks the Spot"
+      ],
       "skills": []
     },
     {
       "name": "Clock Tower",
       "description": "I can start this quest by talking to Brother Kojo in the Clock Tower south of Ardougne.",
-      "notes": ["Combat Level 15 Recommended"],
+      "notes": [
+        "Combat Level 15 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
@@ -224,14 +260,18 @@
     {
       "name": "The Corsair Curse",
       "description": "I can start this quest by talking to <insert name here> north of Port Sarim",
-      "notes": ["Must be able to defeat a level xx enemy"],
+      "notes": [
+        "Must be able to defeat a level xx enemy"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "Creature of Fenkenstrain",
       "description": "I can start this quest by reading the signpost in the center of Canifis.",
-      "notes": ["Must defeat a level 51 monster."],
+      "notes": [
+        "Must defeat a level 51 monster."
+      ],
       "skills": [
         {
           "name": "Crafting",
@@ -242,12 +282,35 @@
           "level": 25
         }
       ],
-      "quests": ["Priest in Peril", "The Restless Ghost"]
+      "quests": [
+        "Priest in Peril",
+        "The Restless Ghost"
+      ]
+    },
+    {
+      "name": "Curse of the Empty Lord",
+      "description": "I can start this miniquest by talking to a Mysterious Ghost north west of the Fishing Guild, assuming I can actually see him.",
+      "quests": [
+        "Desert Treasure",
+        "The Restless Ghost"
+      ],
+      "skills": [
+        {
+          "name": "Prayer",
+          "level": 31
+        }
+      ],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
+      "miniquest": true
     },
     {
       "name": "Darkness of Hallowvale",
       "description": "I can start this quest by speaking to Veliaf Hurtz in the Myreque Hideout beneath Burgh de Rott.",
-      "quests": ["In Aid of the Myreque"],
+      "quests": [
+        "In Aid of the Myreque"
+      ],
       "skills": [
         {
           "name": "Strength",
@@ -288,8 +351,12 @@
     {
       "name": "Death to the Dorgeshuun",
       "description": "I can start this quest by speaking to Mistag in the Dorgeshuun Mines.",
-      "notes": ["Must defeat a level 50 enemy."],
-      "quests": ["The Lost Tribe"],
+      "notes": [
+        "Must defeat a level 50 enemy."
+      ],
+      "quests": [
+        "The Lost Tribe"
+      ],
       "skills": [
         {
           "name": "Thieving",
@@ -304,15 +371,22 @@
     {
       "name": "Demon Slayer",
       "description": "I can start this quest by speaking to Gypsy Aris in the tent in Varrock's main square",
-      "notes": ["Combat Level 15 Recommended"],
+      "notes": [
+        "Combat Level 15 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "The Depths of Despair",
       "description": "I can start this quest by talking to Lord Kandur Hosidius in his home in south east Hosidius.",
-      "notes": ["Combat Level 15 Recommended", "20% Hosidius Favor Required"],
-      "quests": ["Client of Kourend"],
+      "notes": [
+        "Combat Level 15 Recommended",
+        "20% Hosidius Favor Required"
+      ],
+      "quests": [
+        "Client of Kourend"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -347,6 +421,48 @@
         {
           "name": "Thieving",
           "level": 53
+        }
+      ]
+    },
+    {
+      "name": "Desert Treasure II - The Fallen Empire",
+      "description": "I can start this quest by investigating the Ancient Vault north east of Nardah.",
+      "quests": [
+        "Desert Treasure",
+        "Secrets of the North",
+        "Enakhra's Lament",
+        "Temple of the Eye",
+        "The Garden of Death",
+        "Below Ice Mountain",
+        "His Faithful Servants"
+      ],
+      "notes": [
+        "Combat Level 100 Recommended"
+      ],
+      "skills": [
+        {
+          "name": "Magic",
+          "level": 75
+        },
+        {
+          "name": "Firemaking",
+          "level": 75
+        },
+        {
+          "name": "Thieving",
+          "level": 70
+        },
+        {
+          "name": "Herblore",
+          "level": 62
+        },
+        {
+          "name": "Runecraft",
+          "level": 60
+        },
+        {
+          "name": "Construction",
+          "level": 60
         }
       ]
     },
@@ -396,7 +512,9 @@
     {
       "name": "Doric's Quest",
       "description": "I can start this quest by speaking to Doric who is North of Falador",
-      "notes": ["Level 15 Mining Recommended"],
+      "notes": [
+        "Level 15 Mining Recommended"
+      ],
       "quests": [],
       "skills": []
     },
@@ -414,7 +532,9 @@
     {
       "name": "Dragon Slayer II",
       "description": "I can start this quest by talking to Alec Kincade in the Myths' Guild, west of Corsair Cove.",
-      "notes": ["Requires 200 quest points."],
+      "notes": [
+        "Requires 200 quest points."
+      ],
       "quests": [
         "Legends' Quest",
         "Dream Mentor",
@@ -462,14 +582,21 @@
     {
       "name": "Dream Mentor",
       "description": "I can start this quest by inspecting the fallen man, in the mines on the north of Lunar Isle. There should be a tunnel leading to him.",
-      "notes": ["Must have a combat level of 85."],
-      "quests": ["Lunar Diplomacy", "Eadgar's Ruse"],
+      "notes": [
+        "Must have a combat level of 85."
+      ],
+      "quests": [
+        "Lunar Diplomacy",
+        "Eadgar's Ruse"
+      ],
       "skills": []
     },
     {
       "name": "Druidic Ritual",
       "description": "I can start this quest by speaking to Kaqemeex who is at the Druids Circle just North of Taverley",
-      "notes": ["Combat Level 10 Required"],
+      "notes": [
+        "Combat Level 10 Required"
+      ],
       "quests": [],
       "skills": []
     },
@@ -482,7 +609,10 @@
     {
       "name": "Eadgar's Ruse",
       "description": "I can start this quest by talking to Sanfew.",
-      "quests": ["Druidic Ritual", "Troll Stronghold"],
+      "quests": [
+        "Druidic Ritual",
+        "Troll Stronghold"
+      ],
       "skills": [
         {
           "name": "Herblore",
@@ -493,7 +623,9 @@
     {
       "name": "Eagles' Peak",
       "description": "I can start this quest by speaking to Charlie the zookeeper in the Ardougne zoo.",
-      "notes": ["Combat Level 10 Recommended"],
+      "notes": [
+        "Combat Level 10 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -524,7 +656,9 @@
     {
       "name": "Elemental Workshop II",
       "description": "I can start this quest by reading the beaten book found in the education center at The Dig Site.",
-      "quests": ["Elemental Workshop I"],
+      "quests": [
+        "Elemental Workshop I"
+      ],
       "skills": [
         {
           "name": "Magic",
@@ -562,7 +696,9 @@
     {
       "name": "Enlightened Journey",
       "description": "I can start this quest by speaking to Auguste on Entrana.",
-      "notes": ["Requires 20 quest points."],
+      "notes": [
+        "Requires 20 quest points."
+      ],
       "quests": [],
       "skills": [
         {
@@ -593,7 +729,9 @@
         "Level 13 Runecraft would be an advantage.",
         "Level 45 Woodcutting would be an advantage."
       ],
-      "quests": ["The Grand Tree"],
+      "quests": [
+        "The Grand Tree"
+      ],
       "skills": [
         {
           "name": "Magic",
@@ -612,14 +750,21 @@
         "A high farming level would be an advantage.",
         "You must defeat a level 111 monster."
       ],
-      "quests": ["Lost City", "Nature Spirit"],
+      "quests": [
+        "Lost City",
+        "Nature Spirit"
+      ],
       "skills": []
     },
     {
       "name": "Fairytale II - Cure a Queen",
       "description": "I can start this quest by talking to Martin the Master Gardener in Draynor Village square.",
-      "quests": ["Fairytale I - Growing Pains"],
-      "notes": ["Must defeat a level 145 enemy."],
+      "quests": [
+        "Fairytale I - Growing Pains"
+      ],
+      "notes": [
+        "Must defeat a level 145 enemy."
+      ],
       "skills": [
         {
           "name": "Herblore",
@@ -638,7 +783,9 @@
     {
       "name": "Family Crest",
       "description": "I can start this quest by speaking to Dimintheis in East Varrock.",
-      "notes": ["Must defeat a level 170 Demon."],
+      "notes": [
+        "Must defeat a level 170 Demon."
+      ],
       "quests": [],
       "skills": [
         {
@@ -662,7 +809,9 @@
     {
       "name": "The Feud",
       "description": "I can start this quest by speaking to Ali Morrisane, a merchant in the Al Kharid bazaar.",
-      "notes": ["Must defeat a level 75 Warrior."],
+      "notes": [
+        "Must defeat a level 75 Warrior."
+      ],
       "quests": [],
       "skills": [
         {
@@ -674,7 +823,9 @@
     {
       "name": "Fight Arena",
       "description": "I can start this quest by speaking to Lady Servil just North-West of the Khazard Port.",
-      "notes": ["Must defeat a level 137 enemy."],
+      "notes": [
+        "Must defeat a level 137 enemy."
+      ],
       "quests": [],
       "skills": []
     },
@@ -692,7 +843,10 @@
     {
       "name": "Forgettable Tale...",
       "description": "I can start this quest by talking to Veldaban, the Commander of the Black Guard in Keldagrim.",
-      "quests": ["The Giant Dwarf", "Fishing Contest"],
+      "quests": [
+        "The Giant Dwarf",
+        "Fishing Contest"
+      ],
       "skills": [
         {
           "name": "Farming",
@@ -707,14 +861,20 @@
     {
       "name": "The Forsaken Tower",
       "description": "I can start this quest by talking to Lady Vulcana Lovakengj in the Lovakengj Assembly.",
-      "notes": ["Requires 20% Lovakengj Favor."],
-      "quests": ["Client of Kourend"],
+      "notes": [
+        "Requires 20% Lovakengj Favor."
+      ],
+      "quests": [
+        "Client of Kourend"
+      ],
       "skills": []
     },
     {
       "name": "The Fremennik Exiles",
       "description": "I can start this quest by speaking to Chieftain Brundt in the Fremennik Longhall.",
-      "notes": ["Combat Level 80 Recommended"],
+      "notes": [
+        "Combat Level 80 Recommended"
+      ],
       "quests": [
         "The Fremennik Isles",
         "Lunar Diplomacy",
@@ -747,8 +907,12 @@
     {
       "name": "The Fremennik Isles",
       "description": "I can start this quest by speaking with Mord Gunnarys on Rllekka's northern docks.",
-      "notes": ["Combat Level 50 Recommended"],
-      "quests": ["The Fremennik Trials"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
+      "quests": [
+        "The Fremennik Trials"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -763,7 +927,9 @@
     {
       "name": "The Fremennik Trials",
       "description": "I can start this quest by speaking to Chieftain Brundt in the Fremennik Longhall, which is in the town of Rellekka to the north of Sinclair Mansion.",
-      "notes": ["Combat Level 40 Recommended"],
+      "notes": [
+        "Combat Level 40 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -781,16 +947,46 @@
       ]
     },
     {
+      "name": "The Garden of Death",
+      "description": "I can start this quest by searching the Camp south east of Mount Quidamortem.",
+      "notes": [
+        "Combat Level 20 Recommended"
+      ],
+      "skills": [
+        {
+          "name": "Farming",
+          "level": 20
+        }
+      ],
+      "quests": [],
+      "miniquest": false
+    },
+    {
       "name": "Garden of Tranquility",
       "description": "to start this quest I need to speak to Queen Ellamaria in the eastern garden of Varrock Palace.",
       "notes": [],
-      "quests": ["Creature of Fenkenstrain"],
+      "quests": [
+        "Creature of Fenkenstrain"
+      ],
       "skills": [
         {
           "name": "Farming",
           "level": 25
         }
       ]
+    },
+    {
+      "name": "The General's Shadow",
+      "description": "I can start this miniquest by talking to General Khazard south of Rellekka, assuming I can actually see him.",
+      "quests": [
+        "Curse of the Empty Lord",
+        "Fight Arena"
+      ],
+      "skills": [],
+      "notes": [
+        "Combat Level 60 Recommended"
+      ],
+      "miniquest": true
     },
     {
       "name": "Gertrude's Cat",
@@ -802,7 +998,9 @@
     {
       "name": "Getting Ahead",
       "description": "I can start this quest by talking to Gordon at his Farm south of the Farming Guild.",
-      "notes": ["Combat Level 45 Recommended"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -818,8 +1016,12 @@
     {
       "name": "Ghosts Ahoy",
       "description": "To start this quest I need to speak to Velorina, a ghost of Port Phasmatys.",
-      "notes": ["Combat Level 15 Recommended"],
-      "quests": ["Priest in Peril"],
+      "notes": [
+        "Combat Level 15 Recommended"
+      ],
+      "quests": [
+        "Priest in Peril"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -881,7 +1083,9 @@
     {
       "name": "The Grand Tree",
       "description": "I can start this quest at the Grand Tree in the Gnome Stronghold by speaking to King Narnode Shareen.",
-      "notes": ["Combat Level 50 Recommended"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -893,7 +1097,9 @@
     {
       "name": "The Great Brain Robbery",
       "description": "I can begin this quest by talking to Brother Tranquility in Mos Le'Harmless.",
-      "notes": ["Combat Level 60 Recommened"],
+      "notes": [
+        "Combat Level 60 Recommended"
+      ],
       "quests": [
         "Cabin Fever",
         "Creature of Fenkenstrain",
@@ -913,8 +1119,12 @@
     {
       "name": "Grim Tales",
       "description": "I can start this quest by speaking to Sylas in Taverley.",
-      "notes": ["Combat Level 55 Recommended"],
-      "quests": ["Witch's House"],
+      "notes": [
+        "Combat Level 55 Recommended"
+      ],
+      "quests": [
+        "Witch's House"
+      ],
       "skills": [
         {
           "name": "Woodcutting",
@@ -957,8 +1167,12 @@
     {
       "name": "Haunted Mine",
       "description": "I can start this quest by speaking to the Saradominist Zealot outside the mines of Morytania.",
-      "notes": ["Combat Level 50 Recommended"],
-      "quests": ["Priest in Peril"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
+      "quests": [
+        "Priest in Peril"
+      ],
       "skills": [
         {
           "name": "Crafting",
@@ -969,14 +1183,19 @@
     {
       "name": "Hazeel Cult",
       "description": "I can start this quest by talking to Sir Ceril Carnillean at the house due West of Ardougne Zoo",
-      "notes": ["Combat Level 10 Recommended"],
+      "notes": [
+        "Combat Level 10 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "Heroes' Quest",
       "description": "I can start this quest by speaking to Achietties at the Heroes' Guild located North of Taverley",
-      "notes": ["Combat Level 50 Recommended", "55 Quest Points"],
+      "notes": [
+        "Combat Level 50 Recommended",
+        "55 Quest Points"
+      ],
       "quests": [
         "Dragon Slayer I",
         "Merlin's Crystal",
@@ -1003,10 +1222,26 @@
       ]
     },
     {
+      "name": "His Faithful Servants",
+      "description": "I can start this miniquest by talking to the Strange Old Man at the Barrows east of Mort'ton.",
+      "notes": [
+        "Combat Level 70 Recommended"
+      ],
+      "quests": [
+        "Priest in Peril"
+      ],
+      "skills": [],
+      "miniquest": true
+    },
+    {
       "name": "Holy Grail",
       "description": "I can only start this quest when I have completed the Merlin's Crystal Quest by speaking to King Arthur.",
-      "notes": ["Combat Level 50 Recommended"],
-      "quests": ["Merlin's Crystal"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
+      "quests": [
+        "Merlin's Crystal"
+      ],
       "skills": [
         {
           "name": "Attack",
@@ -1032,8 +1267,13 @@
     {
       "name": "Icthlarin's Little Helper",
       "description": "I can start this quest by talking to the Wanderer in her camp north of Sophanem.",
-      "notes": ["Combat Level 50 Recommended", "40 Agility Recommended"],
-      "quests": ["Gertrude's Cat"],
+      "notes": [
+        "Combat Level 50 Recommended",
+        "40 Agility Recommended"
+      ],
+      "quests": [
+        "Gertrude's Cat"
+      ],
       "skills": []
     },
     {
@@ -1046,8 +1286,12 @@
     {
       "name": "In Aid of the Myreque",
       "description": "I can start this quest by speaking to Veliaf Hurtz in the Myreque Hideout beneath The Hollows.",
-      "notes": ["Combat Level 45 Recommended"],
-      "quests": ["In Search of the Myreque"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
+      "quests": [
+        "In Search of the Myreque"
+      ],
       "skills": [
         {
           "name": "Crafting",
@@ -1066,8 +1310,12 @@
     {
       "name": "In Search of the Myreque",
       "description": "I can start this quest by speaking to Vanstrom Klause in the Hair of the Dog Tavern in Canifis.",
-      "notes": ["Combat Level 45 Recommended"],
-      "quests": ["Nature Spirit"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
+      "quests": [
+        "Nature Spirit"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -1076,10 +1324,26 @@
       ]
     },
     {
+      "name": "Into the Tombs",
+      "description": "I can start this miniquest by talking to Maisa inside Osmumten's Tomb at the Necropolis.",
+      "notes": [
+        "Combat Level 95 Recommended"
+      ],
+      "quests": [
+        "Beneath Cursed Sands"
+      ],
+      "skills": [],
+      "miniquest": true
+    },
+    {
       "name": "Jungle Potion",
       "description": "I can start this quest by speaking to Trufitus Shakaya who lives in the main hut in Tai Bwo Wannai village on the island of Karamja.",
-      "notes": ["Combat Level 20 Recommended"],
-      "quests": ["Druidic Ritual"],
+      "notes": [
+        "Combat Level 20 Recommended"
+      ],
+      "quests": [
+        "Druidic Ritual"
+      ],
       "skills": []
     },
     {
@@ -1150,7 +1414,9 @@
     {
       "name": "The Knight's Sword",
       "description": "I can start this quest by speaking to the Squire in the courtyard of the White Knights' Castle in southern Falador.",
-      "notes": ["Combat Level 20 Recommended"],
+      "notes": [
+        "Combat Level 20 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -1162,8 +1428,13 @@
     {
       "name": "Land of the Goblins",
       "description": "I can start thsi quest by talking to Grubfoot in the mines north of Dorgesh-Kaan.",
-      "notes": ["Combat Level 65 Recommended"],
-      "quests": ["Another Slice of H.A.M.", "Fishing Contest"],
+      "notes": [
+        "Combat Level 65 Recommended"
+      ],
+      "quests": [
+        "Another Slice of H.A.M.",
+        "Fishing Contest"
+      ],
       "skills": [
         {
           "name": "Herblore",
@@ -1186,7 +1457,10 @@
     {
       "name": "Legends' Quest",
       "description": "I can start this quest by talking to Radimus Erkle in the Legends Guild, North East of Ardougne.",
-      "notes": ["107 Quest Points Required", "Combat Level 65 Recommended"],
+      "notes": [
+        "107 Quest Points Required",
+        "Combat Level 65 Recommended"
+      ],
       "quests": [
         "Heroes' Quest",
         "Family Crest",
@@ -1240,7 +1514,9 @@
     {
       "name": "Lost City",
       "description": "I can start this quest by speaking to the Adventurers in the Swamp just south of Lumbridge.",
-      "notes": ["Combat Level 45 Recommended"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -1257,7 +1533,10 @@
       "name": "The Lost Tribe",
       "description": "I can start this quest by speaking to Sigmun in Lumbridge Castle.",
       "notes": [],
-      "quests": ["Goblin Diplomacy", "Rune Mysteries"],
+      "quests": [
+        "Goblin Diplomacy",
+        "Rune Mysteries"
+      ],
       "skills": [
         {
           "name": "Mining",
@@ -1276,7 +1555,9 @@
     {
       "name": "Lunar Diplomacy",
       "description": "I can start this quest by talking to Lokar at the Docks to the west of Rellekka.",
-      "notes": ["Combat Level 50 Recommended"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
       "quests": [
         "The Fremennik Trials",
         "Shilo Village",
@@ -1317,7 +1598,9 @@
     {
       "name": "Making Friends with My Arm",
       "description": "I can start this quest by speaking to Burntmeat in the kitchen of the Troll Stronghold",
-      "notes": ["Combat Level 65 Recommended"],
+      "notes": [
+        "Combat Level 65 Recommended"
+      ],
       "quests": [
         "My Arm's Big Adventure",
         "Swan Song",
@@ -1347,13 +1630,18 @@
       "name": "Making History",
       "description": "I can start this quest by talking to Jorral in the Outpost North West of West Ardougne",
       "notes": [],
-      "quests": ["Priest in Peril", "The Restless Ghost"],
+      "quests": [
+        "Priest in Peril",
+        "The Restless Ghost"
+      ],
       "skills": []
     },
     {
       "name": "Merlin's Crystal",
       "description": "I can start this quest by speaking to King Arthur at Camelot Castle, just North West of Catherby",
-      "notes": ["Combat Level 20 Recommended"],
+      "notes": [
+        "Combat Level 20 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
@@ -1374,8 +1662,13 @@
     {
       "name": "Monkey Madness I",
       "description": "I can start this quest by talking to King Narnode Shareen at the Grand Tree in the Gnome Stronghold.",
-      "notes": ["Combat Level 65 Recommended"],
-      "quests": ["The Grand Tree", "Tree Gnome Village"],
+      "notes": [
+        "Combat Level 65 Recommended"
+      ],
+      "quests": [
+        "The Grand Tree",
+        "Tree Gnome Village"
+      ],
       "skills": []
     },
     {
@@ -1422,7 +1715,9 @@
     {
       "name": "Mountain Daughter",
       "description": "I can start this quest by talking to the chieftain of the mountain camp east of Rellekka.",
-      "notes": ["Combat Level 40 Recommended"],
+      "notes": [
+        "Combat Level 40 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -1434,8 +1729,14 @@
     {
       "name": "Mourning's End Part I",
       "description": "I can start this quest by talking to Iswyn and Eluned within the Isafdar forest.",
-      "notes": ["Combat Level 60 Recommended"],
-      "quests": ["Roving Elves", "Big Chompy Bird Hunting", "Sheep Herder"],
+      "notes": [
+        "Combat Level 60 Recommended"
+      ],
+      "quests": [
+        "Roving Elves",
+        "Big Chompy Bird Hunting",
+        "Sheep Herder"
+      ],
       "skills": [
         {
           "name": "Ranged",
@@ -1450,8 +1751,12 @@
     {
       "name": "Mourning's End Part II",
       "description": "I can start this quest by talking to Arianwyn in Lletya",
-      "notes": ["Combat Level 65 Recommended"],
-      "quests": ["Mourning's End Part I"],
+      "notes": [
+        "Combat Level 65 Recommended"
+      ],
+      "quests": [
+        "Mourning's End Part I"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -1473,7 +1778,11 @@
         "Combat Level 55 Recommended",
         "Some Tai Bwo Wannai Cleanup work required"
       ],
-      "quests": ["Eadgar's Ruse", "The Feud", "Jungle Potion"],
+      "quests": [
+        "Eadgar's Ruse",
+        "The Feud",
+        "Jungle Potion"
+      ],
       "skills": [
         {
           "name": "Farming",
@@ -1488,15 +1797,24 @@
     {
       "name": "Nature Spirit",
       "description": "I can start this quest by speaking to Drezel in the Mausoleum beneath Paterdomus.",
-      "notes": ["Combat Level 20 Recommended"],
-      "quests": ["Priest in Peril", "The Restless Ghost"],
+      "notes": [
+        "Combat Level 20 Recommended"
+      ],
+      "quests": [
+        "Priest in Peril",
+        "The Restless Ghost"
+      ],
       "skills": []
     },
     {
       "name": "A Night in the Theatre",
       "description": "I can start this quest by talking to the Mysterious Stranger outside Ver Sinhaza, south east of Meiyerditch.",
-      "notes": ["Combat Level 95 Recommended"],
-      "quests": ["A Taste of Hope"],
+      "notes": [
+        "Combat Level 95 Recommended"
+      ],
+      "quests": [
+        "A Taste of Hope"
+      ],
       "skills": []
     },
     {
@@ -1509,8 +1827,13 @@
     {
       "name": "Olaf's Quest",
       "description": "I can begin this quest by talking to Olaf Hradson who is north-east of Rellekka.",
-      "notes": ["Combat Level 60 Recommended", "Agility Level 50 Recommended"],
-      "quests": ["The Fremennik Trials"],
+      "notes": [
+        "Combat Level 60 Recommended",
+        "Agility Level 50 Recommended"
+      ],
+      "quests": [
+        "The Fremennik Trials"
+      ],
       "skills": [
         {
           "name": "Woodcutting",
@@ -1525,8 +1848,13 @@
     {
       "name": "One Small Favour",
       "description": "I can start this quest by talking to Yanni Salika who owns the Antiques Shop in Shilo Village.",
-      "notes": ["Combat Level 45 Recommended"],
-      "quests": ["Shilo Village", "Rune Mysteries"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
+      "quests": [
+        "Shilo Village",
+        "Rune Mysteries"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -1547,6 +1875,40 @@
       ]
     },
     {
+      "name": "The Path of Glouphrie",
+      "description": "I can start this quest by talking to King Bolren in the Tree Gnome Village.",
+      "quests": [
+        "The Eyes of Glouphrie",
+        "Tree Gnome Village",
+        "Waterfall Quest"
+      ],
+      "skills": [
+        {
+          "name": "Strength",
+          "level": 60
+        },
+        {
+          "name": "Slayer",
+          "level": 56
+        },
+        {
+          "name": "Thieving",
+          "level": 56
+        },
+        {
+          "name": "Ranged",
+          "level": 47
+        },
+        {
+          "name": "Agility",
+          "level": 45
+        }
+      ],
+      "notes": [
+        "Combat Level 60 Recommended"
+      ]
+    },
+    {
       "name": "Pirate's Treasure",
       "description": "I can start this quest by speaking to Redbeard Frank who is in Port Sarim, south of the Rusty Anchor.",
       "notes": [],
@@ -1563,29 +1925,39 @@
     {
       "name": "A Porcine of Interest",
       "description": "I can start this quest by reading the Notice Board in Dryanor Village.",
-      "notes": ["Combat Level 20 Recommended"],
+      "notes": [
+        "Combat Level 20 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "Priest in Peril",
       "description": "I can start this quest by speaking to King Roald in Varrock Palace",
-      "notes": ["Combat Level 15 Recommended"],
+      "notes": [
+        "Combat Level 15 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "Prince Ali Rescue",
       "description": "I can start this quest by talking to Hassan in the Al Kharid Palace.",
-      "notes": ["Combat Level 10 Recommended"],
+      "notes": [
+        "Combat Level 10 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "The Queen of Thieves",
       "description": "I can start this quest by talking to Tomas Lawry outside the bank in Port Piscarilius.",
-      "notes": ["20% Piscarilius Favour"],
-      "quests": ["Client of Kourend"],
+      "notes": [
+        "20% Piscarilius Favour"
+      ],
+      "quests": [
+        "Client of Kourend"
+      ],
       "skills": [
         {
           "name": "Thieving",
@@ -1596,7 +1968,9 @@
     {
       "name": "Rag and Bone Man I",
       "description": "I can start this quest by talking to the Odd Old Man to the West of the Limestone Mine.",
-      "notes": ["Combat Level 15 Recommended"],
+      "notes": [
+        "Combat Level 15 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
@@ -1607,7 +1981,10 @@
         "Combat Level 40 Recommended",
         "Miniquest Skippy and the Mogres"
       ],
-      "quests": ["Rag and Bone Man I", "Horror from the Deep"],
+      "quests": [
+        "Rag and Bone Man I",
+        "Horror from the Deep"
+      ],
       "skills": [
         {
           "name": "Slayer",
@@ -1623,14 +2000,18 @@
       "name": "Ratcatchers",
       "description": "I can start this quest by speaking to Gertrude who lives on the west side of Varrock.",
       "notes": [],
-      "quests": ["Icthlarin's Little Helper"],
+      "quests": [
+        "Icthlarin's Little Helper"
+      ],
       "skills": []
     },
     {
       "name": "Recipe for Disaster",
       "description": "I can start this quest by speaking to the Cook in Lumbridge Castle.",
       "notes": [],
-      "quests": ["Cook's Assistant"],
+      "quests": [
+        "Cook's Assistant"
+      ],
       "skills": [
         {
           "name": "Cooking",
@@ -1641,21 +2022,29 @@
     {
       "name": "Recipe for Disaster - Freeing the Mountain Dwarf",
       "description": "",
-      "notes": ["Must be able to defeat a level 13 enemy"],
-      "quests": ["Fishing Contest"],
+      "notes": [
+        "Must be able to defeat a level 13 enemy"
+      ],
+      "quests": [
+        "Fishing Contest"
+      ],
       "skills": []
     },
     {
       "name": "Recipe for Disaster - Freeing the Goblin Generals",
       "description": "",
       "notes": [],
-      "quests": ["Goblin Diplomacy"],
+      "quests": [
+        "Goblin Diplomacy"
+      ],
       "skills": []
     },
     {
       "name": "Recipe for Disaster - Freeing Pirate Pete",
       "description": "",
-      "notes": ["Must be able to defeat five level 35 enemies"],
+      "notes": [
+        "Must be able to defeat five level 35 enemies"
+      ],
       "quests": [],
       "skills": [
         {
@@ -1687,7 +2076,10 @@
       "name": "Recipe for Disaster - Freeing Evil Dave",
       "description": "",
       "notes": [],
-      "quests": ["Gertrude's Cat", "Shadow of the Storm"],
+      "quests": [
+        "Gertrude's Cat",
+        "Shadow of the Storm"
+      ],
       "skills": [
         {
           "name": "Cooking",
@@ -1699,7 +2091,9 @@
       "name": "Recipe for Disaster - Freeing Skrach Uglogwee",
       "description": "",
       "notes": [],
-      "quests": ["Big Chompy Bird Hunting"],
+      "quests": [
+        "Big Chompy Bird Hunting"
+      ],
       "skills": [
         {
           "name": "Cooking",
@@ -1730,8 +2124,12 @@
     {
       "name": "Recipe for Disaster - Freeing King Awowogei",
       "description": "",
-      "notes": ["Must be able to defeat a level 84 enemy"],
-      "quests": ["Monkey Madness I"],
+      "notes": [
+        "Must be able to defeat a level 84 enemy"
+      ],
+      "quests": [
+        "Monkey Madness I"
+      ],
       "skills": [
         {
           "name": "Cooking",
@@ -1746,15 +2144,24 @@
     {
       "name": "Recruitment Drive",
       "description": "I can start this quest by speaking to Sir Amik Varze, upstairs in Falador Castle,",
-      "notes": ["Combat Level 10 Recommended"],
-      "quests": ["Black Knights' Fortress", "Druidic Ritual"],
+      "notes": [
+        "Combat Level 10 Recommended"
+      ],
+      "quests": [
+        "Black Knights' Fortress",
+        "Druidic Ritual"
+      ],
       "skills": []
     },
     {
       "name": "Regicide",
       "description": "I can start thsi quest by talking to King Lathas in Ardougne Castle.",
-      "notes": ["Combat Level 60 Recommended"],
-      "quests": ["Underground Pass"],
+      "notes": [
+        "Combat Level 60 Recommended"
+      ],
+      "quests": [
+        "Underground Pass"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -1769,7 +2176,9 @@
     {
       "name": "The Restless Ghost",
       "description": "I can start this quest by speaking to Father Aereck in the church next to Lumbridge Castle.",
-      "notes": ["Combat Level 10 Recommended"],
+      "notes": [
+        "Combat Level 10 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
@@ -1783,15 +2192,24 @@
     {
       "name": "Roving Elves",
       "description": "I can start this quest by talking to Islwyn and Eluned within the Isafdar forest.",
-      "notes": ["Combat Level 60 Recommended"],
-      "quests": ["Regicide", "Waterfall Quest"],
+      "notes": [
+        "Combat Level 60 Recommended"
+      ],
+      "quests": [
+        "Regicide",
+        "Waterfall Quest"
+      ],
       "skills": []
     },
     {
       "name": "Royal Trouble",
       "description": "I can start this quest by talking to Advisor Ghrim in Miscellania.",
-      "notes": ["Combat Level 50 Recommended"],
-      "quests": ["Throne of Miscellania"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
+      "quests": [
+        "Throne of Miscellania"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -1806,8 +2224,13 @@
     {
       "name": "Rum Deal",
       "description": "I need to speak to Pirate Pete in Port Phasmatys.",
-      "notes": ["Combat Level 50 Recommended"],
-      "quests": ["Zogre Flesh Eaters", "Priest in Peril"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
+      "quests": [
+        "Zogre Flesh Eaters",
+        "Priest in Peril"
+      ],
       "skills": [
         {
           "name": "Fishing",
@@ -1866,10 +2289,41 @@
       ]
     },
     {
+      "name": "Secrets of the North",
+      "description": "I can start this quest by talking to the Guard outside the Carnillean Mansion in East Ardougne.",
+      "quests": [
+        "Making Friends with My Arm",
+        "The General's Shadow",
+        "Devious Minds",
+        "Hazeel Cult"
+      ],
+      "skills": [
+        {
+          "name": "Agility",
+          "level": 69
+        },
+        {
+          "name": "Thieving",
+          "level": 64
+        },
+        {
+          "name": "Hunter",
+          "level": 56
+        }
+      ],
+      "notes": [
+        "Combat Level 85 Recommended"
+      ]
+    },
+    {
       "name": "Shades of Mort'ton",
       "description": "I can start this quest by exploring the town of Mort'ton which is accessible form the southern edge of Mort Myre.",
-      "notes": ["Combat Level 25 Recommended"],
-      "quests": ["Priest in Peril"],
+      "notes": [
+        "Combat Level 25 Recommended"
+      ],
+      "quests": [
+        "Priest in Peril"
+      ],
       "skills": [
         {
           "name": "Crafting",
@@ -1888,8 +2342,13 @@
     {
       "name": "Shadow of the Storm",
       "description": "I can start this quest by speaking to Fr. Reen in Al Kharid.",
-      "notes": ["Combat Level 50 Recommended"],
-      "quests": ["The Golem", "Demon Slayer"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
+      "quests": [
+        "The Golem",
+        "Demon Slayer"
+      ],
       "skills": []
     },
     {
@@ -1909,15 +2368,22 @@
     {
       "name": "Shield of Arrav",
       "description": "I can start this quest by speaking to Reldo in Varrock's Palace Library, or by speaking to Charlie the Tramp near the Blue Moon Inn in Varrock.",
-      "notes": ["Combat Level 10 Recommended", "Requires a friend"],
+      "notes": [
+        "Combat Level 10 Recommended",
+        "Requires a friend"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "Shilo Village",
       "description": "I can start this quest by speaking to Mosol Rei deep in the unexplored jungles of Southern Karamja.",
-      "notes": ["Combat Level 45 Recommended"],
-      "quests": ["Jungle Potion"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
+      "quests": [
+        "Jungle Potion"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -1932,8 +2398,13 @@
     {
       "name": "Sins of the Father",
       "description": "I can start this quest by talking to Veliaf Hurtz outside the church in Slepe.",
-      "notes": ["Combat Level 95 Recommended"],
-      "quests": ["A Taste of Hope", "Vampyre Slayer"],
+      "notes": [
+        "Combat Level 95 Recommended"
+      ],
+      "quests": [
+        "A Taste of Hope",
+        "Vampyre Slayer"
+      ],
       "skills": [
         {
           "name": "Woodcutting",
@@ -1980,8 +2451,13 @@
     {
       "name": "The Slug Menace",
       "description": "I can start this quest by speaking to Sir Tiffy Cashien in Falador Park",
-      "notes": ["Combat Level 35 Recommended"],
-      "quests": ["Sea Slug", "Wanted!"],
+      "notes": [
+        "Combat Level 35 Recommended"
+      ],
+      "quests": [
+        "Sea Slug",
+        "Wanted!"
+      ],
       "skills": [
         {
           "name": "Crafting",
@@ -2004,8 +2480,13 @@
     {
       "name": "Song of the Elves",
       "description": "I can start this quest by talking to Edmond at his home, north of the Flying Horse Inn in East Ardougne.",
-      "notes": ["Combat LEvel 95 Recommended"],
-      "quests": ["Mourning's End Part II", "Making History"],
+      "notes": [
+        "Combat Level 95 Recommended"
+      ],
+      "quests": [
+        "Mourning's End Part II",
+        "Making History"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -2044,14 +2525,18 @@
     {
       "name": "A Soul's Bane",
       "description": "I can start this quest by talking to Launa at the Rift entrance north west of the dig site.",
-      "notes": ["Combat Level 30 Recommended"],
+      "notes": [
+        "Combat Level 30 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "Spirits of the Elid",
       "description": "I can start this quest by speaking to Awusah who is the mayor in the desert town of Nardah.",
-      "notes": ["Combat Level 40 Recommended"],
+      "notes": [
+        "Combat Level 40 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -2075,8 +2560,14 @@
     {
       "name": "Swan Song",
       "description": "I can start this quest by speaking to Herman Caranos at the entrance to the Piscatoris Fishing Colony, a long way north-west of the Gnome Stronghold.",
-      "notes": ["Combat Level 60 Recommended", "100 Quest Points Required"],
-      "quests": ["One Small Favour", "Garden of Tranquility"],
+      "notes": [
+        "Combat Level 60 Recommended",
+        "100 Quest Points Required"
+      ],
+      "quests": [
+        "One Small Favour",
+        "Garden of Tranquility"
+      ],
       "skills": [
         {
           "name": "Magic",
@@ -2108,7 +2599,9 @@
       "name": "Tai Bwo Wannai Trio",
       "description": "In Jungle Potion, Trufitus found Tai Bwo Wannai Village was Safe to inhabit. To start this quest I must deliver this news to Timfraku, Chief of the village.",
       "notes": [],
-      "quests": ["Jungle Potion"],
+      "quests": [
+        "Jungle Potion"
+      ],
       "skills": [
         {
           "name": "Firemaking",
@@ -2132,14 +2625,21 @@
       "name": "A Tail of Two Cats",
       "description": "I can start this quest by talking to Unferth in his house in Burthorpe. Burthorpe is north of the Heroes' Guild in the Kingdom of Asgarnia.",
       "notes": [],
-      "quests": ["Icthlarin's Little Helper"],
+      "quests": [
+        "Icthlarin's Little Helper"
+      ],
       "skills": []
     },
     {
       "name": "Tale of the Righteous",
       "description": "I can start this quest by talking to Phileas Rimor in his home next to the Cloak and Stagger Inn in Shayzien.",
-      "notes": ["Combat Level 20 Recommended", "20% Shayzien Favour Required"],
-      "quests": ["Client of Kourend"],
+      "notes": [
+        "Combat Level 20 Recommended",
+        "20% Shayzien Favour Required"
+      ],
+      "quests": [
+        "Client of Kourend"
+      ],
       "skills": [
         {
           "name": "Strength",
@@ -2154,8 +2654,12 @@
     {
       "name": "A Taste of Hope",
       "description": "I can start this quest by talking to Garth outside Ver Sinhaza, south east of Meiyerditch.",
-      "notes": ["Combat Level 70 Recommended"],
-      "quests": ["Darkness of Hallowvale"],
+      "notes": [
+        "Combat Level 70 Recommended"
+      ],
+      "quests": [
+        "Darkness of Hallowvale"
+      ],
       "skills": [
         {
           "name": "Crafting",
@@ -2182,7 +2686,9 @@
     {
       "name": "Tears of Guthix",
       "description": "I can start this quest by speaking to Juna the serpent who lives deep in the Lumbridge Swamp Caves.",
-      "notes": ["43 Quest Points Required"],
+      "notes": [
+        "43 Quest Points Required"
+      ],
       "quests": [],
       "skills": [
         {
@@ -2202,7 +2708,9 @@
     {
       "name": "Temple of Ikov",
       "description": "I can start this quest at the Flying Horse Inn in ARdougne by speaking to Lucien",
-      "notes": ["Combat Level 45 Recommended"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -2218,7 +2726,9 @@
     {
       "name": "Temple of the Eye",
       "description": "I can start this quest by talking to Wizasrd Persten north of Al Kharid",
-      "notes": ["Must have entered the Abyss"],
+      "notes": [
+        "Must have entered the Abyss"
+      ],
       "quests": [],
       "skills": [
         {
@@ -2231,7 +2741,10 @@
       "name": "Throne of Miscellania",
       "description": "I can start this quest by talking to King Vargas in Miscellania.",
       "notes": [],
-      "quests": ["Heroes' Quest", "The Fremennik Trials"],
+      "quests": [
+        "Heroes' Quest",
+        "The Fremennik Trials"
+      ],
       "skills": [
         {
           "name": "Woodcutting",
@@ -2250,7 +2763,9 @@
     {
       "name": "The Tourist Trap",
       "description": "I can start this quest by speaking to Irena after I have gone through the Shantay Pass, South of Al Kharid.",
-      "notes": ["Combat Level 20 Recommended"],
+      "notes": [
+        "Combat Level 20 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -2278,7 +2793,9 @@
     {
       "name": "Tree Gnome Village",
       "description": "I can start this quest by speaking to Bolren at the center of the Tree Gnome maze, West of Port Khazard",
-      "notes": ["Combat Level 45 Recommended"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
@@ -2297,8 +2814,12 @@
     {
       "name": "Troll Romance",
       "description": "I can start this quest by speaking to Ug who is in the Troll Stronghold",
-      "notes": ["Combat Level 50 Recommended"],
-      "quests": ["Troll Stronghold"],
+      "notes": [
+        "Combat Level 50 Recommended"
+      ],
+      "quests": [
+        "Troll Stronghold"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -2309,8 +2830,13 @@
     {
       "name": "Troll Stronghold",
       "description": "I can start this quest by speaking to Denulth in his tent at the Imperial Guard camp in Burthorpe",
-      "notes": ["Combat Level 50 Recommended", "Thieving Level 30 Recommended"],
-      "quests": ["Death Plateau"],
+      "notes": [
+        "Combat Level 50 Recommended",
+        "Thieving Level 30 Recommended"
+      ],
+      "quests": [
+        "Death Plateau"
+      ],
       "skills": [
         {
           "name": "Agility",
@@ -2326,7 +2852,9 @@
         "Agility Level 50 Recommended",
         "Thieving Level 50 Recommended"
       ],
-      "quests": ["Biohazard"],
+      "quests": [
+        "Biohazard"
+      ],
       "skills": [
         {
           "name": "Ranged",
@@ -2337,7 +2865,9 @@
     {
       "name": "Vampyre Slayer",
       "description": "I can start this quest by speaking to Morgan who is in Draynor Village.",
-      "notes": ["Combat Level 20 Recommended"],
+      "notes": [
+        "Combat Level 20 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
@@ -2349,13 +2879,19 @@
         "32 Quest Points Required",
         "Must have entered the abyss"
       ],
-      "quests": ["Recruitment Drive", "The Lost Tribe", "Priest in Peril"],
+      "quests": [
+        "Recruitment Drive",
+        "The Lost Tribe",
+        "Priest in Peril"
+      ],
       "skills": []
     },
     {
       "name": "Watchtower",
       "description": "I can start this quest by speaking to the Watchtower Wizard on the top floor of Yanille's Watchtower.",
-      "notes": ["Combat Level 35 Recommended"],
+      "notes": [
+        "Combat Level 35 Recommended"
+      ],
       "quests": [],
       "skills": [
         {
@@ -2383,15 +2919,22 @@
     {
       "name": "Waterfall Quest",
       "description": "I can start this quest by talking to Almera in her home next to Baxtorian Falls.",
-      "notes": ["Combat Level 25 Recommended"],
+      "notes": [
+        "Combat Level 25 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
     {
       "name": "What Liest Below",
       "description": "I can start this quest by speaking to Rat Burgiss on the road south of Varrock",
-      "notes": ["Combat Level 30 Recommended", "Mining Level 42 Recommended"],
-      "quests": ["Rune Mysteries"],
+      "notes": [
+        "Combat Level 30 Recommended",
+        "Mining Level 42 Recommended"
+      ],
+      "quests": [
+        "Rune Mysteries"
+      ],
       "skills": [
         {
           "name": "Runecraft",
@@ -2402,7 +2945,9 @@
     {
       "name": "Witch's House",
       "description": "I can start this quest by speaking to the little boy standing by the long gartden just north of Taverley.",
-      "notes": ["Combat Level 35 Recommended"],
+      "notes": [
+        "Combat Level 35 Recommended"
+      ],
       "quests": [],
       "skills": []
     },
@@ -2423,8 +2968,13 @@
     {
       "name": "Zogre Flesh Eaters",
       "description": "I can start this quest by talking to Grish at the Ogrish ceremonial dance place called Jiggig.",
-      "notes": ["Combat Level 45 Recommended"],
-      "quests": ["Big Chompy Bird Hunting", "Jungle Potion"],
+      "notes": [
+        "Combat Level 45 Recommended"
+      ],
+      "quests": [
+        "Big Chompy Bird Hunting",
+        "Jungle Potion"
+      ],
       "skills": [
         {
           "name": "Ranged",
@@ -2442,7 +2992,7 @@
     },
     {
       "name": "Alfred Grimhand's Barcrawl",
-      "description": "Miniquest",
+      "description": "I can start this miniquest by talking to a Barbarian Guard outside the Barbarian Outpost",
       "notes": [],
       "quests": [],
       "skills": [],
@@ -2454,6 +3004,7 @@
     "description": "",
     "notes": [],
     "quests": [],
-    "skills": []
+    "skills": [],
+    "miniquest": false
   }
 }

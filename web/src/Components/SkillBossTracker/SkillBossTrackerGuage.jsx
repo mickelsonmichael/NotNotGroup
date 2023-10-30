@@ -9,7 +9,7 @@ const SkillBossTrackerGauge = ({
   player,
   primarySkill,
   secondarySkills,
-  hiScoresName,
+  id,
 }) => (
   <div className="boss-tracker-wrapper">
     <Typography variant="h4" textAlign="center" marginBottom={1}>
@@ -26,7 +26,7 @@ const SkillBossTrackerGauge = ({
       />
     </div>
     <Typography variant="h4" textAlign="center" marginTop={1}>
-      {player?.bosses[hiScoresName]?.level ?? 0} Kills
+      {player?.bosses.find(b => b.id === id)?.level ?? 0} Kills
     </Typography>
     <Typography textAlign="center">
       <div className="boss-tracker__skill">

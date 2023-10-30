@@ -10,7 +10,7 @@ const SkillBossTracker = ({
   primarySkill,
   secondarySkills,
   bossName,
-  hiScoresName,
+  id,
 }) => {
   const { accounts } = useAccounts();
 
@@ -35,7 +35,7 @@ const SkillBossTracker = ({
               player={account}
               primarySkill={primarySkill}
               secondarySkills={secondarySkills}
-              hiScoresName={hiScoresName}
+              id={id}
               color={account.color}
             />
           </Grid>
